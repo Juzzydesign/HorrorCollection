@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal horror film collection — rated, reviewed, and organised by genre.">
+  <title>The Obscure Collective</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-top-strip">
+      <button class="login-btn" id="login-btn" aria-label="Admin login">LOGIN</button>
+    </div>
+    <div class="header-title-block">
+      <h1 class="site-title">The Obscure Collective</h1>
+    </div>
+    <div class="header-bottom-strip">
+      <p class="tagline">a personal collection of the damned</p>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════
+       VIEW TABS — The Collection / Want to Watch / Already Seen
+  ══════════════════════════════════════════════ -->
+  <div class="view-tabs-wrapper">
+    <div class="view-tabs" role="tablist" aria-label="View collection">
+      <button class="view-tab active" data-status="all"     role="tab" aria-selected="true">
+        The Collection <span class="tab-count" id="count-all"></span>
+      </button>
+      <button class="view-tab" data-status="watchlist" role="tab" aria-selected="false">
+        Want to Watch <span class="tab-count" id="count-watchlist"></span>
+      </button>
+      <button class="view-tab" data-status="watched"   role="tab" aria-selected="false">
+        Already Seen <span class="tab-count" id="count-watched"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       CONTROLS — search + genre filters
+  ══════════════════════════════════════════════ -->
+  <div class="controls-wrapper">
+    <div class="controls">
+      <div class="filters-row">
+        <div class="filters" role="group" aria-label="Filter by genre">
+          <button class="filter-btn active" data-genre="all">All Genres</button>
+          <button class="filter-btn" data-genre="Cults">Cults</button>
+          <button class="filter-btn" data-genre="Voodoo">Voodoo</button>
+          <button class="filter-btn" data-genre="Supernatural">Supernatural</button>
+          <button class="filter-btn" data-genre="Psychological">Psychological</button>
+          <button class="filter-btn" data-genre="Slasher">Slasher</button>
+          <button class="filter-btn" data-genre="Folk">Folk</button>
+          <button class="filter-btn" data-genre="Series">Series</button>
+        </div>
+        <div class="search-bar">
+          <input type="search" id="search-input" placeholder="Search…"
+                 autocomplete="off" aria-label="Search films">
+        </div>
+        <!-- Add Film button — only visible when logged in -->
+        <button class="add-movie-btn" id="add-movie-btn" hidden aria-label="Add a film">
+          + ADD FILM
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="collection-stats">
+    <span id="movie-count"></span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       MAIN — movie grid
+  ══════════════════════════════════════════════ -->
+  <main class="main-content">
+    <div class="movie-grid" id="movie-grid" role="list"></div>
+    <div class="empty-state" id="empty-state" hidden>No films found matching your selection.</div>
+  </main>
+
+  <footer class="site-footer">
+    <p>A personal horror collection — updated as the collection grows</p>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════
+       MODAL: LOGIN / SETUP PASSWORD
+  ══════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="login-modal" hidden role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+    <div class="modal">
+      <button class="modal-close" id="login-modal-close" aria-label="Close">✕</button>
+      <h2 class="modal-title" id="login-modal-title">Enter the Collective</h2>
+      <p class="modal-sub">Enter your password to manage the collection.</p>
+      <div class="form-field">
+        <label class="form-label" for="login-password">Password</label>
+        <input class="form-input" type="password" id="login-password" autocomplete="current-password" placeholder="Password">
+      </div>
+      <p class="form-error" id="login-error" hidden></p>
+      <button class="btn-primary" id="login-submit">ENTER</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       MODAL: ADD / EDIT FILM
+  ══════════════════════════════════════════════ -->
+  <div class="modal-overlay modal-overlay--large" id="film-modal" hidden role="dialog" aria-modal="true" aria-labelledby="film-modal-title">
+    <div class="modal modal--large">
+      <button class="modal-close" id="film-modal-close" aria-label="Close">✕</button>
+      <h2 class="modal-title" id="film-modal-title">Add to the Archive</h2>
+
+      <form id="film-form" novalidate>
+        <!-- Hidden: stores id when editing -->
+        <input type="hidden" id="film-id">
+
+        <!-- ── Status (top, drives whether rating/review show) ── -->
+        <div class="form-section">
+          <p class="form-section-label">Status</p>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="status" value="watched" checked> Already Seen
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="status" value="watchlist"> Want to Watch
+            </label>
+          </div>
+        </div>
+
+        <!-- ── Basic info ── -->
+        <div class="form-grid-2">
+          <div class="form-field form-field--span2">
+            <label class="form-label" for="film-title">Title <span class="required">*</span></label>
+            <input class="form-input" type="text" id="film-title" placeholder="e.g. The Wicker Man" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="film-year">Year <span class="required">*</span></label>
+            <input class="form-input" type="number" id="film-year" placeholder="1973" min="1888" max="2099" required>
+          </div>
+          <div class="form-field form-field--span2">
+            <label class="form-label" for="film-director">Director</label>
+            <input class="form-input" type="text" id="film-director" placeholder="e.g. Robin Hardy">
+          </div>
+        </div>
+
+        <!-- ── Genres ── -->
+        <div class="form-section">
+          <p class="form-section-label">Genre <span class="required">*</span></p>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="genre" value="Cults"> Cults</label>
+            <label class="checkbox-label"><input type="checkbox" name="genre" value="Voodoo"> Voodoo</label>
+            <label class="checkbox-label"><input type="checkbox" name="genre" value="Supernatural"> Supernatural</label>
+            <label class="checkbox-label"><input type="checkbox" name="genre" value="Psychological"> Psychological</label>
+            <label class="checkbox-label"><input type="checkbox" name="genre" value="Slasher"> Slasher</label>
+            <label class="checkbox-label"><input type="checkbox" name="genre" value="Folk"> Folk</label>
+            <label class="checkbox-label"><input type="checkbox" name="genre" value="Series"> Series</label>
+          </div>
+        </div>
+
+        <!-- ── Rating (watched only) ── -->
+        <div class="form-section" id="rating-section">
+          <p class="form-section-label">My Rating</p>
+          <div class="rating-input-row">
+            <input class="rating-slider" type="range" id="film-rating" min="1" max="10" value="7" step="0.5">
+            <span class="rating-value" id="rating-display">7 / 10</span>
+          </div>
+        </div>
+
+        <!-- ── Review (watched only) ── -->
+        <div class="form-section" id="review-section">
+          <p class="form-section-label">My Review</p>
+          <textarea class="form-input form-textarea" id="film-review" placeholder="Your personal thoughts on the film…" rows="3"></textarea>
+        </div>
+
+        <!-- ── Poster URL ── -->
+        <div class="form-section">
+          <p class="form-section-label">Poster URL</p>
+          <p class="form-hint">Go to themoviedb.org → find the film → right-click the poster → Copy Image Address</p>
+          <input class="form-input" type="url" id="film-poster" placeholder="https://image.tmdb.org/t/p/w500/…">
+          <div class="poster-preview-wrap" id="poster-preview-wrap" hidden>
+            <img id="poster-preview" src="" alt="Poster preview">
+          </div>
+        </div>
+
+        <!-- ── Streaming ── -->
+        <div class="form-section">
+          <p class="form-section-label">Where to Watch</p>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="streaming" value="Netflix"> Netflix</label>
+            <label class="checkbox-label"><input type="checkbox" name="streaming" value="Shudder"> Shudder</label>
+            <label class="checkbox-label"><input type="checkbox" name="streaming" value="Tubi"> Tubi</label>
+            <label class="checkbox-label"><input type="checkbox" name="streaming" value="Prime"> Prime</label>
+            <label class="checkbox-label"><input type="checkbox" name="streaming" value="Hulu"> Hulu</label>
+            <label class="checkbox-label"><input type="checkbox" name="streaming" value="Peacock"> Peacock</label>
+            <label class="checkbox-label"><input type="checkbox" name="streaming" value="Max"> Max</label>
+            <label class="checkbox-label"><input type="checkbox" name="streaming" value="Kanopy"> Kanopy</label>
+            <label class="checkbox-label"><input type="checkbox" name="streaming" value="Mubi"> Mubi</label>
+          </div>
+        </div>
+
+        <p class="form-error" id="film-error" hidden></p>
+
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" id="film-cancel">CANCEL</button>
+          <button type="submit" class="btn-primary" id="film-submit">ADD TO ARCHIVE</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SCRIPTS (order matters)
+  ══════════════════════════════════════════════ -->
+  <script src="js/movies.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/film-form.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
