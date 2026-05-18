@@ -2083,5 +2083,22 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe6Ad.jpg",
     "tmdbId": null,
     "id": 127
+  },
+  {
+    "title": "Nope",
+    "year": 2022,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 8.5,
+    "description": "Residents in a lonely gulch of inland California bear witness to an uncanny, chilling discovery.",
+    "director": "Jordan Peele",
+    "streaming": [
+      "Peacock"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/AcKVlWaNVVVFQwro3nLXqPljcYA.jpg",
+    "tmdbId": null,
+    "id": 128
   }
 ]
