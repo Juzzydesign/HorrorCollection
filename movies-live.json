@@ -257,9 +257,9 @@
     "review": null,
     "director": "Alan Parker",
     "streaming": [],
-    "posterUrl": null,
-    "description": "Reincarnated 30 years after being killed in a suspicious on-set fire, a small-time actor is determined to punish the person who ignited the blaze.",
-    "tmdbId": null
+    "posterUrl": "https://image.tmdb.org/t/p/w500/h5v3wjJQNB7q2RntEnKDLhKtTFE.jpg",
+    "description": "A down-and-out Brooklyn detective is hired to track down a singer on an odyssey that will take him through the desperate streets of Harlem, the smoke-filled jazz clubs of New Orleans, and the swamps of Louisiana and its seedy underworld of voodoo.",
+    "tmdbId": 635
   },
   {
     "id": 17,
