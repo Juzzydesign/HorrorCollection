@@ -2017,5 +2017,22 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/f1tIYarTbkBdIT1aW0gzelDwknv.jpg",
     "tmdbId": null,
     "id": 123
+  },
+  {
+    "title": "Kill List",
+    "year": 2011,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Nearly a year after a botched job, a hitman takes a new assignment with the promise of a big payoff for three killings. What starts off as an easy task soon unravels, sending the killer into the heart of darkness.",
+    "director": "Ben Wheatley",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qwT2I3ons0oD58jIppKmd4qLtvB.jpg",
+    "tmdbId": null,
+    "id": 124
   }
 ]
