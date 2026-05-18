@@ -69,22 +69,6 @@
     "tmdbId": null
   },
   {
-    "id": 5,
-    "title": "Perfect Wife",
-    "year": null,
-    "genres": [
-      "Cults"
-    ],
-    "status": "watchlist",
-    "rating": null,
-    "review": null,
-    "director": null,
-    "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/mVeihvklKJyeen5M1Pbxh2dmuHl.jpg",
-    "description": "When Leah's brother dies in a car accident, she vows revenge on the doc who failed to save him.",
-    "tmdbId": null
-  },
-  {
     "id": 6,
     "title": "Gloriavale: New Zealand's Secret Cult",
     "year": null,
