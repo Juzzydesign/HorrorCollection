@@ -1083,14 +1083,15 @@ img { display: block; max-width: 100%; }
   }
 
   .controls {
-    padding: 8px 14px;
-    gap: 6px;
+    padding: 8px 0;
+    gap: 0;
   }
 
-  /* Stack filters on row 1, search+add on row 2 */
+  /* ── Row 1: genre filter strip — edge-to-edge, scrollable ── */
   .filters-row {
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 0;
+    position: relative;
   }
 
   .filters {
@@ -1101,13 +1102,30 @@ img { display: block; max-width: 100%; }
     flex-wrap: nowrap;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+    padding: 2px 14px 8px;
+    gap: 6px;
   }
 
   .filters::-webkit-scrollbar { display: none; }
 
+  /* Right-fade hint — signals more buttons off-screen */
+  .filters-row::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 42px; /* covers just the filter row */
+    background: linear-gradient(to right, transparent, rgba(8,8,8,0.97));
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  /* ── Row 2: search + add film ── */
   .search-bar {
     order: 2;
     flex: 1;
+    padding-left: 14px;
   }
 
   .search-bar input {
@@ -1118,10 +1136,15 @@ img { display: block; max-width: 100%; }
   #add-movie-btn {
     order: 3;
     flex-shrink: 0;
+    margin-right: 14px;
   }
 
   .filter-btn,
   .status-btn { white-space: nowrap; flex-shrink: 0; }
+
+  /* Prevent "WANT TO WATCH" badge from wrapping on narrow cards */
+  .status-badge { white-space: nowrap; font-size: 0.62rem; }
+  .genre-badge  { font-size: 0.62rem; }
 
   .main-content { padding: 14px 14px 60px; }
 
