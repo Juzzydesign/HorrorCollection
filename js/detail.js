@@ -119,19 +119,19 @@ function renderHero(movie) {
 
       <h1 class="detail-title">${escapeHTML(movie.title)}</h1>
 
+      <div class="detail-genres">
+        ${genreTags}
+      </div>
+
+      ${ratingHTML}
+
+      <div class="detail-divider"></div>
+
       <div class="detail-meta-row">
         <span>${movie.year}</span>
         ${movie.director ? `<span>${escapeHTML(movie.director)}</span>` : ''}
         ${runtimeText ? `<span>${runtimeText}</span>` : ''}
       </div>
-
-      ${ratingHTML}
-
-      <div class="detail-genres">
-        ${genreTags}
-      </div>
-
-      <div class="detail-divider"></div>
 
       ${synopsisHTML}
     </div>

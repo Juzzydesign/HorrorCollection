@@ -798,14 +798,13 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-wrap: wrap;
   gap: 0 6px;
-  font-size: 1rem;
   font-family: var(--font-ui);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-secondary);
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .detail-meta-row span::after {
@@ -858,8 +857,8 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: 6px;
-  margin-bottom: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .blood-drops {
