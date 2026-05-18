@@ -277,6 +277,24 @@ img { display: block; max-width: 100%; }
   border-color: var(--red);
 }
 
+/* Rating filter — slightly muted active colour to distinguish from genre */
+.filter-btn.rating-filter.active {
+  color: #000;
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+/* Divider between genre pills and rating pills */
+.filter-divider {
+  display: inline-block;
+  width: 1px;
+  height: 18px;
+  background: rgba(255,255,255,0.15);
+  margin: 0 4px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
 /* Status toggles */
 .status-toggles {
   display: flex;

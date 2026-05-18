@@ -5,6 +5,7 @@
 // ─── State ────────────────────────────────────────────────────────────────────
 let activeGenre  = 'all';
 let activeStatus = 'all';   // 'all' | 'watched' | 'watchlist'
+let activeRating = 0;       // minimum score; 0 = no filter
 let searchQuery  = '';
 const RETURN_STATE_KEY = 'horror_return_state';
 
@@ -12,6 +13,7 @@ const RETURN_STATE_KEY = 'horror_return_state';
 document.addEventListener('DOMContentLoaded', () => {
   setupViewTabs();
   setupGenreFilters();
+  setupRatingFilters();
   setupSearch();
   setupLoginButton();
   setupHiddenLoginTrigger();
@@ -52,6 +54,7 @@ window.addEventListener('pagehide', () => {
   sessionStorage.setItem(RETURN_STATE_KEY, JSON.stringify({
     genre:   activeGenre,
     status:  activeStatus,
+    rating:  activeRating,
     scrollY: window.scrollY,
   }));
 });
@@ -65,6 +68,7 @@ function restoreReturnState() {
     const s = JSON.parse(raw);
     activeGenre  = s.genre  || 'all';
     activeStatus = s.status || 'all';
+    activeRating = s.rating || 0;
     syncFilterUI();
     renderGrid();
     requestAnimationFrame(() => window.scrollTo(0, s.scrollY || 0));
@@ -73,8 +77,11 @@ function restoreReturnState() {
 }
 
 function syncFilterUI() {
-  document.querySelectorAll('.filter-btn').forEach(btn => {
+  document.querySelectorAll('.filter-btn:not(.rating-filter)').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.genre === activeGenre);
+  });
+  document.querySelectorAll('.rating-filter').forEach(btn => {
+    btn.classList.toggle('active', parseInt(btn.dataset.minRating, 10) === activeRating);
   });
   document.querySelectorAll('.view-tab').forEach(btn => {
     const on = btn.dataset.status === activeStatus;
@@ -101,11 +108,23 @@ function setupViewTabs() {
 
 // ─── Genre filters ────────────────────────────────────────────────────────────
 function setupGenreFilters() {
-  document.querySelectorAll('.filter-btn').forEach(btn => {
+  document.querySelectorAll('.filter-btn:not(.rating-filter)').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.filter-btn:not(.rating-filter)').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       activeGenre = btn.dataset.genre;
+      renderGrid();
+    });
+  });
+}
+
+// ─── Rating filters ───────────────────────────────────────────────────────────
+function setupRatingFilters() {
+  document.querySelectorAll('.rating-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.rating-filter').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeRating = parseInt(btn.dataset.minRating, 10) || 0;
       renderGrid();
     });
   });
@@ -357,7 +376,10 @@ function applyFilters(movies) {
         (m.title  || '').toLowerCase().includes(searchQuery) ||
         (m.director || '').toLowerCase().includes(searchQuery) ||
         (m.genres || []).some(g => g.toLowerCase().includes(searchQuery));
-      return genreOk && statusOk && searchOk;
+      // Rating filter: only applies to watched films with a rating
+      const ratingOk = activeRating === 0 ||
+        (m.status === 'watched' && m.rating != null && m.rating >= activeRating);
+      return genreOk && statusOk && searchOk && ratingOk;
     })
     .sort((a, b) => (a.title || '').localeCompare(b.title || ''));
 }
