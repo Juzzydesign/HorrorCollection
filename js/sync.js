@@ -91,7 +91,7 @@ async function pushMoviesToGitHub() {
   try {
     const metaRes = await fetch(SYNC_API_URL, {
       headers: {
-        Authorization: `token ${pat}`,
+        Authorization: `Bearer ${pat}`,
         Accept:        'application/vnd.github.v3+json',
       },
     });
@@ -121,7 +121,12 @@ async function pushMoviesToGitHub() {
 
     if (res.ok) return { ok: true };
     const err = await res.json().catch(() => ({}));
-    return { ok: false, error: err.message || `GitHub error ${res.status}` };
+    const msg = err.message || `GitHub error ${res.status}`;
+    // Friendly hints for the most common failures
+    if (res.status === 401) return { ok: false, error: 'Token rejected — check it was copied in full.' };
+    if (res.status === 403) return { ok: false, error: 'Permission denied — make sure the token has repo → Contents (write) access.' };
+    if (res.status === 404) return { ok: false, error: 'Not found — make sure the token belongs to the Juzzydesign GitHub account and has repo → Contents access.' };
+    return { ok: false, error: msg };
   } catch (e) {
     return { ok: false, error: e.message || 'Network error' };
   }
