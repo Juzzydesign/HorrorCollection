@@ -72,7 +72,7 @@ function updateAuthUI() {
     if (addBtn)  addBtn.hidden  = false;
     adminBtns.forEach(el => el.hidden = false);
   } else {
-    loginBtn.textContent = 'LOGIN';
+    loginBtn.textContent = 'ADMIN LOGIN';
     loginBtn.hidden = false;
     if (saveBtn) saveBtn.hidden = true;
     if (addBtn)  addBtn.hidden  = true;
