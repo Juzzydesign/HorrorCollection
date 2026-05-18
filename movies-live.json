@@ -113,9 +113,9 @@
     "review": null,
     "director": "Paul Thomas Anderson",
     "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
-    "description": "Driver is a skilled Hollywood stuntman who moonlights as a getaway driver for criminals. Though he projects an icy exterior, lately he's been warming up to a pretty neighbor named Irene and her young son, Benicio. When Irene's husband gets out of jail, he enlists Driver's help in a million-dollar heist. The job goes horribly wrong, and Driver must risk his life to protect Irene and Benicio from the vengeful masterminds behind the robbery.",
-    "tmdbId": 64690
+    "posterUrl": "https://image.tmdb.org/t/p/w500/rUSjbyvYWN9H4az8xt0tDtU7I6v.jpg",
+    "description": "Freddie, a volatile, heavy-drinking veteran who suffers from post-traumatic stress disorder, finds some semblance of a family when he stumbles onto the ship of Lancaster Dodd, the charismatic leader of a new \"religion\" he forms after World War II.",
+    "tmdbId": 68722
   },
   {
     "id": 9,
@@ -424,7 +424,7 @@
       "Psychological"
     ],
     "status": "watched",
-    "rating": 6,
+    "rating": 3.5,
     "review": null,
     "director": "Jennifer Kent",
     "streaming": [
@@ -432,7 +432,7 @@
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/qt3fqapeo94TfvMyld8P7gkpXLz.jpg",
     "description": "A grieving single mother and her child fall into a deep well of paranoia when an eerie children's book manifests in their home.",
-    "tmdbId": 242224
+    "tmdbId": null
   },
   {
     "id": 27,
