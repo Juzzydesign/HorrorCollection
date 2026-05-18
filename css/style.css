@@ -248,6 +248,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
 }
 
 /* Search */
@@ -1253,8 +1254,9 @@ img { display: block; max-width: 100%; }
     padding: 8px 12px;
   }
 
-  /* ── Add film button: full width ── */
+  /* ── Add film button: flow below ratings, full width ── */
   #add-movie-btn {
+    position: static;
     width: 100%;
     padding: 11px 16px;
     font-size: 0.78rem;
@@ -1456,6 +1458,10 @@ img { display: block; max-width: 100%; }
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s;
+  /* Desktop: float to top-right of the controls block */
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 
 .add-movie-btn:hover {
