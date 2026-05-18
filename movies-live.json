@@ -2000,5 +2000,22 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
     "tmdbId": null,
     "id": 122
+  },
+  {
+    "title": "The Lighthouse",
+    "year": 2019,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Two lighthouse keepers try to maintain their sanity while living on a remote and mysterious New England island in the 1890s.",
+    "director": "Robert Eggers",
+    "streaming": [
+      "Max"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/f1tIYarTbkBdIT1aW0gzelDwknv.jpg",
+    "tmdbId": null,
+    "id": 123
   }
 ]
