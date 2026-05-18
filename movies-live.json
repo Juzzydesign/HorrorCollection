@@ -2182,5 +2182,22 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
     "tmdbId": null,
     "id": 133
+  },
+  {
+    "title": "The Cursed",
+    "year": 2021,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "In the late 19th century, a brutal land baron slaughters a Roma clan, unleashing a curse on his family and village. In the days that follow, the townspeople are plagued by nightmares, the baron's son goes missing, and a boy is found murdered. The locals suspect a wild animal, but a visiting pathologist warns of a more sinister presence lurking in the woods.",
+    "director": "Sean Ellis",
+    "streaming": [
+      "Netflix"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/bewmBcjJxHeipS1PNu9Lfyvt3zY.jpg",
+    "tmdbId": null,
+    "id": 134
   }
 ]
