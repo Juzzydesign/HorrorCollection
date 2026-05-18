@@ -2100,5 +2100,23 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/AcKVlWaNVVVFQwro3nLXqPljcYA.jpg",
     "tmdbId": null,
     "id": 128
+  },
+  {
+    "title": "The Medium",
+    "year": 2021,
+    "genres": [
+      "Supernatural",
+      "Folk"
+    ],
+    "status": "watched",
+    "rating": 7.5,
+    "description": "A shaman's family learn that their goddess is supposedly controlling one of them. However, their lives take a frightening turn when they realise the goddess has nothing to do with the possession.",
+    "director": "Banjong Pisanthanakun",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/tWoSE8SH6XhgWKHIL3p0sj7lA3V.jpg",
+    "tmdbId": null,
+    "id": 129
   }
 ]
