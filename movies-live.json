@@ -847,13 +847,13 @@
       "Supernatural"
     ],
     "status": "watched",
-    "rating": 7.5,
+    "rating": 7,
     "review": null,
     "director": "Matt Reeves",
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/3b5gD5vNmf7Vafj2MN8uMA8r0qu.jpg",
     "description": "A bullied young boy befriends a young female vampire who lives in secrecy with her guardian.  A remake of the movie “Let The Right One In” which was an adaptation of a book.",
-    "tmdbId": 41402
+    "tmdbId": null
   },
   {
     "id": 51,
@@ -1061,9 +1061,9 @@
     "review": null,
     "director": "Pascal Laugier",
     "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/xFZH2l9UOyIclk2ZFWNHQ38B2RP.jpg",
-    "description": "In the year 2019, a plague has transformed almost every human into a vampire. Faced with a dwindling blood supply, the fractured dominant race plots their survival; meanwhile, a researcher works with a covert band of vampires on a way to save humankind.",
-    "tmdbId": 19901
+    "posterUrl": "https://image.tmdb.org/t/p/w500/uxfhBMyNtpR3zckvPdKF6rlCU5O.jpg",
+    "description": "A young woman’s quest for revenge against the people who kidnapped and tortured her as a child leads her and her best friend, also a victim of child abuse, on a terrifying journey into a living hell of depravity.",
+    "tmdbId": 9539
   },
   {
     "id": 64,
@@ -1153,7 +1153,7 @@
       "Psychological"
     ],
     "status": "watched",
-    "rating": null,
+    "rating": 4.5,
     "review": null,
     "director": "Osgood Perkins",
     "streaming": [],
