@@ -3,11 +3,19 @@
  */
 
 // ─── State ────────────────────────────────────────────────────────────────────
-let activeGenre  = 'all';
-let activeStatus = 'all';   // 'all' | 'watched' | 'watchlist'
-let activeRating = 0;       // minimum score; 0 = no filter
-let searchQuery  = '';
+let activeGenre     = 'all';
+let activeStatus    = 'all';        // 'all' | 'watched' | 'watchlist'
+let activeRatingKey = 'all';        // 'all' | 'low' | 'mid' | 'high'
+let searchQuery     = '';
 const RETURN_STATE_KEY = 'horror_return_state';
+
+// Rating ranges — inclusive on both ends
+const RATING_RANGES = {
+  all:  null,
+  low:  { min: 0,   max: 5.5 },
+  mid:  { min: 6,   max: 7.5 },
+  high: { min: 8,   max: 10  },
+};
 
 // ─── Entry point ──────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
@@ -52,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // Save scroll + filter state whenever we leave this page
 window.addEventListener('pagehide', () => {
   sessionStorage.setItem(RETURN_STATE_KEY, JSON.stringify({
-    genre:   activeGenre,
-    status:  activeStatus,
-    rating:  activeRating,
-    scrollY: window.scrollY,
+    genre:      activeGenre,
+    status:     activeStatus,
+    ratingKey:  activeRatingKey,
+    scrollY:    window.scrollY,
   }));
 });
 
@@ -66,9 +74,9 @@ function restoreReturnState() {
   sessionStorage.removeItem(RETURN_STATE_KEY);
   try {
     const s = JSON.parse(raw);
-    activeGenre  = s.genre  || 'all';
-    activeStatus = s.status || 'all';
-    activeRating = s.rating || 0;
+    activeGenre     = s.genre     || 'all';
+    activeStatus    = s.status    || 'all';
+    activeRatingKey = s.ratingKey || 'all';
     syncFilterUI();
     renderGrid();
     requestAnimationFrame(() => window.scrollTo(0, s.scrollY || 0));
@@ -81,7 +89,7 @@ function syncFilterUI() {
     btn.classList.toggle('active', btn.dataset.genre === activeGenre);
   });
   document.querySelectorAll('.rating-filter').forEach(btn => {
-    btn.classList.toggle('active', parseInt(btn.dataset.minRating, 10) === activeRating);
+    btn.classList.toggle('active', btn.dataset.ratingKey === activeRatingKey);
   });
   document.querySelectorAll('.view-tab').forEach(btn => {
     const on = btn.dataset.status === activeStatus;
@@ -124,7 +132,7 @@ function setupRatingFilters() {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.rating-filter').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      activeRating = parseInt(btn.dataset.minRating, 10) || 0;
+      activeRatingKey = btn.dataset.ratingKey || 'all';
       renderGrid();
     });
   });
@@ -376,9 +384,10 @@ function applyFilters(movies) {
         (m.title  || '').toLowerCase().includes(searchQuery) ||
         (m.director || '').toLowerCase().includes(searchQuery) ||
         (m.genres || []).some(g => g.toLowerCase().includes(searchQuery));
-      // Rating filter: only applies to watched films with a rating
-      const ratingOk = activeRating === 0 ||
-        (m.status === 'watched' && m.rating != null && m.rating >= activeRating);
+      // Rating filter: range-based, only applies to watched films with a rating
+      const range    = RATING_RANGES[activeRatingKey];
+      const ratingOk = !range ||
+        (m.status === 'watched' && m.rating != null && m.rating >= range.min && m.rating <= range.max);
       return genreOk && statusOk && searchOk && ratingOk;
     })
     .sort((a, b) => (a.title || '').localeCompare(b.title || ''));
