@@ -483,10 +483,13 @@
     "rating": 6.5,
     "review": null,
     "director": "Zach Cregger",
-    "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/vnLnD1e0NdgWllZp1rSzDnohieQ.jpg",
-    "description": "When TJ decides to leave home, he turns to the streets for the love and support he always wanted. His life becomes a tug of war between the parents that raised him and his new gang leader chief who's bringing him further down to the ground.",
-    "tmdbId": null
+    "streaming": [
+      "Prime",
+      "Max"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "description": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "tmdbId": 1078605
   },
   {
     "id": 30,
