@@ -1897,10 +1897,12 @@
     "rating": null,
     "review": null,
     "director": null,
-    "streaming": [],
-    "posterUrl": null,
-    "description": null,
-    "tmdbId": null
+    "streaming": [
+      "Prime"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/hQSdrXBYTbLGHYDIseHkBOPXTgL.jpg",
+    "description": "Some of literature's most terrifying characters, including Dr. Frankenstein, Dorian Gray, and iconic figures from the novel Dracula are lurking in the darkest corners of Victorian London. Penny Dreadful is a frightening psychological thriller that weaves together these classic horror origin stories into a new adult drama.",
+    "tmdbId": 54671
   },
   {
     "id": 115,
