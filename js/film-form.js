@@ -212,7 +212,7 @@ function resetFilmForm() {
   if (lookupStatus) { lookupStatus.textContent = ''; delete lookupStatus.dataset.type; }
 
   document.querySelectorAll('input[name="status"]').forEach(r => {
-    r.checked = r.value === 'watched';
+    r.checked = r.value === 'watchlist';
   });
   document.querySelectorAll('input[name="genre"]').forEach(cb => cb.checked = false);
   document.querySelectorAll('input[name="streaming"]').forEach(cb => cb.checked = false);
