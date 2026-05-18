@@ -52,7 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
   loadRemoteMovies().then(changed => {
     if (!changed) return;
     const refreshed = (getMovies ? getMovies() : MOVIES).find(m => m.id === movieId);
-    if (refreshed) renderDetail(refreshed);
+    if (refreshed) {
+      renderDetail(refreshed);
+      // Re-inject poster upload after re-render (re-render wipes the overlay)
+      if (isAdminLoggedIn()) injectPosterUpload(refreshed);
+    }
   });
 });
 
