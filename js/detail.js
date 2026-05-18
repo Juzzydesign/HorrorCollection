@@ -376,9 +376,9 @@ function injectPosterUpload(movie) {
     if (!file || !file.type.startsWith('image/')) return;
     const reader = new FileReader();
     reader.onload = () => {
-      // Compress via canvas so the stored data URL stays small (~30–60 KB)
       const img = new Image();
-      img.onload = () => {
+      img.onload = async () => {
+        // Compress via canvas (~30–60 KB)
         const MAX = 600;
         const scale = Math.min(1, MAX / Math.max(img.width, img.height));
         const canvas = document.createElement('canvas');
@@ -386,9 +386,21 @@ function injectPosterUpload(movie) {
         canvas.height = Math.round(img.height * scale);
         canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
         const compressed = canvas.toDataURL('image/jpeg', 0.82);
-        updateMovie(movie.id, { posterUrl: compressed });
-        // Note: base64 posters are kept local-only (not pushed to GitHub)
-        autoPush();
+
+        if (isSyncConfigured()) {
+          // Push the image to GitHub so all visitors can see it
+          const publicUrl = await pushPosterToGitHub(movie.id, compressed);
+          if (publicUrl) {
+            updateMovie(movie.id, { posterUrl: publicUrl });
+            autoPush(); // also update movies-live.json with the new URL
+          } else {
+            // GitHub push failed — save locally as base64 fallback
+            updateMovie(movie.id, { posterUrl: compressed });
+          }
+        } else {
+          // No sync configured — save locally only
+          updateMovie(movie.id, { posterUrl: compressed });
+        }
         location.reload();
       };
       img.src = reader.result;

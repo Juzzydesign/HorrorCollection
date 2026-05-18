@@ -148,6 +148,50 @@ async function pushMoviesToGitHub() {
   }
 }
 
+// ─── Push a poster image file to GitHub ──────────────────────────────────────
+/**
+ * Uploads a compressed poster image to posters/{movieId}.jpg in the repo.
+ * Returns the public raw.githubusercontent.com URL on success, or null.
+ * @param {number} movieId
+ * @param {string} dataUrl  — canvas.toDataURL() output (data:image/jpeg;base64,…)
+ */
+async function pushPosterToGitHub(movieId, dataUrl) {
+  const pat = getSyncPAT();
+  if (!pat) return null;
+
+  const base64   = dataUrl.replace(/^data:image\/\w+;base64,/, '');
+  const filename = `posters/${movieId}.jpg`;
+  const apiUrl   = `https://api.github.com/repos/Juzzydesign/HorrorCollection/contents/${filename}`;
+
+  // Get existing SHA so we can update (not just create) the file
+  let sha = null;
+  try {
+    const r = await fetch(apiUrl, {
+      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github.v3+json' },
+    });
+    if (r.ok) sha = (await r.json()).sha;
+  } catch { /* new file — no SHA needed */ }
+
+  const body = { message: `Upload poster for movie ${movieId}`, content: base64 };
+  if (sha) body.sha = sha;
+
+  try {
+    const res = await fetch(apiUrl, {
+      method:  'PUT',
+      headers: {
+        Authorization:  `Bearer ${pat}`,
+        Accept:         'application/vnd.github.v3+json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) return null;
+    return `https://raw.githubusercontent.com/Juzzydesign/HorrorCollection/main/${filename}`;
+  } catch {
+    return null;
+  }
+}
+
 // ─── Silent auto-push (fire-and-forget with optional UI feedback) ─────────────
 /**
  * Auto-push after any admin change.
