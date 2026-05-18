@@ -222,15 +222,33 @@ function showNotFound() {
 
 // ─── Blood drop rating ───────────────────────────────────────────────────────
 function buildBloodDrops(rating) {
-  const DROP = `<svg viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path d="M6 0 C6 0 0.5 7 0.5 10.5 A5.5 5.5 0 0 0 11.5 10.5 C11.5 7 6 0 6 0Z"/>
+  const PATH = 'M6 0 C6 0 0.5 7 0.5 10.5 A5.5 5.5 0 0 0 11.5 10.5 C11.5 7 6 0 6 0Z';
+
+  // Full and empty drops use CSS for fill colour
+  const svgDrop = `<svg viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="${PATH}"/></svg>`;
+
+  // Half drop: inline gradient — left 50% filled red, right 50% dim
+  const svgHalf = `<svg viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="half-drop" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="50%" stop-color="#c9150e"/>
+        <stop offset="50%" stop-color="rgba(201,21,14,0.18)"/>
+      </linearGradient>
+    </defs>
+    <path d="${PATH}" fill="url(#half-drop)"/>
   </svg>`;
 
   let html = '';
   for (let i = 1; i <= 10; i++) {
     const filled = i <= Math.floor(rating);
     const half   = !filled && i === Math.ceil(rating) && rating % 1 >= 0.5;
-    html += `<span class="drop${filled ? ' drop--full' : half ? ' drop--half' : ''}">${DROP}</span>`;
+    if (filled) {
+      html += `<span class="drop drop--full">${svgDrop}</span>`;
+    } else if (half) {
+      html += `<span class="drop drop--half">${svgHalf}</span>`;
+    } else {
+      html += `<span class="drop">${svgDrop}</span>`;
+    }
   }
   return html;
 }
