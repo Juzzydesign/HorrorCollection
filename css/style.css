@@ -54,6 +54,8 @@ body {
   font-size: 17px;
   line-height: 1.6;
   min-height: 100vh;
+  /* Prevent iOS Safari from auto-linking addresses, dates, phone numbers in titles */
+  -webkit-touch-callout: none;
 }
 
 /* Heavy grain overlay — the key to the poster texture */
