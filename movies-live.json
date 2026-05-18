@@ -1978,8 +1978,9 @@
     "review": null,
     "director": "John Griffin",
     "streaming": [],
-    "posterUrl": null,
-    "tmdbId": null,
-    "id": 119
+    "posterUrl": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+    "tmdbId": 124364,
+    "id": 119,
+    "description": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down."
   }
 ]
