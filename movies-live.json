@@ -2140,8 +2140,8 @@
     "genres": [
       "Folk"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 5,
     "description": "A 19th-century widow has to make an impossible choice when, during an especially cruel winter, a foreign ship sinks off the coast of her Icelandic fishing village.",
     "director": "Thordur Palsson",
     "streaming": [
@@ -2149,7 +2149,9 @@
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/fAXDQny8kEquc1BImiQHhYMGSsW.jpg",
     "tmdbId": null,
-    "id": 131
+    "id": 131,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "title": "Hokum",
