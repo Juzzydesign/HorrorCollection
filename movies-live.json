@@ -2049,5 +2049,22 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/shUG4L8iKu9g4bhZVI3SNsIOvD3.jpg",
     "tmdbId": null,
     "id": 125
+  },
+  {
+    "title": "Eyes of Fire",
+    "year": 1983,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "In 1750, an adulterous preacher is ejected from a small British colony with his motley crew of followers, who make their way downriver to establish a new settlement of their own beyond the western frontier.",
+    "director": "Avery Crounse",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mxT0psJTjT2yri8QOvHE4N7iANo.jpg",
+    "tmdbId": null,
+    "id": 126
   }
 ]
