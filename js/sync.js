@@ -47,23 +47,21 @@ async function fetchRemoteMovies() {
 }
 
 /**
- * Fetches remote movies in the background and updates localStorage if the
- * data has changed. Returns true if localStorage was updated (caller can
- * re-render), false if nothing changed or the fetch failed.
+ * Fetches remote movies in the background and updates localStorage.
+ * Always applies remote data so visitors see the latest admin edits.
+ * Returns true so the caller re-renders with the fresh data.
+ * Returns false only if the fetch failed or the file is empty (not yet synced).
  *
  * IMPORTANT: do NOT await this before rendering — render immediately from
- * localStorage first, then call this and re-render only if it returns true.
+ * localStorage first, then call this and re-render when it returns true.
  */
 async function loadRemoteMovies() {
   const movies = await fetchRemoteMovies();
   // Empty array means the file was never synced — keep whatever is local.
   if (!movies || movies.length === 0) return false;
 
-  const incoming = JSON.stringify(movies);
-  if (localStorage.getItem(MOVIES_KEY) === incoming) return false; // no change
-
-  localStorage.setItem(MOVIES_KEY, incoming);
-  return true; // data updated — caller should re-render
+  localStorage.setItem(MOVIES_KEY, JSON.stringify(movies));
+  return true;
 }
 
 // ─── Push movies to GitHub (admin only) ──────────────────────────────────────
