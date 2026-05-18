@@ -2167,5 +2167,23 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/1RxhzwFkAUqMt215Brb06u8P8pn.jpg",
     "tmdbId": null,
     "id": 133
+  },
+  {
+    "title": "The Ritual",
+    "year": 2017,
+    "genres": [
+      "Voodoo",
+      "Folk"
+    ],
+    "status": "watched",
+    "rating": 7,
+    "description": "A group of college friends reunite for a trip to the forest, but encounter a menacing presence in the woods that's stalking them.",
+    "director": "David Bruckner",
+    "streaming": [
+      "Netflix"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9022CYEGqYETCeXN1oE3uwYJWub.jpg",
+    "tmdbId": null,
+    "id": 134
   }
 ]
