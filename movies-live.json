@@ -1,1 +1,1964 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Pater Noster and the Mission of Light",
+    "year": null,
+    "genres": [
+      "Cults"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/cP8LMN40ZKW9QN7ISUTO0SnuDnW.jpg",
+    "description": "Max, a young record store clerk stumbles upon a rare vinyl LP and is drawn into the world of a 1970s hippie commune. An invitation to the remnants of the cult and its unholy spawn leads to grave circumstances for Max and her friends.",
+    "tmdbId": null
+  },
+  {
+    "id": 2,
+    "title": "Incantation",
+    "year": 2022,
+    "genres": [
+      "Cults",
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 9.5,
+    "review": null,
+    "director": "Kevin Ko",
+    "streaming": [
+      "Netflix"
+    ],
+    "posterUrl": null,
+    "description": "Lee and Pete have been best friends since childhood. As their lives begin to branch into different directions, they take a trip to their childhood baseball stadium to reflect on their glory days.",
+    "tmdbId": 895555
+  },
+  {
+    "id": 3,
+    "title": "As Above, So Below",
+    "year": 2014,
+    "genres": [
+      "Cults",
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "review": null,
+    "director": "John Erick Dowdle",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/a0tMQxbjlFHFBbL8Hc9KuzcOlo4.jpg",
+    "description": "Charlotte is from a family of beauty queens, but she has yet to win a title of her own. Her final chance is the Hiyas ng Dalampasigan Pageant, and her mother has taken steps to make sure that she wins. But her chances are dashed when the mysterious Samantha suddenly joins the contest. The two become bitter enemies following the contest, but they are soon forced by destiny to team up. It turns out the two have a hidden connection to a mystical past, and must work together to discover the truth about their heritage.",
+    "tmdbId": 228274
+  },
+  {
+    "id": 4,
+    "title": "Bring Her Back",
+    "year": 2025,
+    "genres": [
+      "Cults",
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 10,
+    "review": null,
+    "director": "Danny Philippou, Michael Philippou",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/1Q3GlCXGYWELifxANYZ5OVMRVZl.jpg",
+    "description": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
+    "tmdbId": null
+  },
+  {
+    "id": 5,
+    "title": "Perfect Wife",
+    "year": null,
+    "genres": [
+      "Cults"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mVeihvklKJyeen5M1Pbxh2dmuHl.jpg",
+    "description": "When Leah's brother dies in a car accident, she vows revenge on the doc who failed to save him.",
+    "tmdbId": null
+  },
+  {
+    "id": 6,
+    "title": "Gloriavale: New Zealand's Secret Cult",
+    "year": null,
+    "genres": [
+      "Cults"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": null,
+    "description": null,
+    "tmdbId": null
+  },
+  {
+    "id": 7,
+    "title": "The Sacrament",
+    "year": 2013,
+    "genres": [
+      "Cults"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Ti West",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/bmELHOCvi7M9YQLueTKTzk83RoM.jpg",
+    "description": "Saul Leiter could have been lauded as the great the pioneer of color photography, but was never driven by the lure of success. Instead he preferred to drink coffee and photograph in his own way, amassing an archive of beautiful work that is now piled high in his New York apartment. An intimate and personal film, In No Great Hurry follows Saul as he deals with the triple burden of clearing an apartment full of memories, becoming world famous in his 80s and fending off a pesky filmmaker.",
+    "tmdbId": 204016
+  },
+  {
+    "id": 8,
+    "title": "The Master",
+    "year": 2012,
+    "genres": [
+      "Cults",
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 5,
+    "review": null,
+    "director": "Paul Thomas Anderson",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+    "description": "Driver is a skilled Hollywood stuntman who moonlights as a getaway driver for criminals. Though he projects an icy exterior, lately he's been warming up to a pretty neighbor named Irene and her young son, Benicio. When Irene's husband gets out of jail, he enlists Driver's help in a million-dollar heist. The job goes horribly wrong, and Driver must risk his life to protect Irene and Benicio from the vengeful masterminds behind the robbery.",
+    "tmdbId": 64690
+  },
+  {
+    "id": 9,
+    "title": "The Wicker Man",
+    "year": 2006,
+    "genres": [
+      "Cults",
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Neil LaBute",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8xMeKeXGHY2KbiMjSpEGqlIjAEp.jpg",
+    "description": "In the near future, a police officer specializes in malfunctioning robots. When a robot turns out to have been programmed to kill, he begins to uncover a homicidal plot to create killer robots... and his son becomes a target.",
+    "tmdbId": 9507
+  },
+  {
+    "id": 10,
+    "title": "Waco",
+    "year": 2018,
+    "genres": [
+      "Cults",
+      "Series"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/y8fQ3kqHoLdHpk8eeUon4oHRrGr.jpg",
+    "description": "Followers from around the world travel to Mount Carmel to hear the preaching of David Koresh, a local Texas working-class kid turned prophet of God and leader of the religious group The Branch Davidians.",
+    "tmdbId": null
+  },
+  {
+    "id": 11,
+    "title": "Hereditary",
+    "year": 2018,
+    "genres": [
+      "Cults",
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 8.5,
+    "review": null,
+    "director": "Ari Aster",
+    "streaming": [
+      "Max",
+      "Prime"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/4O6c3T8nQD8DHniuJYMnB5VXbIy.jpg",
+    "description": "Following the death of the Leigh family matriarch, Annie and her children uncover disturbing secrets about their heritage. Their daily lives are not only impacted, but they also become entangled in a chilling fate from which they cannot escape, driving them to the brink of madness.",
+    "tmdbId": 493922
+  },
+  {
+    "id": 12,
+    "title": "Azrael",
+    "year": 2024,
+    "genres": [
+      "Cults",
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 6.5,
+    "review": null,
+    "director": "E.L. Katz",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qpdFKDvJS7oLKTcBLXOaMwUESbs.jpg",
+    "description": "In a world where no one speaks, a devout female hunts down a young woman who has escaped her imprisonment. Recaptured by its ruthless leaders, Azrael is due to be sacrificed to pacify an ancient evil deep within the surrounding wilderness.",
+    "tmdbId": null
+  },
+  {
+    "id": 13,
+    "title": "Together",
+    "year": 2025,
+    "genres": [
+      "Cults",
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 10,
+    "review": null,
+    "director": "Michael Shanks",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/80slKYVM5teFH3kz6ouWrZXveqj.jpg",
+    "description": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
+    "tmdbId": null
+  },
+  {
+    "id": 14,
+    "title": "Unchosen",
+    "year": null,
+    "genres": [
+      "Cults",
+      "Series"
+    ],
+    "status": "watched",
+    "rating": 7,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7gD2x5iVQO8TyGsZrkltMREuZsG.jpg",
+    "description": "Part of the Almost Famous series. It was the late 1990s, and 3,000 young actors around the world were scouted for the role of a lifetime. On the ride home from school, Devon Michael’s mom told him he’d be auditioning for The Phantom Menace, one of the most anticipated movies ever. From 3,000, the producers narrowed it down to three, and soon Michael was at Skywalker Ranch doing a test screen with George Lucas and Natalie Portman.",
+    "tmdbId": null
+  },
+  {
+    "id": 15,
+    "title": "The Serpent and the Rainbow",
+    "year": 1988,
+    "genres": [
+      "Voodoo",
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Wes Craven",
+    "streaming": [
+      "Shudder",
+      "Tubi"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/fcCmBIBHcgSYPBZr7aaHRSz4kFV.jpg",
+    "description": "In a remote part of the countryside, a bungled kidnapping turns into a living nightmare for four central characters when they cross paths with a psychopathic farmer and all hell breaks loose.",
+    "tmdbId": 13849
+  },
+  {
+    "id": 16,
+    "title": "Angel Heart",
+    "year": 1987,
+    "genres": [
+      "Voodoo",
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Alan Parker",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/oArsQTD4bPPMtRjqr03SO9W6phF.jpg",
+    "description": "Reincarnated 30 years after being killed in a suspicious on-set fire, a small-time actor is determined to punish the person who ignited the blaze.",
+    "tmdbId": 8079
+  },
+  {
+    "id": 17,
+    "title": "A Dark Song",
+    "year": 2016,
+    "genres": [
+      "Voodoo",
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Liam Gavin",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": null,
+    "description": "Nora, a psychoanalyst, sees her routine turn into a nightmare when a man begs for her help. Not for him, but for his wife Luiza, a traumatized woman, who claims to be someone else.",
+    "tmdbId": 429278
+  },
+  {
+    "id": 18,
+    "title": "Eve's Bayou",
+    "year": 1997,
+    "genres": [
+      "Voodoo"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Kasi Lemmons",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mtl43J82BOX49DKsplg4KPRkbn8.jpg",
+    "description": "A boy kidnapped by two mismatched hitmen puts them at each other's throats while being driven to their employers, possibly to be killed. Cohen, an older professional becomes increasingly irritated with his partner Tate, a brutish killer, when their prisoner uses unnatural guile and resourcefulness to play them off against each other.",
+    "tmdbId": 32079
+  },
+  {
+    "id": 19,
+    "title": "The House of the Dead",
+    "year": 2003,
+    "genres": [
+      "Voodoo"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Uwe Boll",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/4x337Nt4cq6OO1Rb3HDvUofT9F0.jpg",
+    "description": "On an island off the coast, a techno rave party attracts a diverse group of college coeds and a Coast Guard officer. Soon, they discover that their X-laced escapades are to be interrupted by zombies and monsters that attack them on the ground, from the air, and in the sea, ruled by an evil entity.",
+    "tmdbId": null
+  },
+  {
+    "id": 20,
+    "title": "The Skeleton Key",
+    "year": 2005,
+    "genres": [
+      "Voodoo",
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Iain Softley",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/6rb24x39vV8n5301IelC8rCPJTH.jpg",
+    "description": "FBI Agent Will Graham, who retired after catching Hannibal Lecktor, returns to duty to engage in a risky cat-and-mouse game with Lecktor to capture a new killer.",
+    "tmdbId": 11454
+  },
+  {
+    "id": 21,
+    "title": "Keeper",
+    "year": 2025,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mbGHijUc0C3fcM12l6ro6FgxIvg.jpg",
+    "description": "Liz and Malcolm escape for a romantic anniversary weekend at a secluded cabin. When Malcolm suddenly returns to the city, Liz finds herself isolated and in the presence of an unspeakable evil that reveals the cabin's horrifying secrets.",
+    "tmdbId": null
+  },
+  {
+    "id": 22,
+    "title": "The Wailing",
+    "year": 2016,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "review": null,
+    "director": "Na Hong-jin",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/dDnSKFQkpL5BIWCCnXXlcTpVx7x.jpg",
+    "description": "Fritz Reinhart is a successful surgeon in Zurich suddenly faced with the suffering in a refugee camp on the Burmese border during his vacation in Thailand. Being a doctor, he is confronted with the issue of providing immediate emergency aid. He has no idea that this is going to last a whole year and that as a \"helper\" he will be caught in a turmoil of emotions that challenge his existence as a family man, even his entire life, abruptly and radically.",
+    "tmdbId": 325502
+  },
+  {
+    "id": 23,
+    "title": "Talk to Me",
+    "year": 2023,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "review": null,
+    "director": "Danny Philippou, Michael Philippou",
+    "streaming": [
+      "Prime"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/kdPMUMJzyYAc4roD52qavX0nLIC.jpg",
+    "description": "When a group of friends discover how to conjure spirits using an embalmed hand, they become hooked on the new thrill, until one of them goes too far and unleashes terrifying supernatural forces.",
+    "tmdbId": 1008042
+  },
+  {
+    "id": 24,
+    "title": "The Dark and the Wicked",
+    "year": 2020,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Bryan Bertino",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/4DB9VFVTp0IQEWFEIf9f3f2z3t5.jpg",
+    "description": "On a secluded farm in a nondescript rural town, a man is slowly dying. His family gathers to mourn, and soon a darkness grows, marked by waking nightmares and a growing sense that something evil is taking over the family.",
+    "tmdbId": 738021
+  },
+  {
+    "id": 25,
+    "title": "Tarot",
+    "year": 2024,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 4,
+    "review": null,
+    "director": "Spenser Cohen, Anna Halberg",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/gAEUXC37vl1SnM7PXsHTF23I2vq.jpg",
+    "description": "When a group of friends recklessly violate the sacred rule of Tarot readings, they unknowingly unleash an unspeakable evil trapped within the cursed cards. One by one, they come face to face with fate and end up in a race against death.",
+    "tmdbId": 1008762
+  },
+  {
+    "id": 26,
+    "title": "The Babadook",
+    "year": 2014,
+    "genres": [
+      "Supernatural",
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 6,
+    "review": null,
+    "director": "Jennifer Kent",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qt3fqapeo94TfvMyld8P7gkpXLz.jpg",
+    "description": "A grieving single mother and her child fall into a deep well of paranoia when an eerie children's book manifests in their home.",
+    "tmdbId": 242224
+  },
+  {
+    "id": 27,
+    "title": "Oddity",
+    "year": 2024,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 6.5,
+    "review": null,
+    "director": "Damian Mc Carthy",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/3Z9c1tbUhP0QruRjczPHnbx3U2D.jpg",
+    "description": "After the brutal murder of her twin sister, Darcy goes after those responsible by using haunted items as her tools for revenge.",
+    "tmdbId": null
+  },
+  {
+    "id": 28,
+    "title": "Resurrection",
+    "year": 2022,
+    "genres": [
+      "Supernatural",
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Andrew Semans",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/kfRr8Jm1gaEnLTXCIfHkSw8QW6t.jpg",
+    "description": "A woman's carefully constructed life is upended when an unwelcome shadow from her past returns, forcing her to confront the monster she's evaded for two decades.",
+    "tmdbId": null
+  },
+  {
+    "id": 29,
+    "title": "Weapons",
+    "year": 2024,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 6.5,
+    "review": null,
+    "director": "Zach Cregger",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/vnLnD1e0NdgWllZp1rSzDnohieQ.jpg",
+    "description": "When TJ decides to leave home, he turns to the streets for the love and support he always wanted. His life becomes a tug of war between the parents that raised him and his new gang leader chief who's bringing him further down to the ground.",
+    "tmdbId": null
+  },
+  {
+    "id": 30,
+    "title": "Possum",
+    "year": 2018,
+    "genres": [
+      "Supernatural",
+      "Folk"
+    ],
+    "status": "watched",
+    "rating": null,
+    "review": null,
+    "director": "Matthew Holness",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/5QOFKSpE7KacBriU95fxG6hmmvr.jpg",
+    "description": "A disgraced children's puppeteer returns to his childhood home and is forced to confront his wicked stepfather and the secrets that have tortured him his entire life.",
+    "tmdbId": null
+  },
+  {
+    "id": 31,
+    "title": "Aniara",
+    "year": 2018,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 5,
+    "review": null,
+    "director": "Pella Kågerman, Hugo Lilja",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/pEpEJe8NTmwWL0hwYkZguTzEqzt.jpg",
+    "description": "A ship carrying settlers to a new home on Mars after Earth is rendered uninhabitable is knocked off-course, causing the passengers to consider their place in the universe.",
+    "tmdbId": null
+  },
+  {
+    "id": 32,
+    "title": "Melancholia",
+    "year": 2011,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Lars von Trier",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mWIK8zJUv6vRQlSaToKqhC6s5Q6.jpg",
+    "description": "Facing eviction from his parent's home on his 30th birthday, a socially awkward guy meets the girl of his dreams and creates his own rules for growing up.",
+    "tmdbId": 59928
+  },
+  {
+    "id": 33,
+    "title": "Under the Skin",
+    "year": 2013,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Jonathan Glazer",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/wTzrGsznUP6lMcDi3HY5EF1WACD.jpg",
+    "description": "A Boston teacher decides to turn her old home into a boarding house to pull in some much-needed extra money. It turns out her tenants help her in more ways than supplementing her income, and ultimately they become instrumental in turning her life around.",
+    "tmdbId": 175311
+  },
+  {
+    "id": 34,
+    "title": "It Feeds",
+    "year": null,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/uC3lzzgOUgkubje7HR20qznAAGj.jpg",
+    "description": "A clairvoyant therapist confronts her own personal demons while trying to save a young girl who believes a malevolent entity is feeding on her.",
+    "tmdbId": null
+  },
+  {
+    "id": 35,
+    "title": "V/H/S Beyond",
+    "year": 2024,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/wXaf6VGNHIGU7qivapGOF7o4o4N.jpg",
+    "description": "The infinite playground of forbidden worlds and dangerous lifeforms offered by the sci-fi horror genre will lead to the biggest, maddest, bloodiest V/H/S ever.",
+    "tmdbId": null
+  },
+  {
+    "id": 36,
+    "title": "No One Will Save You",
+    "year": 2023,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 6.5,
+    "review": null,
+    "director": "Brian Duffield",
+    "streaming": [
+      "Hulu"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/ehGIDAMaYy6Eg0o8ga0oqflDjqW.jpg",
+    "description": "A lonely woman battles extraterrestrials who threaten her future while forcing her to face her past.",
+    "tmdbId": null
+  },
+  {
+    "id": 37,
+    "title": "Devil",
+    "year": 2010,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "John Erick Dowdle",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/aNk0yx0xRcs66OdByiy2pJaFhI6.jpg",
+    "description": "Maya is a quick-witted young woman who comes over the Mexican border without papers and makes her way to the LA home of her older sister Rosa. Rosa gets Maya a job as a janitor: a non-union janitorial service has the contract, the foul-mouthed supervisor can fire workers on a whim, and the service-workers' union has assigned organizer Sam Shapiro to bring its \"justice for janitors\" campaign to the building. Sam finds Maya a willing listener, she's also attracted to him. Rosa resists, she has an ailing husband to consider. The workers try for public support; management intimidates workers to divide and conquer. Rosa and Maya as well as workers and management may be set to collide.",
+    "tmdbId": 37691
+  },
+  {
+    "id": 38,
+    "title": "Mind Body Spirit",
+    "year": 2024,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Alex Henes, Matthew Merenda",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/crkMD6xsMWMzKFK2xOE8tslR3AC.jpg",
+    "description": "Anya, an aspiring yoga influencer, as she embarks on a ritual practice left behind by her estranged grandmother. What starts as a spiritual self-help guide quickly evolves into something much more sinister. As Anya becomes obsessed with the mysterious power of the practice, she unwittingly unleashes an otherworldly entity that begins to take control of her life -- and her videos. Now Anya must race to unlock the truth, before her descent into madness threatens to consume her mind, body and spirit.",
+    "tmdbId": null
+  },
+  {
+    "id": 39,
+    "title": "Starve Acre",
+    "year": 2023,
+    "genres": [
+      "Supernatural",
+      "Folk"
+    ],
+    "status": "watched",
+    "rating": null,
+    "review": null,
+    "director": "Daniel Kokotajlo",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/5j37QHXuNygzEa2X54RMlOb6hj3.jpg",
+    "description": "When their son starts acting strangely, a couple unwittingly allow dark and sinister forces into their home, awakening a long-dormant ancient evil rooted deep in the countryside.",
+    "tmdbId": null
+  },
+  {
+    "id": 40,
+    "title": "1408",
+    "year": 2007,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 7,
+    "review": null,
+    "director": "Mikael Håfström",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9050VGrYjYrEjpOvDZVAngLbg1f.jpg",
+    "description": "In October of 1994 three student filmmakers disappeared in the woods near Burkittsville, Maryland, while shooting a documentary. A year later their footage was found.",
+    "tmdbId": 2667
+  },
+  {
+    "id": 41,
+    "title": "Mad God",
+    "year": 2022,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Phil Tippett",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/105stT9GkiENXiYqvWYKoAuHKQL.jpg",
+    "description": "A figure known as \"The Assassin\" descends from the heavens into a nightmarish pit full of monsters, titans, and cruelty.",
+    "tmdbId": null
+  },
+  {
+    "id": 42,
+    "title": "Ascension",
+    "year": null,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [
+      "Tubi"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/eHLZiLMvBL7oK2LAWekemb3xFjS.jpg",
+    "description": "Soon to be Martial Arts Master, Luna is forced to go on a dangerous journey when her teacher, Sensei Sirius is kidnapped by a vengeful ex-student.",
+    "tmdbId": null
+  },
+  {
+    "id": 43,
+    "title": "Brightwood",
+    "year": 2022,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 7.5,
+    "review": null,
+    "director": "Jared Grotegut",
+    "streaming": [
+      "Tubi"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/359JRjSSr3t1l6ObcmZFbJwvKI8.jpg",
+    "description": "A couple find themselves trapped while on a run around a pond.",
+    "tmdbId": null
+  },
+  {
+    "id": 44,
+    "title": "Good Boy",
+    "year": 2023,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Vilde Hoel",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/pzluRg3Jnm2YPs7CQyCrFJ8JADl.jpg",
+    "description": "Christian, a millionaire heir, meets Sigrid, a young student, on a dating app. They hit it off quickly, but there's only one problem: Christian lives with Frank, a man who dresses up and constantly acts like a dog.",
+    "tmdbId": null
+  },
+  {
+    "id": 45,
+    "title": "Sting",
+    "year": 2024,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Kiah Roache-Turner",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/97XZtLd461e5e0WBIBJREK1lzqC.jpg",
+    "description": "After raising an unnervingly talented spider in secret, 12-year-old Charlotte must face the truth about her pet and fight for her family's survival.",
+    "tmdbId": null
+  },
+  {
+    "id": 46,
+    "title": "The Hole in the Ground",
+    "year": 2019,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 6.5,
+    "review": null,
+    "director": "Lee Cronin",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7DMRJzH9AwpSN5D19cExAB9vDZW.jpg",
+    "description": "Trying to escape her broken past, Sarah O’Neill is building a new life on the fringes of a backwood rural town with her young son Chris. A terrifying encounter with a mysterious neighbour shatters her fragile security, throwing Sarah into a spiralling nightmare of paranoia and mistrust, as she tries to uncover if the disturbing changes in her little boy are connected to an ominous sinkhole buried deep in the forest that borders their home.",
+    "tmdbId": null
+  },
+  {
+    "id": 47,
+    "title": "Late Night with the Devil",
+    "year": 2023,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "review": null,
+    "director": "Cameron Cairnes, Colin Cairnes",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mu8LRWT9GHkfiyHm7kgxT6YNvMW.jpg",
+    "description": "A live broadcast of a late-night talk show in 1977 goes horribly wrong, unleashing evil into the nation's living rooms.",
+    "tmdbId": null
+  },
+  {
+    "id": 48,
+    "title": "Drag Me to Hell",
+    "year": 2009,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Sam Raimi",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/5dibQ1Agra1moDNOfpa5M330g1C.jpg",
+    "description": "Dual follows drifter Luke Twain in the late 1800s when he discovers a town where all the inhabitants has been brutally murdered. Making a choice to remain and uncover what took place there, he finds himself in a strange game of cat and mouse with a mysterious man that still has one final mission...",
+    "tmdbId": 19523
+  },
+  {
+    "id": 49,
+    "title": "Dead Talents Society",
+    "year": 2024,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/yDcc3OWNEtzjDtJly1OyZShtTMV.jpg",
+    "description": "When ghosts must compete to survive in the underworld by haunting the living, one unassuming young woman needs help creating a lasting performance while under the tutelage of a passionate agent and a washed-up diva.",
+    "tmdbId": null
+  },
+  {
+    "id": 50,
+    "title": "Let Me In",
+    "year": 2010,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 7.5,
+    "review": null,
+    "director": "Matt Reeves",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9AvD9lfGytbndj1OpgDICfvHZ6K.jpg",
+    "description": "An insane surgeon finds himself up to his armpits in eyeballs after guilt prompts him to begin removing the eyes of abducted people in hopes of performing transplants on his daughter who lost her own in a car-accident he caused.",
+    "tmdbId": 40139
+  },
+  {
+    "id": 51,
+    "title": "10 Cloverfield Lane",
+    "year": 2016,
+    "genres": [
+      "Supernatural",
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "review": null,
+    "director": "Dan Trachtenberg",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/q8A39vcBDruhvoDTJd6L8a4lnTi.jpg",
+    "description": "After a catastrophic car crash, a young woman wakes up in a survivalist's underground bunker, where he claims to have saved her from an apocalyptic attack that has left the outside world uninhabitable.",
+    "tmdbId": 333371
+  },
+  {
+    "id": 52,
+    "title": "Bugonia",
+    "year": 2025,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 9,
+    "review": null,
+    "director": "John Lee",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/oxgsAQDAAxA92mFGYCZllgWkH9J.jpg",
+    "description": "Two conspiracy obsessed young men kidnap the high-powered CEO of a major company, convinced that she is an alien intent on destroying planet Earth.",
+    "tmdbId": null
+  },
+  {
+    "id": 53,
+    "title": "Save the Green Planet",
+    "year": 2003,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Jang Jun-hwan",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/kou9TDjveVwBhWnxCRUT88RUVCs.jpg",
+    "description": "A young man believes that his country's leaders are actually toxic reptilian aliens sent down to launch a takeover of his beloved Earth. So he decides to abduct them and force the truth out on camera in his basement that doubles as a film studio and torture chamber.",
+    "tmdbId": null
+  },
+  {
+    "id": 54,
+    "title": "Sound of My Voice",
+    "year": 2011,
+    "genres": [
+      "Supernatural",
+      "Cults"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Zal Batmanglij",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/6wStc532wuBrW2NZM3TicEWDmaL.jpg",
+    "description": "A journalist and his girlfriend get pulled in while they investigate a cult whose leader claims to be from the future.",
+    "tmdbId": null
+  },
+  {
+    "id": 55,
+    "title": "Hard Candy",
+    "year": 2005,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "review": null,
+    "director": "David Slade",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/70gwaushxXcpGRvadHtLD0YLHC1.jpg",
+    "description": "Astronauts Glenn and Fuji investigate Planet X and encounter mysterious aliens known as the Xiliens, who ask Earth's people to help save their world from \"Monster Zero\".  In exchange for borrowing Godzilla and Rodan, the Xiliens offer a cure for cancer. As Glenn investigates, he develops a romance with Miss Namikawa and uncovers the Xilien's true intentions.",
+    "tmdbId": 19545
+  },
+  {
+    "id": 56,
+    "title": "May",
+    "year": 2002,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 4.5,
+    "review": null,
+    "director": "Lucky McKee",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/oFXhJYTax1cnNtgvLdKlXuYiWPV.jpg",
+    "description": "A socially awkward veterinary assistant with a lazy eye and obsession with perfection descends into depravity after developing a crush on a boy with perfect hands.",
+    "tmdbId": 22047
+  },
+  {
+    "id": 57,
+    "title": "Bully",
+    "year": 2001,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Larry Clark",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/q4lZrHWTWuybb6pzMucj1c0ngCW.jpg",
+    "description": "After taking his dying father's advice, Hal dates only the embodiments of female physical perfection. But that all changes after Hal has an unexpected run-in with self-help guru Tony Robbins. Intrigued by Hal's shallowness, Robbins hypnotizes him into seeing the beauty that exists even in the least physically appealing women. Hal soon falls for Rosemary, but he doesn't realize that his gorgeous girlfriend is actually a 300-pound-not-so-hottie.",
+    "tmdbId": 9889
+  },
+  {
+    "id": 58,
+    "title": "The Killing of a Sacred Deer",
+    "year": 2017,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 5,
+    "review": null,
+    "director": "Yorgos Lanthimos",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/e4DGlsc9g0h5AyoyvvAuIRnofN7.jpg",
+    "description": "Dr. Steven Murphy is a renowned cardiovascular surgeon who presides over a spotless household with his wife and two children. Lurking at the margins of his idyllic suburban existence is Martin, a fatherless teen who insinuates himself into the doctor's life in gradually unsettling ways.",
+    "tmdbId": null
+  },
+  {
+    "id": 59,
+    "title": "The Substance",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 7,
+    "review": null,
+    "director": "Coralie Fargeat",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
+    "description": "A fading celebrity decides to use a black market drug, a cell-replicating substance that temporarily creates a younger, better version of herself.",
+    "tmdbId": null
+  },
+  {
+    "id": 60,
+    "title": "Speak No Evil",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 7.5,
+    "review": null,
+    "director": "James Watkins",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/dA4N6uWOnEMgbxXwFX7qX7adzs8.jpg",
+    "description": "When an American family is invited to spend the weekend at the idyllic country estate of a charming British family they befriended on vacation, what begins as a dream holiday soon warps into a snarled psychological nightmare.",
+    "tmdbId": null
+  },
+  {
+    "id": 61,
+    "title": "Thirteen",
+    "year": 2003,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Catherine Hardwicke",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/pY8FbKKl3VD0jRI1iDFrwN6alLa.jpg",
+    "description": "Cynical bodyguard Jericho is hired by a man possessed by Satan, who is in search of his bride. When Jericho realizes what is happening, he must do everything he can to save the woman and the world.",
+    "tmdbId": 9946
+  },
+  {
+    "id": 62,
+    "title": "Red Rooms",
+    "year": 2023,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Pascal Plante",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/uBJvbf0g9rcsYElcwZCMYU0Vrj8.jpg",
+    "description": "The high-profile case of serial killer Ludovic Chevalier has just gone to trial, and Kelly-Anne is obsessed. When reality blurs with her morbid fantasies, she goes down a dark path to seek the final piece of the case’s puzzle.",
+    "tmdbId": null
+  },
+  {
+    "id": 63,
+    "title": "Martyrs",
+    "year": 2008,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Pascal Laugier",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/xFZH2l9UOyIclk2ZFWNHQ38B2RP.jpg",
+    "description": "In the year 2019, a plague has transformed almost every human into a vampire. Faced with a dwindling blood supply, the fractured dominant race plots their survival; meanwhile, a researcher works with a covert band of vampires on a way to save humankind.",
+    "tmdbId": 19901
+  },
+  {
+    "id": 64,
+    "title": "Irréversible",
+    "year": 2002,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Gaspar Noé",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/sZRa3rg7kKt8qkJ6C480VPmUR6A.jpg",
+    "description": "As young French couple Gilles and Marion officially separate, we see, in reverse order, the milestone moments in their relationship: Gilles revealing his unfaithfulness at a tense dinner party; Marion giving birth to their premature son while Gilles is elsewhere; Gilles and Marion's joyous wedding; and, finally, the fateful moment when they meet as acquaintances at an Italian beach resort, and their love affair begins.",
+    "tmdbId": 4974
+  },
+  {
+    "id": 65,
+    "title": "I Saw the Devil",
+    "year": 2010,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Kim Jee-woon",
+    "streaming": [],
+    "posterUrl": null,
+    "description": "2 Djs, 2 Hit Records and 2 many problems.",
+    "tmdbId": 49539
+  },
+  {
+    "id": 66,
+    "title": "The Vanishing",
+    "year": 1988,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "George Sluizer",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8WJLVLj1QE0VDhb6u9ReCRTFxDY.jpg",
+    "description": "Documentary on the French-Algerian conflict 1954-1962 which was never officially called a \"war\", including interviews with some of the survivors.",
+    "tmdbId": 17283
+  },
+  {
+    "id": 67,
+    "title": "Megan Is Missing",
+    "year": 2011,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 4,
+    "review": null,
+    "director": "Michael Goi",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/vqFIC6miVQWBUrkQYk3Fe0jqXrD.jpg",
+    "description": "Fourteen-year–old Megan and her best friend Amy spend a lot of time on the internet, posting videos of themselves and chatting with guys online. One night Megan chats with a guy named Josh who convinces her to meet him for a date. The next day, Megan is missing—forever. Based on actual cases of child abduction.",
+    "tmdbId": null
+  },
+  {
+    "id": 68,
+    "title": "Would You Rather",
+    "year": 2012,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "David Guy Levy",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/unYQSQWX66qmQwUYDBaBkOOFEGm.jpg",
+    "description": "Desperate to help her ailing brother, a young woman agrees to compete in a deadly game of \"Would You Rather\" hosted by a sadistic aristocrat.",
+    "tmdbId": null
+  },
+  {
+    "id": 69,
+    "title": "Longlegs",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": null,
+    "review": null,
+    "director": "Osgood Perkins",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/1EwNyiiNFd863H4e8nWEzutnZD7.jpg",
+    "description": "FBI Agent Lee Harker is a gifted new recruit assigned to the unsolved case of an elusive serial killer. As the case takes complex turns, unearthing evidence of the occult, Harker discovers a personal connection to the merciless killer and must race against time to stop him before he claims the lives of another innocent family.",
+    "tmdbId": null
+  },
+  {
+    "id": 70,
+    "title": "The Voices",
+    "year": 2014,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 7,
+    "review": null,
+    "director": "Marjane Satrapi",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/weY5OVSFmxvA3D4lfyhgvugklEh.jpg",
+    "description": "A mentally unhinged factory worker must decide whether to listen to his talking cat and become a killer, or follow his dog's advice to keep striving for normalcy.",
+    "tmdbId": null
+  },
+  {
+    "id": 71,
+    "title": "The Stylist",
+    "year": 2020,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Jill Gevargizian",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/gjsEk331R9VRGv6NuJGBjEUc1yZ.jpg",
+    "description": "Claire is a lonely hairstylist who secretly murders and scalps her clients. When Olivia makes the well-intentioned mistake of asking Claire to style her hair for her wedding, she becomes dangerously obsessed, and her sanity starts to slip away with bloody consequences.",
+    "tmdbId": null
+  },
+  {
+    "id": 72,
+    "title": "Heretic",
+    "year": 2024,
+    "genres": [
+      "Psychological",
+      "Cults"
+    ],
+    "status": "watched",
+    "rating": 7.5,
+    "review": null,
+    "director": "Scott Beck, Bryan Woods",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/fr96XzlzsONrQrGfdLMiwtQjott.jpg",
+    "description": "Two young missionaries are forced to prove their faith when they knock on the wrong door and are greeted by a diabolical Mr. Reed, becoming ensnared in his deadly game of cat-and-mouse.",
+    "tmdbId": null
+  },
+  {
+    "id": 73,
+    "title": "What You Wish For",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Nicholas Tomnay",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/bBbceiJHq4dqrKcFEAKolBhiDx0.jpg",
+    "description": "A talented chef with gambling woes flees to a Latin American villa to visit an old friend who appears to be living an extraordinary life as a private chef. Envy soon turns to greed and then to something deeply unsettling for the chef when he assumes his friend's life and discovers the motives of his mysterious clients.",
+    "tmdbId": null
+  },
+  {
+    "id": 74,
+    "title": "Cuckoo",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Tilman Singer",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/4bGP5cnSZbfBJfIidZNSEIKnav7.jpg",
+    "description": "After reluctantly moving to the German Alps with her father and his new family, Gretchen discovers that their new town hides sinister secrets, as she's plagued by strange noises and frightening visions of a woman pursuing her.",
+    "tmdbId": null
+  },
+  {
+    "id": 75,
+    "title": "Malignant",
+    "year": 2021,
+    "genres": [
+      "Psychological",
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "James Wan",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/dGv2BWjzwAz6LB8a8JeRIZL8hSz.jpg",
+    "description": "Madison is paralyzed by shocking visions of grisly murders, and her torment worsens as she discovers that these waking dreams are in fact terrifying realities with a mysterious tie to her past.",
+    "tmdbId": null
+  },
+  {
+    "id": 76,
+    "title": "Strange Darling",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "JT Mollner",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/kWNCRgt3ocv19bYO0sk7TRuZuFY.jpg",
+    "description": "Nothing is what it seems when a twisted one-night stand spirals into a serial killer’s vicious murder spree.",
+    "tmdbId": null
+  },
+  {
+    "id": 77,
+    "title": "I Saw the TV Glow",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Jane Schoenbrun",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/hS4GYkYpN1rfl4GIxyc02sCyfAj.jpg",
+    "description": "In late-90s suburbia, a lonely teenager meets a girl at school who introduces him to a mysterious late-night T.V. show — a vision of a supernatural world pulsing beneath their own. As time goes on, however, questions begin to arise about why the show sometimes seems more real than their own lives. In the pale glow of the television, their view of reality begins to crack.",
+    "tmdbId": null
+  },
+  {
+    "id": 78,
+    "title": "The Human Centipede",
+    "year": 2009,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Tom Six",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/gMtjxIkEi0hnTV5lPHbgeZ4ZpUZ.jpg",
+    "description": "During a stopover in Germany in the middle of a carefree road trip through Europe, two American girls find themselves alone at night when their car breaks down in the woods. Searching for help at a nearby villa, they are wooed into the clutches of a deranged retired surgeon, who has a very disturbed vision.",
+    "tmdbId": null
+  },
+  {
+    "id": 79,
+    "title": "Twinless",
+    "year": null,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9vaw9Az5tPLMjNLj426KgKsp0k8.jpg",
+    "description": "Two men who lost their respective twin brothers develop a growing friendship after meeting in a support group. However, both harbor long-hidden secrets that threaten to tear them apart.",
+    "tmdbId": null
+  },
+  {
+    "id": 80,
+    "title": "Eight Eyes",
+    "year": 2023,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Austin Jennings",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/uJZC2uoqYtyuDIFoGEeHt4MOqUw.jpg",
+    "description": "At the breaking point of their dysfunctional marriage, Cass and Gav take a trip through Serbia. After meeting a mysterious local, Saint Peter, who eagerly offers to be their guide, the couple embarks on an impromptu sightseeing expedition that soon takes a series of sinister turns.",
+    "tmdbId": null
+  },
+  {
+    "id": 81,
+    "title": "It's What's Inside",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": null,
+    "review": null,
+    "director": "Greg Jardin",
+    "streaming": [
+      "Netflix"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/6jzwaLoDurD6Jn2ILb42nFcn3xq.jpg",
+    "description": "A pre-wedding reunion descends into a psychological nightmare for a group of college friends when a surprise guest arrives with a mysterious suitcase.",
+    "tmdbId": null
+  },
+  {
+    "id": 82,
+    "title": "Milk and Serial",
+    "year": null,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": null,
+    "description": null,
+    "tmdbId": null
+  },
+  {
+    "id": 83,
+    "title": "Sleep",
+    "year": 2023,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Jason Yu",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/b4d90lpmSTLoCP9tkBU7QAQOhh0.jpg",
+    "description": "A pregnant wife who becomes worried about her husband’s sleeping habits. What starts out as some light sleep-talking soon escalates to unexpectedly grotesque behaviour. They consult a sleep clinic without success and as his nightmarish behaviour escalates, they desperately seek help from a shaman.",
+    "tmdbId": null
+  },
+  {
+    "id": 84,
+    "title": "Vacancy",
+    "year": 2007,
+    "genres": [
+      "Psychological",
+      "Slasher"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Nimród Antal",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9nlJVsbebi1onTwGyJ3UHDNttID.jpg",
+    "description": "A young married couple becomes stranded at an isolated motel and find hidden video cameras in their room. They realize that unless they escape, they'll be the next victims of a snuff film.",
+    "tmdbId": 7231
+  },
+  {
+    "id": 85,
+    "title": "Gonjinam",
+    "year": null,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": null,
+    "description": null,
+    "tmdbId": null
+  },
+  {
+    "id": 86,
+    "title": "Woman of the Hour",
+    "year": 2023,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 7,
+    "review": null,
+    "director": "Anna Kendrick",
+    "streaming": [
+      "Netflix"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/nc9ZqrJFbcUdlMg9lxXXtJb24jU.jpg",
+    "description": "An aspiring actress crosses paths with a prolific serial killer in '70s LA when they're cast on an episode of \"The Dating Game.\"",
+    "tmdbId": null
+  },
+  {
+    "id": 87,
+    "title": "Best Wishes to All",
+    "year": null,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/vwWYIcVkDb8twv0unOCcriYCSrD.jpg",
+    "description": "A young woman's visit to her grandparents' home leads to the discovery of what's brought them happiness, a revelation that will lead her to question her choices, sanity and reality itself.",
+    "tmdbId": null
+  },
+  {
+    "id": 88,
+    "title": "The Long Walk",
+    "year": 2019,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Mattie Do",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/HTOpR44TNZvh7WPucgoAbyROP.jpg",
+    "description": "An old Laotian hermit discovers that the ghost of a road accident victim can transport him back in time fifty years to the moment of his mother's painful death.",
+    "tmdbId": null
+  },
+  {
+    "id": 89,
+    "title": "The Ugly Stepsister",
+    "year": null,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/rayAREIKtSinuov10GvrZHyXfXH.jpg",
+    "description": "In a fairy-tale kingdom where beauty is a brutal business, Elvira battles to compete with her incredibly beautiful stepsister, and she will go to any length to catch the prince’s eye.",
+    "tmdbId": null
+  },
+  {
+    "id": 90,
+    "title": "Eddington",
+    "year": null,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/4GIqZUgPZ146BhibsPHMHef2nXX.jpg",
+    "description": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "tmdbId": null
+  },
+  {
+    "id": 91,
+    "title": "If I Had Legs I'd Kick You",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Mary Bronstein",
+    "streaming": [],
+    "posterUrl": null,
+    "description": null,
+    "tmdbId": null
+  },
+  {
+    "id": 92,
+    "title": "American Sweatshop",
+    "year": null,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/38OuhBN7yga2nJSP16VPSOJ2Mwz.jpg",
+    "description": "A content moderator is tasked with purging offensive media from the internet. When she witnesses a crime in a video, she is lured away from the safety of her keyboard as she obsessively seeks to hold someone accountable.",
+    "tmdbId": null
+  },
+  {
+    "id": 93,
+    "title": "Magazine Dreams",
+    "year": 2023,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Elijah Bynum",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/vSidx9NHKuQIPEQ4yI9b9zkTeh3.jpg",
+    "description": "Aspiring bodybuilder Killian Maddox struggles to find human connection in an exploration of celebrity and violence. Nothing deters him from his fiercely protected dream of superstardom, not even the doctors who warn him of the permanent damage he causes to himself with his quest.",
+    "tmdbId": null
+  },
+  {
+    "id": 94,
+    "title": "Nuremberg",
+    "year": 2000,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Yves Simoneau",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/dRNdt8l5x9Vxr3ODpmKJLgMVsLs.jpg",
+    "description": "Justice Robert H. Jackson leads Allied prosecutors in trying 21 Germans for Nazi war crimes after World War II. Blu Ray Versión",
+    "tmdbId": null
+  },
+  {
+    "id": 95,
+    "title": "Dogtooth",
+    "year": 2009,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Yorgos Lanthimos",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/iDSSAE6BFoU8UJegNdJg2luuJe9.jpg",
+    "description": "A high school track star's wedding plans are capsized by venereal disease and a bad, beautiful new girl in town. His coach and a physician steer him into the light again.",
+    "tmdbId": 50954
+  },
+  {
+    "id": 96,
+    "title": "House of Wax",
+    "year": 2005,
+    "genres": [
+      "Slasher"
+    ],
+    "status": "watched",
+    "rating": 7,
+    "review": null,
+    "director": "Jaume Collet-Serra",
+    "streaming": [
+      "Tubi"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/oYetboAljWR2N5A7MU3i63DvUtd.jpg",
+    "description": "Three bachelors find themselves forced to take care of a baby left by one of the guy's girlfriends.",
+    "tmdbId": 12154
+  },
+  {
+    "id": 97,
+    "title": "The Midnight Meat Train",
+    "year": 2008,
+    "genres": [
+      "Slasher"
+    ],
+    "status": "watched",
+    "rating": 6.5,
+    "review": null,
+    "director": "Ryûhei Kitamura",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/eYA8KiSnIAbxtoIgg4lpZjB0dfz.jpg",
+    "description": "Forced to give up his dreams of art school, Zach works dead-end jobs to support his sister and her son. Questioning his life, he paints, surfs and hangs out with his best friend, Gabe. When Gabe's older brother returns home for the summer, Zach suddenly finds himself drawn into a relationship he didn't expect.",
+    "tmdbId": 17483
+  },
+  {
+    "id": 98,
+    "title": "Tusk",
+    "year": 2014,
+    "genres": [
+      "Slasher",
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "review": null,
+    "director": "Kevin Smith",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/pA2SgITmH0lzet9Nn5cxeinRKMv.jpg",
+    "description": "When his best friend and podcast co-host goes missing in the backwoods of Canada, a young guy joins forces with his friend's girlfriend to search for him.",
+    "tmdbId": null
+  },
+  {
+    "id": 99,
+    "title": "Sinners",
+    "year": 2025,
+    "genres": [
+      "Folk",
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 7.5,
+    "review": null,
+    "director": "Ryan Coogler",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "description": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+    "tmdbId": null
+  },
+  {
+    "id": 100,
+    "title": "Hagazussa",
+    "year": 2017,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Lukas Feigelfeld",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qxUiwpRKagcNHFlly5IpcbX0QPI.jpg",
+    "description": "In the 15th century, a young goatherd living alone in a mountain hut feels a dark presence in the woods.",
+    "tmdbId": null
+  },
+  {
+    "id": 101,
+    "title": "Brotherhood of the Wolf",
+    "year": 2001,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Christophe Gans",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/Ahd4F7azhjsxgXYjVyFmVzJu9LB.jpg",
+    "description": "In 18th century France, the Chevalier de Fronsac and his Native American friend Mani are sent by the King to the Gevaudan province to investigate the killings of hundreds by a mysterious beast.",
+    "tmdbId": null
+  },
+  {
+    "id": 102,
+    "title": "Frewaka",
+    "year": 2023,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Tom Sullivan",
+    "streaming": [],
+    "posterUrl": null,
+    "description": null,
+    "tmdbId": null
+  },
+  {
+    "id": 103,
+    "title": "You Won't Be Alone",
+    "year": 2022,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Goran Stolevski",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qVRADANU3JpMyapKjV3eM41VlDG.jpg",
+    "description": "In an isolated mountain village in 19th century Macedonia, a young feral witch accidentally kills a peasant. She assumes the peasant's shape to see what life is like in her skin, igniting a deep seated curiosity to experience life inside the bodies of others.",
+    "tmdbId": null
+  },
+  {
+    "id": 104,
+    "title": "The Devil's Bath",
+    "year": 2024,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Veronika Franz, Severin Fiala",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/txVfrmwFOKB5qczM0ENYSqKMnSv.jpg",
+    "description": "In 1750 Austria, a deeply religious woman named Agnes has just married her beloved, but her mind and heart soon grow heavy as her life becomes a long list of chores and expectations. Day after day, she is increasingly trapped in a murky and lonely path leading to evil thoughts, until the possibility of committing a shocking act of violence seems like the only way out of her inner prison.",
+    "tmdbId": null
+  },
+  {
+    "id": 105,
+    "title": "Rabbit Trap",
+    "year": 2024,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": null,
+    "description": null,
+    "tmdbId": null
+  },
+  {
+    "id": 106,
+    "title": "Rosemary's Baby",
+    "year": 1968,
+    "genres": [
+      "Folk",
+      "Cults"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Roman Polanski",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/uYgvlHceRFjAFbsNeMInYcLZLUb.jpg",
+    "description": "A young couple, Rosemary and Guy, moves into an infamous New York apartment building, known by frightening legends and mysterious events, with the purpose of starting a family.",
+    "tmdbId": null
+  },
+  {
+    "id": 107,
+    "title": "The Northman",
+    "year": 2022,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Robert Eggers",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/aSSJMnHknzKjlZ6zybwD7eyJ4Po.jpg",
+    "description": "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
+    "tmdbId": null
+  },
+  {
+    "id": 108,
+    "title": "Hatching",
+    "year": 2022,
+    "genres": [
+      "Folk",
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Hanna Bergholm",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/jgJACjJIpcbFfEEmEglinfQWQPO.jpg",
+    "description": "12 year old Tinja is desperate to please her mother, a woman obsessed with presenting the image of a perfect family. One night, Tinja finds a strange egg. What hatches is beyond belief.",
+    "tmdbId": null
+  },
+  {
+    "id": 109,
+    "title": "Border",
+    "year": 2018,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Ali Abbasi",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8KzOTRlKjdAKQTemV41hq86ldFS.jpg",
+    "description": "When a border guard with a sixth sense for identifying smugglers encounters the first person she cannot prove is guilty, she is forced to confront terrifying revelations about herself and humankind.",
+    "tmdbId": null
+  },
+  {
+    "id": 110,
+    "title": "Antlers",
+    "year": 2021,
+    "genres": [
+      "Folk",
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Scott Cooper",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/cMch3tiexw3FdOEeZxMWVel61Xg.jpg",
+    "description": "A small-town Oregon teacher and her brother, the local sheriff, discover a young student is harbouring a dangerous secret that could have frightening consequences.",
+    "tmdbId": null
+  },
+  {
+    "id": 111,
+    "title": "Black Sheep",
+    "year": 2006,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Jonathan King",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/b6Spp82Tg8rv4YUSHGWFqFbgp0q.jpg",
+    "description": "After a childhood prank by his brother Angus causes Henry to develop a phobia of sheep, he must step up to the onslaught of a genetically-mutated man-eating flock with the help of his friend and a young environmentalist.",
+    "tmdbId": null
+  },
+  {
+    "id": 112,
+    "title": "When Animals Dream",
+    "year": 2014,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Jonas Alexander Arnby",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7fbKZ1fiVJQAisje8noLiDcK1H4.jpg",
+    "description": "Teenage Marie lives on a small island with her father and catatonic mother. Virtually friendless and sullen, Marie begins to experience frightening changes in her body that mark her as a dangerous threat.",
+    "tmdbId": null
+  },
+  {
+    "id": 113,
+    "title": "Thale",
+    "year": 2013,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": "Aleksander Nordaas",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/wzHeVg5U0G83Lkq5o86c2KiWgGZ.jpg",
+    "description": "Norwegian folklore turns out to be real when Leo and Elvis encounter a girl called Thale in a basement. A regular cleaning job turns into a struggle for survival, while they're trying to figure out what or who Thale is.  Could Thale be a huldra?  A seductive forest spirit who appears from the front to be a beautiful young woman, but who also has a cow's tale and whose back appears to be like a hollowed out tree. The huldra has been known to offer rewards to those who satisfy them sexually, while death to those who fail to do so and are also prone to stealing human babies.",
+    "tmdbId": null
+  },
+  {
+    "id": 114,
+    "title": "Penny Dreadful",
+    "year": 2014,
+    "genres": [
+      "Series",
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": null,
+    "description": null,
+    "tmdbId": null
+  },
+  {
+    "id": 115,
+    "title": "Bates Motel",
+    "year": 2013,
+    "genres": [
+      "Series",
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": null,
+    "description": null,
+    "tmdbId": null
+  },
+  {
+    "id": 116,
+    "title": "The Vow",
+    "year": 2020,
+    "genres": [
+      "Series",
+      "Cults"
+    ],
+    "status": "watched",
+    "rating": 10,
+    "review": null,
+    "director": null,
+    "streaming": [
+      "Netflix"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/pc2ly9aKPmRrrFwOJinNNKafCv7.jpg",
+    "description": "Yo and Boy, the two of them have to come across a shrine shaped like a Doraemon cartoon character. They argue about the sacredness of this shrine and whether we should really believe in it or not.",
+    "tmdbId": null
+  },
+  {
+    "id": 117,
+    "title": "Bobby",
+    "year": null,
+    "genres": [
+      "Series"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [
+      "Netflix"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/ea6aSTUFQopOW7kWFZB9AvMYnbs.jpg",
+    "description": "In 1968 the lives of a retired doorman, hotel manager, lounge singer, busboy, beautician and others intersect in the wake of Robert F. Kennedy's assassination at the Ambassador Hotel in Los Angeles.",
+    "tmdbId": null
+  },
+  {
+    "id": 118,
+    "title": "Sharp Objects",
+    "year": 2018,
+    "genres": [
+      "Series",
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "review": null,
+    "director": null,
+    "streaming": [],
+    "posterUrl": null,
+    "description": null,
+    "tmdbId": null
+  }
+]
