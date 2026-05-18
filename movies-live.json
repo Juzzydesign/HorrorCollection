@@ -96,9 +96,9 @@
     "review": null,
     "director": null,
     "streaming": [],
-    "posterUrl": null,
-    "description": null,
-    "tmdbId": null
+    "posterUrl": "https://image.tmdb.org/t/p/w500/yn8fUyydUTnaxo5deI2TiOyIqMi.jpg",
+    "description": "With unprecedented access, filmmakers Noel Smyth and Fergus Grady lift the lid on the secretive Gloriavale Christian Community following a family of survivors searching for justice.",
+    "tmdbId": 995952
   },
   {
     "id": 7,
