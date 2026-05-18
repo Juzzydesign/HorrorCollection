@@ -75,16 +75,15 @@ function setupFilmModal() {
 function toggleWatchedFields() {
   const isWatched = document.querySelector('input[name="status"]:checked')?.value === 'watched';
   document.getElementById('rating-section').hidden = !isWatched;
-  document.getElementById('review-section').hidden = !isWatched;
 }
 
 function resetFilmForm() {
-  document.getElementById('film-id').value       = '';
-  document.getElementById('film-title').value    = '';
-  document.getElementById('film-year').value     = '';
-  document.getElementById('film-director').value = '';
-  document.getElementById('film-review').value   = '';
-  document.getElementById('film-poster').value   = '';
+  document.getElementById('film-id').value          = '';
+  document.getElementById('film-title').value       = '';
+  document.getElementById('film-year').value        = '';
+  document.getElementById('film-director').value    = '';
+  document.getElementById('film-overview').value    = '';
+  document.getElementById('film-poster').value      = '';
   document.getElementById('film-rating').value   = '7';
   document.getElementById('rating-display').textContent = '7 / 10';
   document.getElementById('poster-preview-wrap').hidden = true;
@@ -97,12 +96,12 @@ function resetFilmForm() {
 }
 
 function populateFilmForm(movie) {
-  document.getElementById('film-id').value       = movie.id;
-  document.getElementById('film-title').value    = movie.title    || '';
-  document.getElementById('film-year').value     = movie.year     || '';
-  document.getElementById('film-director').value = movie.director || '';
-  document.getElementById('film-review').value   = movie.review   || '';
-  document.getElementById('film-poster').value   = movie.posterUrl || '';
+  document.getElementById('film-id').value          = movie.id;
+  document.getElementById('film-title').value       = movie.title       || '';
+  document.getElementById('film-year').value        = movie.year        || '';
+  document.getElementById('film-director').value    = movie.director    || '';
+  document.getElementById('film-overview').value    = movie.description || '';
+  document.getElementById('film-poster').value      = movie.posterUrl   || '';
 
   if (movie.rating != null) {
     document.getElementById('film-rating').value = movie.rating;
@@ -147,9 +146,9 @@ function handleFilmSubmit() {
     year,
     genres,
     status,
-    rating:    isWatched ? parseFloat(document.getElementById('film-rating').value) : null,
-    review:    isWatched ? document.getElementById('film-review').value.trim() || null : null,
-    director:  document.getElementById('film-director').value.trim() || null,
+    rating:      isWatched ? parseFloat(document.getElementById('film-rating').value) : null,
+    description: document.getElementById('film-overview').value.trim() || null,
+    director:    document.getElementById('film-director').value.trim() || null,
     streaming,
     posterUrl: document.getElementById('film-poster').value.trim() || null,
     tmdbId:    null,

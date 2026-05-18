@@ -42,7 +42,10 @@
   padding: 0;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip; /* prevents page H-scroll without creating a scroll container */
+}
 
 body {
   background-color: var(--bg-primary);
@@ -1049,14 +1052,45 @@ img { display: block; max-width: 100%; }
   }
 
   .site-title {
-    font-size: clamp(3.5rem, 20vw, 6rem);
+    font-size: clamp(2.4rem, 13vw, 4rem);
+  }
+
+  .view-tabs {
+    padding: 0 8px;
+    min-width: 0;
+    width: 100%;
+  }
+  .view-tab {
+    flex: 1;
+    min-width: 0;
+    justify-content: center;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+    padding: 14px 4px 12px;
+    gap: 4px;
+  }
+  .tab-count {
+    font-size: 0.58rem;
+    padding: 2px 5px;
+    min-width: 18px;
+    flex-shrink: 0;
   }
 
   .controls {
     padding: 8px 14px;
+    gap: 6px;
+  }
+
+  /* Stack filters on row 1, search+add on row 2 */
+  .filters-row {
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .filters {
+    order: 1;
+    width: 100%;
+    flex: none;
     overflow-x: auto;
     flex-wrap: nowrap;
     scrollbar-width: none;
@@ -1064,6 +1098,21 @@ img { display: block; max-width: 100%; }
   }
 
   .filters::-webkit-scrollbar { display: none; }
+
+  .search-bar {
+    order: 2;
+    flex: 1;
+  }
+
+  .search-bar input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #add-movie-btn {
+    order: 3;
+    flex-shrink: 0;
+  }
 
   .filter-btn,
   .status-btn { white-space: nowrap; flex-shrink: 0; }
@@ -1078,6 +1127,11 @@ img { display: block; max-width: 100%; }
   .movie-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
+  }
+
+  .site-title {
+    font-size: clamp(1.8rem, 10.5vw, 2.8rem);
+    letter-spacing: 0.06em;
   }
 }
 
@@ -1109,6 +1163,26 @@ img { display: block; max-width: 100%; }
 
 .change-pwd-btn:hover {
   color: var(--text-secondary);
+}
+
+.save-btn {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: transparent;
+  border: 1px solid rgba(201,168,76,0.35);
+  border-radius: var(--radius);
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.save-btn:hover {
+  color: #e8c96a;
+  border-color: var(--gold);
 }
 
 .login-btn {

@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupHiddenLoginTrigger();
   setupLoginModal();
   setupFilmModal();
+  setupSaveButton();
   document.addEventListener('film-saved', renderGrid);
   updateAuthUI();   // from auth.js — sync login state on load
   if (!restoreReturnState()) renderGrid();
@@ -98,6 +99,25 @@ function setupSearch() {
       renderGrid();
     }, 200);
   });
+}
+
+// ─── Save / Export ────────────────────────────────────────────────────────────
+function setupSaveButton() {
+  document.getElementById('save-btn')?.addEventListener('click', exportMoviesJS);
+}
+
+function exportMoviesJS() {
+  const movies  = getMovies();
+  const version = localStorage.getItem('horror_archive_data_version') || DATA_VERSION;
+  const content =
+    `const DATA_VERSION = '${version}';\n\n` +
+    `const MOVIES = ${JSON.stringify(movies, null, 2)};\n`;
+  const url = URL.createObjectURL(new Blob([content], { type: 'text/javascript' }));
+  const a   = Object.assign(document.createElement('a'), { href: url, download: 'movies.js' });
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 // ─── Login / Logout button ────────────────────────────────────────────────────

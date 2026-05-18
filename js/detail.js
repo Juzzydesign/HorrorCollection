@@ -127,14 +127,7 @@ function renderBody(movie) {
 
   const streamingHTML = buildStreamingHTML(movie.streaming);
 
-  const reviewHTML = (movie.status === 'watched' && movie.review)
-    ? `<div class="detail-section">
-         <h3>My Review</h3>
-         <p class="review-text">${escapeHTML(movie.review)}</p>
-       </div>`
-    : '';
-
-  if (!streamingHTML && !reviewHTML) {
+  if (!streamingHTML) {
     body.hidden = true;
     return;
   }
@@ -142,8 +135,7 @@ function renderBody(movie) {
   body.innerHTML = `
     <div class="detail-body-spacer"></div>
     <div class="detail-sections">
-      ${streamingHTML ? `<div class="detail-section">${streamingHTML}</div>` : ''}
-      ${reviewHTML}
+      <div class="detail-section">${streamingHTML}</div>
     </div>
   `;
 }
@@ -313,8 +305,20 @@ function injectPosterUpload(movie) {
     if (!file || !file.type.startsWith('image/')) return;
     const reader = new FileReader();
     reader.onload = () => {
-      updateMovie(movie.id, { posterUrl: reader.result });
-      location.reload();
+      // Compress via canvas so the stored data URL stays small (~30–60 KB)
+      const img = new Image();
+      img.onload = () => {
+        const MAX = 600;
+        const scale = Math.min(1, MAX / Math.max(img.width, img.height));
+        const canvas = document.createElement('canvas');
+        canvas.width  = Math.round(img.width  * scale);
+        canvas.height = Math.round(img.height * scale);
+        canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+        const compressed = canvas.toDataURL('image/jpeg', 0.82);
+        updateMovie(movie.id, { posterUrl: compressed });
+        location.reload();
+      };
+      img.src = reader.result;
     };
     reader.readAsDataURL(file);
   }

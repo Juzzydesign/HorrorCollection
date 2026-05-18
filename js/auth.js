@@ -59,7 +59,8 @@ async function attemptLogin(password) {
 
 function updateAuthUI() {
   const loginBtn  = document.getElementById('login-btn');
-const addBtn    = document.getElementById('add-movie-btn');
+  const saveBtn   = document.getElementById('save-btn');
+  const addBtn    = document.getElementById('add-movie-btn');
   const adminBtns = document.querySelectorAll('.card-admin');
 
   if (!loginBtn) return;
@@ -67,12 +68,14 @@ const addBtn    = document.getElementById('add-movie-btn');
   if (isLoggedIn()) {
     loginBtn.textContent = 'LOGOUT';
     loginBtn.hidden = false;
-if (addBtn) addBtn.hidden = false;
+    if (saveBtn) saveBtn.hidden = false;
+    if (addBtn)  addBtn.hidden  = false;
     adminBtns.forEach(el => el.hidden = false);
   } else {
     loginBtn.textContent = 'LOGIN';
     loginBtn.hidden = false;
-if (addBtn) addBtn.hidden = true;
+    if (saveBtn) saveBtn.hidden = true;
+    if (addBtn)  addBtn.hidden  = true;
     adminBtns.forEach(el => el.hidden = true);
   }
 }
