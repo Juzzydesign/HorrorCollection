@@ -356,13 +356,15 @@
       "Supernatural"
     ],
     "status": "watched",
-    "rating": 8,
+    "rating": 9.5,
     "review": null,
     "director": "Na Hong-jin",
-    "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/dDnSKFQkpL5BIWCCnXXlcTpVx7x.jpg",
-    "description": "Fritz Reinhart is a successful surgeon in Zurich suddenly faced with the suffering in a refugee camp on the Burmese border during his vacation in Thailand. Being a doctor, he is confronted with the issue of providing immediate emergency aid. He has no idea that this is going to last a whole year and that as a \"helper\" he will be caught in a turmoil of emotions that challenge his existence as a family man, even his entire life, abruptly and radically.",
-    "tmdbId": 325502
+    "streaming": [
+      "Hulu"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/RbymxgEM5SpDfO2Io2JMFG10Vi.jpg",
+    "description": "A stranger arrives in a little village and soon after a mysterious sickness starts spreading. A policeman is drawn into the incident and is forced to solve the mystery in order to save his daughter.",
+    "tmdbId": 293670
   },
   {
     "id": 23,
