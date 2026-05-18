@@ -307,10 +307,12 @@
     "rating": null,
     "review": null,
     "director": "Kasi Lemmons",
-    "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/mtl43J82BOX49DKsplg4KPRkbn8.jpg",
-    "description": "A boy kidnapped by two mismatched hitmen puts them at each other's throats while being driven to their employers, possibly to be killed. Cohen, an older professional becomes increasingly irritated with his partner Tate, a brutish killer, when their prisoner uses unnatural guile and resourcefulness to play them off against each other.",
-    "tmdbId": 32079
+    "streaming": [
+      "Peacock"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/33yTPcGSv7eo3FVlb7XKACHl1M8.jpg",
+    "description": "Summer heats up in rural Louisiana beside Eve’s Bayou, 1962, as the Batiste family tries to survive the secrets they’ve kept and the betrayals they’ve endured.",
+    "tmdbId": 45153
   },
   {
     "id": 19,
