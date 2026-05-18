@@ -259,7 +259,12 @@ async function handleTmdbFix(movie) {
   setStatus(status, 'Fetching…', '');
 
   try {
-    const data = await fetchTmdb(parsed.id, parsed.type);
+    // Fetch movie details and streaming providers in parallel
+    const [data, streaming] = await Promise.all([
+      fetchTmdb(parsed.id, parsed.type),
+      fetchTmdbProviders(parsed.id, parsed.type),
+    ]);
+
     if (data.status_message) {
       setStatus(status, `TMDB error: ${data.status_message}`, 'error');
       return;
@@ -269,6 +274,7 @@ async function handleTmdbFix(movie) {
       tmdbId:      parsed.id,
       posterUrl:   data.poster_path ? TMDB_IMG_BASE + data.poster_path : movie.posterUrl,
       description: data.overview    || null,
+      streaming:   streaming.length  ? streaming : movie.streaming,
     };
 
     updateMovie(movie.id, changes);
@@ -287,6 +293,37 @@ async function handleTmdbFix(movie) {
 function fetchTmdb(id, type = 'movie') {
   return fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${TMDB_API_KEY}`)
     .then(r => r.json());
+}
+
+// Map TMDB provider names → our platform labels
+const TMDB_PROVIDER_MAP = {
+  'Netflix':                'Netflix',
+  'Amazon Prime Video':     'Prime',
+  'Hulu':                   'Hulu',
+  'Max':                    'Max',
+  'HBO Max':                'Max',
+  'Peacock Premium':        'Peacock',
+  'Peacock Premium Plus':   'Peacock',
+  'Shudder':                'Shudder',
+  'Tubi TV':                'Tubi',
+  'Kanopy':                 'Kanopy',
+  'MUBI':                   'Mubi',
+  'MUBI Amazon Channel':    'Mubi',
+};
+
+async function fetchTmdbProviders(id, type = 'movie') {
+  try {
+    const res  = await fetch(`https://api.themoviedb.org/3/${type}/${id}/watch/providers?api_key=${TMDB_API_KEY}`);
+    const data = await res.json();
+    // Use US flatrate (subscription) providers; fall back to an empty list
+    const flatrate = data.results?.US?.flatrate || [];
+    return flatrate
+      .map(p => TMDB_PROVIDER_MAP[p.provider_name])
+      .filter(Boolean)
+      .filter((v, i, arr) => arr.indexOf(v) === i); // deduplicate
+  } catch {
+    return [];
+  }
 }
 
 // Returns { id, type } or null. Supports movie and TV series URLs.
