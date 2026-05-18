@@ -1985,5 +1985,20 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
     "tmdbId": null,
     "id": 121
+  },
+  {
+    "title": "The Devils",
+    "year": 1971,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "A charismatic 17th-century French priest becomes the target of a sexually obsessed nun’s witchcraft accusations, which corrupt church and state officials are all too happy to exploit.​​​​​​​​​​​​​​​​",
+    "director": "Ken Russell",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+    "tmdbId": null,
+    "id": 122
   }
 ]
