@@ -37,10 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Render immediately from localStorage — page appears instantly
   if (!restoreReturnState()) renderGrid();
 
-  // Then fetch remote data in the background and refresh only if it changed
-  loadRemoteMovies().then(changed => {
-    if (changed) renderGrid();
-  });
+  // Visitors fetch the latest data from GitHub on every load.
+  // Admins skip this — their localStorage IS the source of truth and
+  // fetching remote would overwrite unsynchronised local edits.
+  if (!isLoggedIn()) {
+    loadRemoteMovies().then(changed => {
+      if (changed) renderGrid();
+    });
+  }
 });
 
 // Save scroll + filter state whenever we leave this page

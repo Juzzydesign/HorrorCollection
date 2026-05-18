@@ -48,16 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Fetch remote data in the background; re-render the detail if it changed
-  loadRemoteMovies().then(changed => {
-    if (!changed) return;
-    const refreshed = (getMovies ? getMovies() : MOVIES).find(m => m.id === movieId);
-    if (refreshed) {
-      renderDetail(refreshed);
-      // Re-inject poster upload after re-render (re-render wipes the overlay)
-      if (isAdminLoggedIn()) injectPosterUpload(refreshed);
-    }
-  });
+  // Visitors fetch the latest data from GitHub on every load.
+  // Admins skip this — their localStorage IS the source of truth.
+  if (!isAdminLoggedIn()) {
+    loadRemoteMovies().then(changed => {
+      if (!changed) return;
+      const refreshed = (getMovies ? getMovies() : MOVIES).find(m => m.id === movieId);
+      if (refreshed) renderDetail(refreshed);
+    });
+  }
 });
 
 // ─── Get movie ID from URL query param ───────────────────────────────────────
