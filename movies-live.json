@@ -125,14 +125,14 @@
       "Cults",
       "Folk"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 7,
     "review": null,
     "director": "Neil LaBute",
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg",
     "description": "Police sergeant Neil Howie is called to an island village in search of a missing girl whom the locals claim never existed. The investigation is further complicated as Howie’s religious views clash with those of the island’s residents.",
-    "tmdbId": 16307
+    "tmdbId": null
   },
   {
     "id": 10,
@@ -199,7 +199,7 @@
       "Supernatural"
     ],
     "status": "watched",
-    "rating": 10,
+    "rating": 9.5,
     "review": null,
     "director": "Michael Shanks",
     "streaming": [],
@@ -548,10 +548,12 @@
     "rating": null,
     "review": null,
     "director": "Jonathan Glazer",
-    "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/wTzrGsznUP6lMcDi3HY5EF1WACD.jpg",
-    "description": "A Boston teacher decides to turn her old home into a boarding house to pull in some much-needed extra money. It turns out her tenants help her in more ways than supplementing her income, and ultimately they become instrumental in turning her life around.",
-    "tmdbId": 175311
+    "streaming": [
+      "Netflix"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/55wmcXJIDYITr7JDijJTdvwSaAv.jpg",
+    "description": "A seductive stranger prowls the streets of Glasgow in search of prey: unsuspecting men who fall under her spell.",
+    "tmdbId": 97370
   },
   {
     "id": 34,
@@ -1003,22 +1005,6 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/dA4N6uWOnEMgbxXwFX7qX7adzs8.jpg",
     "description": "When an American family is invited to spend the weekend at the idyllic country estate of a charming British family they befriended on vacation, what begins as a dream holiday soon warps into a snarled psychological nightmare.",
     "tmdbId": null
-  },
-  {
-    "id": 61,
-    "title": "Thirteen",
-    "year": 2003,
-    "genres": [
-      "Psychological"
-    ],
-    "status": "watchlist",
-    "rating": null,
-    "review": null,
-    "director": "Catherine Hardwicke",
-    "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/pY8FbKKl3VD0jRI1iDFrwN6alLa.jpg",
-    "description": "Cynical bodyguard Jericho is hired by a man possessed by Satan, who is in search of his bride. When Jericho realizes what is happening, he must do everything he can to save the woman and the world.",
-    "tmdbId": 9946
   },
   {
     "id": 62,
