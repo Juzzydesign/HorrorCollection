@@ -2233,5 +2233,26 @@
       "Mystery"
     ],
     "id": 135
+  },
+  {
+    "title": "The Witch",
+    "year": 2016,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "In 1630, a farmer relocates his family to a remote plot of land on the edge of a forest where strange, unsettling things happen. With suspicion and paranoia mounting, each family member's faith, loyalty and love are tested in shocking ways.",
+    "director": "Robert Eggers",
+    "streaming": [
+      "Max"
+    ],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror"
+    ],
+    "id": 136
   }
 ]
