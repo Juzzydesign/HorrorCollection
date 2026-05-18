@@ -1693,10 +1693,12 @@
     "rating": null,
     "review": null,
     "director": "Tom Sullivan",
-    "streaming": [],
-    "posterUrl": null,
-    "description": null,
-    "tmdbId": null
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/pfLylbmY0uxQm6Sh63j6bpb7XB3.jpg",
+    "description": "Care worker Shoo, who is haunted by a personal tragedy, is sent to a remote village to care for an agoraphobic woman, who fears both her neighbours and the Na Sídhe – sinister folkloric entities she believes abducted her decades before.",
+    "tmdbId": 1189735
   },
   {
     "id": 103,
