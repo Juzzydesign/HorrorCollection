@@ -204,9 +204,10 @@ function injectAdminPanel(movie) {
   panel.innerHTML = `
     <span class="admin-fix-label">Fix movie data</span>
     <input class="admin-fix-input" id="tmdb-url-input"
-           type="text" placeholder="Paste TMDB URL or ID — e.g. themoviedb.org/movie/228274"
+           type="text" placeholder="Paste TMDB URL — movie/228274 or tv/1399"
            spellcheck="false" autocomplete="off">
     <button class="admin-fix-btn" id="tmdb-fetch-btn">FETCH</button>
+    <button class="admin-fix-btn admin-clear-btn" id="tmdb-clear-btn">CLEAR</button>
     <span class="admin-fix-status" id="admin-fix-status"></span>
     <button class="admin-fix-btn admin-edit-btn" id="detail-edit-btn">EDIT FILM</button>
   `;
@@ -218,6 +219,12 @@ function injectAdminPanel(movie) {
   document.getElementById('tmdb-url-input').addEventListener('keydown', e => {
     if (e.key === 'Enter') handleTmdbFix(movie);
   });
+  document.getElementById('tmdb-clear-btn').addEventListener('click', () => {
+    if (confirm('Clear poster and description for this film?')) {
+      updateMovie(movie.id, { posterUrl: null, description: null, tmdbId: null });
+      location.reload();
+    }
+  });
   document.getElementById('detail-edit-btn').addEventListener('click', () => openFilmModal(movie));
 }
 
@@ -226,8 +233,8 @@ async function handleTmdbFix(movie) {
   const status = document.getElementById('admin-fix-status');
   const btn    = document.getElementById('tmdb-fetch-btn');
 
-  const tmdbId = extractTmdbId(input.value);
-  if (!tmdbId) {
+  const parsed = extractTmdbId(input.value.trim());
+  if (!parsed) {
     setStatus(status, 'Could not parse a TMDB ID from that.', 'error');
     return;
   }
@@ -236,20 +243,19 @@ async function handleTmdbFix(movie) {
   setStatus(status, 'Fetching…', '');
 
   try {
-    const data = await fetchTmdb(tmdbId);
+    const data = await fetchTmdb(parsed.id, parsed.type);
     if (data.status_message) {
       setStatus(status, `TMDB error: ${data.status_message}`, 'error');
       return;
     }
 
     const changes = {
-      tmdbId,
+      tmdbId:      parsed.id,
       posterUrl:   data.poster_path ? TMDB_IMG_BASE + data.poster_path : movie.posterUrl,
       description: data.overview    || null,
     };
 
-    updateMovie(movie.id, changes);   // from data.js
-
+    updateMovie(movie.id, changes);
     setStatus(status, 'Updated! Reloading…', 'ok');
     setTimeout(() => location.reload(), 800);
   } catch (err) {
@@ -259,16 +265,22 @@ async function handleTmdbFix(movie) {
   }
 }
 
-function fetchTmdb(id) {
-  return fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${TMDB_API_KEY}`)
+function fetchTmdb(id, type = 'movie') {
+  return fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${TMDB_API_KEY}`)
     .then(r => r.json());
 }
 
+// Returns { id, type } or null. Supports movie and TV series URLs.
 function extractTmdbId(raw) {
-  const urlMatch = raw.match(/themoviedb\.org\/movie\/(\d+)/);
-  if (urlMatch) return parseInt(urlMatch[1], 10);
-  const num = parseInt(raw.trim(), 10);
-  return isNaN(num) ? null : num;
+  const tvMatch    = raw.match(/themoviedb\.org\/tv\/(\d+)/);
+  if (tvMatch) return { id: parseInt(tvMatch[1], 10), type: 'tv' };
+
+  const movieMatch = raw.match(/themoviedb\.org\/movie\/(\d+)/);
+  if (movieMatch) return { id: parseInt(movieMatch[1], 10), type: 'movie' };
+
+  // Plain number — default to movie
+  const num = parseInt(raw, 10);
+  return isNaN(num) ? null : { id: num, type: 'movie' };
 }
 
 function setStatus(el, msg, type) {

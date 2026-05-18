@@ -640,6 +640,12 @@ img { display: block; max-width: 100%; }
 .admin-fix-btn:hover    { background: var(--red-bright); }
 .admin-fix-btn:disabled { opacity: 0.5; cursor: default; }
 
+.admin-clear-btn {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-dim);
+}
+.admin-clear-btn:hover { background: rgba(255,255,255,0.15); }
+
 .admin-fix-status {
   font-family: var(--font-ui);
   font-size: 0.68rem;
