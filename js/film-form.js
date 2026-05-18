@@ -17,7 +17,8 @@ const FORM_PROVIDER_MAP = {
   'Kanopy': 'Kanopy', 'MUBI': 'Mubi', 'MUBI Amazon Channel': 'Mubi',
 };
 
-let editingId = null;
+let editingId        = null;
+let pendingTmdbGenres = [];   // TMDB genre names captured during autofill
 
 // ─── Open / Close ─────────────────────────────────────────────────────────────
 function openFilmModal(movie = null) {
@@ -167,6 +168,9 @@ async function handleTmdbLookup() {
       cb.checked = platforms.includes(cb.value);
     });
 
+    // Store TMDB genres so they get saved with the movie
+    pendingTmdbGenres = (data.genres || []).map(g => g.name).filter(Boolean);
+
     setLookupStatus(status, `✓ Filled in from TMDB — check genres and rating.`, 'ok');
   } catch (e) {
     setLookupStatus(status, `Request failed: ${e.message}`, 'error');
@@ -210,6 +214,7 @@ function resetFilmForm() {
   const lookupStatus = document.getElementById('tmdb-lookup-status');
   if (lookupInput)  lookupInput.value   = '';
   if (lookupStatus) { lookupStatus.textContent = ''; delete lookupStatus.dataset.type; }
+  pendingTmdbGenres = [];
 
   document.querySelectorAll('input[name="status"]').forEach(r => {
     r.checked = r.value === 'watchlist';
@@ -247,6 +252,9 @@ function populateFilmForm(movie) {
     document.getElementById('poster-preview').src = movie.posterUrl;
     document.getElementById('poster-preview-wrap').hidden = false;
   }
+
+  // Restore existing TMDB genres so they aren't lost on re-save
+  pendingTmdbGenres = movie.tmdbGenres || [];
 }
 
 // ─── Submit ───────────────────────────────────────────────────────────────────
@@ -273,8 +281,9 @@ function handleFilmSubmit() {
     description: document.getElementById('film-overview').value.trim() || null,
     director:    document.getElementById('film-director').value.trim() || null,
     streaming,
-    posterUrl: document.getElementById('film-poster').value.trim() || null,
-    tmdbId:    null,
+    posterUrl:   document.getElementById('film-poster').value.trim() || null,
+    tmdbId:      null,
+    tmdbGenres:  pendingTmdbGenres,
   };
 
   if (editingId) {

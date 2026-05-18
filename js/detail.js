@@ -86,9 +86,15 @@ function renderHero(movie) {
             onerror="this.parentElement.innerHTML = '<div class=\'detail-poster-placeholder\'></div>'">`
     : `<div class="detail-poster-placeholder"></div>`;
 
-  const genreTags = movie.genres
+  const genreTags = (movie.genres || [])
     .map(g => `<span class="genre-tag">${escapeHTML(g)}</span>`)
     .join('');
+
+  const tmdbGenreTags = (movie.tmdbGenres || []).length
+    ? `<div class="detail-tmdb-genres">
+         ${(movie.tmdbGenres).map(g => `<span class="tmdb-genre-tag">${escapeHTML(g)}</span>`).join('')}
+       </div>`
+    : '';
 
   const ratingHTML = (movie.status === 'watched' && movie.rating != null)
     ? `<div class="detail-rating-block">
@@ -122,6 +128,8 @@ function renderHero(movie) {
       <div class="detail-genres">
         ${genreTags}
       </div>
+
+      ${tmdbGenreTags}
 
       ${ratingHTML}
 
@@ -274,11 +282,14 @@ async function handleTmdbFix(movie) {
       return;
     }
 
+    const tmdbGenres = (data.genres || []).map(g => g.name).filter(Boolean);
+
     const changes = {
       tmdbId:      parsed.id,
       posterUrl:   data.poster_path ? TMDB_IMG_BASE + data.poster_path : movie.posterUrl,
       description: data.overview    || null,
       streaming:   streaming.length  ? streaming : movie.streaming,
+      tmdbGenres:  tmdbGenres.length ? tmdbGenres : (movie.tmdbGenres || []),
     };
 
     updateMovie(movie.id, changes);
