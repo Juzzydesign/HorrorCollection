@@ -47,9 +47,9 @@
     "review": null,
     "director": "John Erick Dowdle",
     "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/a0tMQxbjlFHFBbL8Hc9KuzcOlo4.jpg",
-    "description": "Charlotte is from a family of beauty queens, but she has yet to win a title of her own. Her final chance is the Hiyas ng Dalampasigan Pageant, and her mother has taken steps to make sure that she wins. But her chances are dashed when the mysterious Samantha suddenly joins the contest. The two become bitter enemies following the contest, but they are soon forced by destiny to team up. It turns out the two have a hidden connection to a mystical past, and must work together to discover the truth about their heritage.",
-    "tmdbId": 228274
+    "posterUrl": "https://image.tmdb.org/t/p/w500/oJZSajKLJkoTOzSZQN2ZwRnPwHZ.jpg",
+    "description": "When a team of explorers venture into the catacombs that lie beneath the streets of Paris, they uncover the dark secret that lies within this city of the dead.",
+    "tmdbId": 256274
   },
   {
     "id": 4,
@@ -273,9 +273,9 @@
     "review": null,
     "director": "Alan Parker",
     "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/oArsQTD4bPPMtRjqr03SO9W6phF.jpg",
+    "posterUrl": null,
     "description": "Reincarnated 30 years after being killed in a suspicious on-set fire, a small-time actor is determined to punish the person who ignited the blaze.",
-    "tmdbId": 8079
+    "tmdbId": null
   },
   {
     "id": 17,
@@ -702,7 +702,7 @@
   {
     "id": 42,
     "title": "Ascension",
-    "year": null,
+    "year": 2024,
     "genres": [
       "Supernatural"
     ],
@@ -713,7 +713,7 @@
     "streaming": [
       "Tubi"
     ],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/eHLZiLMvBL7oK2LAWekemb3xFjS.jpg",
+    "posterUrl": null,
     "description": "Soon to be Martial Arts Master, Luna is forced to go on a dangerous journey when her teacher, Sensei Sirius is kidnapped by a vengeful ex-student.",
     "tmdbId": null
   },
@@ -1912,17 +1912,17 @@
     "title": "The Vow",
     "year": 2020,
     "genres": [
-      "Series",
-      "Cults"
+      "Cults",
+      "Series"
     ],
     "status": "watched",
-    "rating": 10,
+    "rating": 8.5,
     "review": null,
     "director": null,
     "streaming": [
       "Netflix"
     ],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/pc2ly9aKPmRrrFwOJinNNKafCv7.jpg",
+    "posterUrl": null,
     "description": "Yo and Boy, the two of them have to come across a shrine shaped like a Doraemon cartoon character. They argue about the sacredness of this shrine and whether we should really believe in it or not.",
     "tmdbId": null
   },
@@ -1960,5 +1960,20 @@
     "posterUrl": null,
     "description": null,
     "tmdbId": null
+  },
+  {
+    "title": "From",
+    "year": 2026,
+    "genres": [
+      "Series"
+    ],
+    "status": "watched",
+    "rating": 7.5,
+    "review": null,
+    "director": "John Griffin",
+    "streaming": [],
+    "posterUrl": null,
+    "tmdbId": null,
+    "id": 119
   }
 ]
