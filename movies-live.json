@@ -2034,5 +2034,20 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/qwT2I3ons0oD58jIppKmd4qLtvB.jpg",
     "tmdbId": null,
     "id": 124
+  },
+  {
+    "title": "The Blood on Satan's Claw",
+    "year": 1971,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "After a landsman in 18th century England discovers a corpse covered in fur buried in a field, the town becomes infected by \"the devil's skin,\" leading the local children to engage in demonic rituals and criminal behavior.",
+    "director": "Piers Haggard",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/shUG4L8iKu9g4bhZVI3SNsIOvD3.jpg",
+    "tmdbId": null,
+    "id": 125
   }
 ]
