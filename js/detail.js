@@ -126,13 +126,13 @@ function renderHero(movie) {
         ${runtimeText ? `<span>${runtimeText}</span>` : ''}
       </div>
 
+      ${ratingHTML}
+
       <div class="detail-genres">
         ${genreTags}
       </div>
 
       <div class="detail-divider"></div>
-
-      ${ratingHTML}
 
       ${synopsisHTML}
     </div>
