@@ -2118,5 +2118,22 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/tWoSE8SH6XhgWKHIL3p0sj7lA3V.jpg",
     "tmdbId": null,
     "id": 129
+  },
+  {
+    "title": "Terrified",
+    "year": 2018,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Police commissioner Funes and three researchers of supernatural phenomena investigate inexplicable events that are occurring in the suburbs of Buenos Aires.",
+    "director": "Demián Rugna",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/eMP4F0POBgrB4icn6XgYeLLIrld.jpg",
+    "tmdbId": null,
+    "id": 130
   }
 ]
