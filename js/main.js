@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   updateAuthUI();   // from auth.js — sync login state on load
+  toggleRatingRow();
 
   // Render immediately from localStorage — page appears instantly
   if (!restoreReturnState()) renderGrid();
@@ -78,6 +79,7 @@ function restoreReturnState() {
     activeStatus    = s.status    || 'all';
     activeRatingKey = s.ratingKey || 'all';
     syncFilterUI();
+    toggleRatingRow();
     renderGrid();
     requestAnimationFrame(() => window.scrollTo(0, s.scrollY || 0));
     return true;
@@ -109,9 +111,21 @@ function setupViewTabs() {
       btn.classList.add('active');
       btn.setAttribute('aria-selected', 'true');
       activeStatus = btn.dataset.status;
+
+      // Hide rating filters on Watchlist (no ratings to filter by)
+      if (activeStatus === 'watchlist') {
+        activeRatingKey = 'all';
+        syncFilterUI();
+      }
+      toggleRatingRow();
       renderGrid();
     });
   });
+}
+
+function toggleRatingRow() {
+  const row = document.querySelector('.filters-row--ratings');
+  if (row) row.hidden = activeStatus === 'watchlist';
 }
 
 // ─── Genre filters ────────────────────────────────────────────────────────────
