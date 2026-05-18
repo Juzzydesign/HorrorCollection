@@ -320,16 +320,17 @@
     "year": 2005,
     "genres": [
       "Voodoo",
-      "Psychological"
+      "Psychological",
+      "Folk"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 9,
     "review": null,
     "director": "Iain Softley",
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/wHmubdzrVw8oq7htzrf364wsJNp.jpg",
     "description": "A hospice nurse working at a spooky New Orleans plantation home finds herself entangled in a mystery involving the house's dark past.",
-    "tmdbId": 9913
+    "tmdbId": null
   },
   {
     "id": 21,
@@ -1093,9 +1094,9 @@
     "review": null,
     "director": "George Sluizer",
     "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/8WJLVLj1QE0VDhb6u9ReCRTFxDY.jpg",
-    "description": "Documentary on the French-Algerian conflict 1954-1962 which was never officially called a \"war\", including interviews with some of the survivors.",
-    "tmdbId": 17283
+    "posterUrl": "https://image.tmdb.org/t/p/w500/whCG6TGm3h9AHBkfh5M0MnJ8zT0.jpg",
+    "description": "The boyfriend of an abducted woman never gives up the search as the abductor looks on.",
+    "tmdbId": 1644
   },
   {
     "id": 67,
