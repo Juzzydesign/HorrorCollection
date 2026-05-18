@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; background: #080808; }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', 'Arial Black', sans-serif;
+    position: relative;
+  }
+
+  /* Red accent lines */
+  .line-top {
+    position: absolute;
+    top: 80px;
+    left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #c9150e 20%, #c9150e 80%, transparent);
+  }
+  .line-bottom {
+    position: absolute;
+    bottom: 80px;
+    left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #c9150e 20%, #c9150e 80%, transparent);
+  }
+
+  /* Corner marks */
+  .corner { position: absolute; width: 20px; height: 20px; }
+  .corner-tl { top: 30px; left: 40px; border-top: 1px solid #c9150e; border-left: 1px solid #c9150e; }
+  .corner-tr { top: 30px; right: 40px; border-top: 1px solid #c9150e; border-right: 1px solid #c9150e; }
+  .corner-bl { bottom: 30px; left: 40px; border-bottom: 1px solid #c9150e; border-left: 1px solid #c9150e; }
+  .corner-br { bottom: 30px; right: 40px; border-bottom: 1px solid #c9150e; border-right: 1px solid #c9150e; }
+
+  .title {
+    font-size: 128px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #c9150e;
+    text-align: center;
+    line-height: 0.9;
+    text-shadow: 0 0 80px rgba(201,21,14,0.3);
+  }
+
+  .tagline {
+    margin-top: 28px;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    text-align: center;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="line-top"></div>
+  <div class="line-bottom"></div>
+  <div class="corner corner-tl"></div>
+  <div class="corner corner-tr"></div>
+  <div class="corner corner-bl"></div>
+  <div class="corner corner-br"></div>
+
+  <h1 class="title">The Obscure<br>Collective</h1>
+  <p class="tagline">a personal collection of the damned</p>
+</body>
+</html>
