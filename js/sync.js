@@ -60,7 +60,25 @@ async function loadRemoteMovies() {
   // Empty array means the file was never synced — keep whatever is local.
   if (!movies || movies.length === 0) return false;
 
-  localStorage.setItem(MOVIES_KEY, JSON.stringify(movies));
+  // Preserve any locally-uploaded (base64) posters — remote data strips
+  // them to keep file size small, so we stitch them back in here.
+  try {
+    const current = JSON.parse(localStorage.getItem(MOVIES_KEY) || '[]');
+    const localPosters = {};
+    current.forEach(m => {
+      if (m.posterUrl && m.posterUrl.startsWith('data:')) {
+        localPosters[m.id] = m.posterUrl;
+      }
+    });
+    const merged = movies.map(m => ({
+      ...m,
+      posterUrl: localPosters[m.id] || m.posterUrl,
+    }));
+    localStorage.setItem(MOVIES_KEY, JSON.stringify(merged));
+  } catch {
+    localStorage.setItem(MOVIES_KEY, JSON.stringify(movies));
+  }
+
   return true;
 }
 

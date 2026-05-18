@@ -858,8 +858,8 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: 20px;
-  margin-bottom: 0;
+  margin-top: 6px;
+  margin-bottom: 20px;
 }
 
 .blood-drops {
