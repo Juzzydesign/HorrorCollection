@@ -2167,5 +2167,20 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/b0RWuqzgvyfiIYU4QfgJHhmxZF4.jpg",
     "tmdbId": null,
     "id": 132
+  },
+  {
+    "title": "Obsession",
+    "year": 2026,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+    "director": "Curry Barker",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
+    "tmdbId": null,
+    "id": 133
   }
 ]
