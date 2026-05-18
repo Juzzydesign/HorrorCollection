@@ -650,7 +650,7 @@
       "Supernatural",
       "Folk"
     ],
-    "status": "watched",
+    "status": "watchlist",
     "rating": null,
     "review": null,
     "director": "Daniel Kokotajlo",
@@ -1646,22 +1646,6 @@
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/qxUiwpRKagcNHFlly5IpcbX0QPI.jpg",
     "description": "In the 15th century, a young goatherd living alone in a mountain hut feels a dark presence in the woods.",
-    "tmdbId": null
-  },
-  {
-    "id": 101,
-    "title": "Brotherhood of the Wolf",
-    "year": 2001,
-    "genres": [
-      "Folk"
-    ],
-    "status": "watchlist",
-    "rating": null,
-    "review": null,
-    "director": "Christophe Gans",
-    "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/Ahd4F7azhjsxgXYjVyFmVzJu9LB.jpg",
-    "description": "In 18th century France, the Chevalier de Fronsac and his Native American friend Mani are sent by the King to the Gevaudan province to investigate the killings of hundreds by a mysterious beast.",
     "tmdbId": null
   },
   {
