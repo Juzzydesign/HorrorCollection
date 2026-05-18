@@ -1517,10 +1517,12 @@
     "rating": null,
     "review": null,
     "director": "Mary Bronstein",
-    "streaming": [],
-    "posterUrl": null,
-    "description": null,
-    "tmdbId": null
+    "streaming": [
+      "Max"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/va0TQ9WprMXRqQAzY56vyqY0Yd5.jpg",
+    "description": "With her life crashing down around her, Linda attempts to navigate her child's mysterious illness, her absent husband, a missing person, and an increasingly hostile relationship with her therapist.",
+    "tmdbId": 1160360
   },
   {
     "id": 92,
