@@ -66,7 +66,11 @@
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/1Q3GlCXGYWELifxANYZ5OVMRVZl.jpg",
     "description": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Child harm"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 6,
@@ -926,7 +930,12 @@
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/uHTmlcivbPeclEdmtuQg3zOQWPS.jpg",
     "description": "Hayley’s a smart, charming teenage girl. Jeff’s a handsome, smooth fashion photographer. An Internet chat, a coffee shop meet-up, an impromptu fashion shoot back at Jeff’s place. Jeff thinks it’s his lucky night. He’s in for a surprise.",
-    "tmdbId": 2652
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Sexual violence",
+      "Child harm"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 56,
@@ -1006,7 +1015,11 @@
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/dA4N6uWOnEMgbxXwFX7qX7adzs8.jpg",
     "description": "When an American family is invited to spend the weekend at the idyllic country estate of a charming British family they befriended on vacation, what begins as a dream holiday soon warps into a snarled psychological nightmare.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Child harm"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 62,
@@ -1102,7 +1115,13 @@
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/vqFIC6miVQWBUrkQYk3Fe0jqXrD.jpg",
     "description": "Fourteen-year–old Megan and her best friend Amy spend a lot of time on the internet, posting videos of themselves and chatting with guys online. One night Megan chats with a guy named Josh who convinces her to meet him for a date. The next day, Megan is missing—forever. Based on actual cases of child abduction.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Sexual violence",
+      "Torture",
+      "Child harm"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 68,
@@ -1415,7 +1434,11 @@
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/nc9ZqrJFbcUdlMg9lxXXtJb24jU.jpg",
     "description": "An aspiring actress crosses paths with a prolific serial killer in '70s LA when they're cast on an episode of \"The Dating Game.\"",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Sexual violence"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 87,
@@ -1602,8 +1625,8 @@
     "title": "Tusk",
     "year": 2014,
     "genres": [
-      "Slasher",
-      "Psychological"
+      "Psychological",
+      "Slasher"
     ],
     "status": "watched",
     "rating": 8,
@@ -1612,7 +1635,11 @@
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/pA2SgITmH0lzet9Nn5cxeinRKMv.jpg",
     "description": "When his best friend and podcast co-host goes missing in the backwoods of Canada, a young guy joins forces with his friend's girlfriend to search for him.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Torture"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 99,
