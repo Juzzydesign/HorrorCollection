@@ -144,6 +144,8 @@ img { display: block; max-width: 100%; }
   line-height: 0.9;
   letter-spacing: 0.12em;
   color: var(--red);
+  user-select: none;
+  -webkit-user-select: none;
   /* Slight print texture on the text */
   text-shadow:
     2px 2px 0 rgba(0,0,0,0.5),
