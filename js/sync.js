@@ -14,7 +14,7 @@
 const SYNC_PAT_KEY = 'horror_sync_pat';
 const SYNC_RAW_URL = 'https://raw.githubusercontent.com/Juzzydesign/HorrorCollection/main/movies-live.json';
 const SYNC_API_URL = 'https://api.github.com/repos/Juzzydesign/HorrorCollection/contents/movies-live.json';
-const SYNC_TIMEOUT = 6000; // ms before giving up on the fetch
+const SYNC_TIMEOUT = 8000; // ms before giving up on the background fetch
 
 // ─── PAT helpers ─────────────────────────────────────────────────────────────
 function getSyncPAT()        { return localStorage.getItem(SYNC_PAT_KEY) || ''; }
@@ -47,17 +47,23 @@ async function fetchRemoteMovies() {
 }
 
 /**
- * Loads remote movies into localStorage so getMovies() returns them.
- * Silently falls back to local data if the fetch fails.
- * Call this early in DOMContentLoaded (before rendering the page).
+ * Fetches remote movies in the background and updates localStorage if the
+ * data has changed. Returns true if localStorage was updated (caller can
+ * re-render), false if nothing changed or the fetch failed.
+ *
+ * IMPORTANT: do NOT await this before rendering — render immediately from
+ * localStorage first, then call this and re-render only if it returns true.
  */
 async function loadRemoteMovies() {
   const movies = await fetchRemoteMovies();
-  // Only update localStorage if the remote file has actual content.
-  // An empty [] means the file has never been synced — keep local data.
-  if (movies && movies.length > 0) {
-    localStorage.setItem(MOVIES_KEY, JSON.stringify(movies));
-  }
+  // Empty array means the file was never synced — keep whatever is local.
+  if (!movies || movies.length === 0) return false;
+
+  const incoming = JSON.stringify(movies);
+  if (localStorage.getItem(MOVIES_KEY) === incoming) return false; // no change
+
+  localStorage.setItem(MOVIES_KEY, incoming);
+  return true; // data updated — caller should re-render
 }
 
 // ─── Push movies to GitHub (admin only) ──────────────────────────────────────

@@ -9,11 +9,7 @@ let searchQuery  = '';
 const RETURN_STATE_KEY = 'horror_return_state';
 
 // ─── Entry point ──────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', async () => {
-  // Pull the latest data from GitHub before rendering so visitors always see
-  // the most up-to-date collection. Falls back to localStorage silently.
-  await loadRemoteMovies();
-
+document.addEventListener('DOMContentLoaded', () => {
   setupViewTabs();
   setupGenreFilters();
   setupSearch();
@@ -32,7 +28,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   updateAuthUI();   // from auth.js — sync login state on load
+
+  // Render immediately from localStorage — page appears instantly
   if (!restoreReturnState()) renderGrid();
+
+  // Then fetch remote data in the background and refresh only if it changed
+  loadRemoteMovies().then(changed => {
+    if (changed) renderGrid();
+  });
 });
 
 // Save scroll + filter state whenever we leave this page

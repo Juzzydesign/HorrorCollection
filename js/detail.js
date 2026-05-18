@@ -10,11 +10,7 @@ function isAdminLoggedIn() {
   return sessionStorage.getItem('horror_archive_session') === 'authenticated';
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
-  // Pull the latest data from GitHub so the detail page reflects any
-  // changes made on another device. Falls back to localStorage silently.
-  await loadRemoteMovies();
-
+document.addEventListener('DOMContentLoaded', () => {
   // Use history.back() so the browser restores scroll + filter state
   document.getElementById('back-btn')?.addEventListener('click', e => {
     if (history.length > 1) {
@@ -25,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const movieId = getMovieIdFromURL();
 
-  // Always read from localStorage (data.js) so edits made on the grid are reflected here
+  // Render immediately from localStorage — page appears instantly
   const movie = getMovies ? getMovies().find(m => m.id === movieId)
                            : MOVIES.find(m => m.id === movieId);
 
@@ -46,6 +42,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       location.reload();
     });
   }
+
+  // Fetch remote data in the background; re-render the detail if it changed
+  loadRemoteMovies().then(changed => {
+    if (!changed) return;
+    const refreshed = (getMovies ? getMovies() : MOVIES).find(m => m.id === movieId);
+    if (refreshed) renderDetail(refreshed);
+  });
 });
 
 // ─── Get movie ID from URL query param ───────────────────────────────────────
