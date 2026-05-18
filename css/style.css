@@ -104,10 +104,50 @@ img { display: block; max-width: 100%; }
 /* Top strip */
 .header-top-strip {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 24px;
   border-bottom: 1px solid var(--rule-subtle);
+  gap: 12px;
+}
+
+/* Search in header — left side */
+.header-search {
+  flex: 1;
+  max-width: 260px;
+}
+
+.header-search input {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 5px 12px;
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.header-search input::placeholder {
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.header-search input:focus {
+  border-color: var(--red);
+  background: rgba(255,255,255,0.07);
+}
+
+/* Auth buttons group — right side */
+.header-auth-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 .header-top-strip span {
@@ -272,16 +312,16 @@ img { display: block; max-width: 100%; }
 }
 
 .filter-btn.active {
-  color: #000;
-  background: var(--red);
-  border-color: var(--red);
+  color: var(--red);
+  background: rgba(201,21,14,0.15);
+  border-color: rgba(201,21,14,0.5);
 }
 
-/* Rating filter — slightly muted active colour to distinguish from genre */
+/* Rating filter active — gold opacity to distinguish from genre */
 .filter-btn.rating-filter.active {
-  color: #000;
-  background: var(--gold);
-  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(201,168,76,0.12);
+  border-color: rgba(201,168,76,0.45);
 }
 
 /* Divider between genre pills and rating pills */
@@ -1215,15 +1255,14 @@ img { display: block; max-width: 100%; }
     flex-shrink: 0;
   }
 
-  /* ── Search bar: full width ── */
-  .search-bar {
-    width: 100%;
+  /* ── Header search — let it grow on small screens ── */
+  .header-search {
+    max-width: none;
+    flex: 1;
   }
-  .search-bar input {
-    width: 100%;
-    font-size: 0.82rem;
-    padding: 10px 14px;
-    box-sizing: border-box;
+  .header-search input {
+    font-size: 0.8rem;
+    padding: 8px 12px;
   }
 
   /* ── Add film button: full width ── */
@@ -1382,7 +1421,8 @@ img { display: block; max-width: 100%; }
 }
 
 .view-tab.active {
-  color: var(--text-primary);
+  color: #fff;
+  background: var(--red);
   border-bottom-color: transparent;
 }
 
@@ -1398,8 +1438,8 @@ img { display: block; max-width: 100%; }
 }
 
 .view-tab.active .tab-count {
-  color: var(--text-secondary);
-  background: rgba(201,21,14,0.18);
+  color: rgba(255,255,255,0.85);
+  background: rgba(0,0,0,0.2);
 }
 
 /* =====================================================

@@ -26,8 +26,14 @@
   ══════════════════════════════════════════════ -->
   <header class="site-header">
     <div class="header-top-strip">
-      <button class="save-btn" id="save-btn" hidden aria-label="Save changes">SAVE</button>
-      <button class="login-btn" id="login-btn" aria-label="Admin login">ADMIN LOGIN</button>
+      <div class="header-search">
+        <input type="search" id="search-input" placeholder="Search…"
+               autocomplete="off" aria-label="Search films">
+      </div>
+      <div class="header-auth-group">
+        <button class="save-btn" id="save-btn" hidden aria-label="Save changes">SAVE</button>
+        <button class="login-btn" id="login-btn" aria-label="Admin login">ADMIN LOGIN</button>
+      </div>
     </div>
     <div class="header-title-block">
       <h1 class="site-title">The Obscure Collective</h1>
@@ -72,15 +78,11 @@
 
           <span class="filter-divider"></span>
 
-          <button class="filter-btn rating-filter active" data-min-rating="0">All Scores</button>
+          <button class="filter-btn rating-filter active" data-min-rating="0">All Ratings</button>
           <button class="filter-btn rating-filter" data-min-rating="6">6+</button>
           <button class="filter-btn rating-filter" data-min-rating="7">7+</button>
           <button class="filter-btn rating-filter" data-min-rating="8">8+</button>
           <button class="filter-btn rating-filter" data-min-rating="9">9+</button>
-        </div>
-        <div class="search-bar">
-          <input type="search" id="search-input" placeholder="Search…"
-                 autocomplete="off" aria-label="Search films">
         </div>
         <!-- Add Film button — only visible when logged in -->
         <button class="add-movie-btn" id="add-movie-btn" hidden aria-label="Add a film">
