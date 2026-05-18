@@ -748,10 +748,12 @@
     "rating": null,
     "review": null,
     "director": "Vilde Hoel",
-    "streaming": [],
+    "streaming": [
+      "Prime"
+    ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/pzluRg3Jnm2YPs7CQyCrFJ8JADl.jpg",
     "description": "Christian, a millionaire heir, meets Sigrid, a young student, on a dating app. They hit it off quickly, but there's only one problem: Christian lives with Frank, a man who dresses up and constantly acts like a dog.",
-    "tmdbId": null
+    "tmdbId": 983507
   },
   {
     "id": 45,
