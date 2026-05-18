@@ -828,10 +828,12 @@
     "rating": null,
     "review": null,
     "director": null,
-    "streaming": [],
+    "streaming": [
+      "Netflix"
+    ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/yDcc3OWNEtzjDtJly1OyZShtTMV.jpg",
     "description": "When ghosts must compete to survive in the underworld by haunting the living, one unassuming young woman needs help creating a lasting performance while under the tutelage of a passionate agent and a washed-up diva.",
-    "tmdbId": null
+    "tmdbId": 1006724
   },
   {
     "id": 50,
