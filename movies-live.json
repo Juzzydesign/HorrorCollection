@@ -60,7 +60,7 @@
       "Supernatural"
     ],
     "status": "watched",
-    "rating": 10,
+    "rating": 9,
     "review": null,
     "director": "Danny Philippou, Michael Philippou",
     "streaming": [],
@@ -959,9 +959,9 @@
     "review": null,
     "director": "Larry Clark",
     "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/q4lZrHWTWuybb6pzMucj1c0ngCW.jpg",
-    "description": "After taking his dying father's advice, Hal dates only the embodiments of female physical perfection. But that all changes after Hal has an unexpected run-in with self-help guru Tony Robbins. Intrigued by Hal's shallowness, Robbins hypnotizes him into seeing the beauty that exists even in the least physically appealing women. Hal soon falls for Rosemary, but he doesn't realize that his gorgeous girlfriend is actually a 300-pound-not-so-hottie.",
-    "tmdbId": 9889
+    "posterUrl": "https://image.tmdb.org/t/p/w500/vMJ2WHBbK4Jr3eDuF1e7O6lbC8m.jpg",
+    "description": "A group of teenagers in South Florida enact a murder plot against their mutual bully, Bobby, who has emotionally, physically, and sexually abused them for years.",
+    "tmdbId": 9517
   },
   {
     "id": 58,
@@ -1525,12 +1525,10 @@
     "rating": null,
     "review": null,
     "director": null,
-    "streaming": [
-      "Hulu"
-    ],
+    "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/38OuhBN7yga2nJSP16VPSOJ2Mwz.jpg",
     "description": "A content moderator is tasked with purging offensive media from the internet. When she witnesses a crime in a video, she is lured away from the safety of her keyboard as she obsessively seeks to hold someone accountable.",
-    "tmdbId": 1215020
+    "tmdbId": null
   },
   {
     "id": 93,
