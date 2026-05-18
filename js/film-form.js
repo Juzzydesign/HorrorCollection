@@ -5,6 +5,18 @@
  * so each page can react (re-render grid or reload detail).
  */
 
+const TMDB_KEY      = '41089d29cdd93cab75f143d7d95d23ce';
+const TMDB_IMG      = 'https://image.tmdb.org/t/p/w500';
+
+// Provider name → our platform label
+const FORM_PROVIDER_MAP = {
+  'Netflix': 'Netflix', 'Amazon Prime Video': 'Prime',
+  'Hulu': 'Hulu', 'Max': 'Max', 'HBO Max': 'Max',
+  'Peacock Premium': 'Peacock', 'Peacock Premium Plus': 'Peacock',
+  'Shudder': 'Shudder', 'Tubi TV': 'Tubi',
+  'Kanopy': 'Kanopy', 'MUBI': 'Mubi', 'MUBI Amazon Channel': 'Mubi',
+};
+
 let editingId = null;
 
 // ─── Open / Close ─────────────────────────────────────────────────────────────
@@ -75,6 +87,107 @@ function setupFilmModal() {
   });
 
   document.getElementById('film-delete-btn')?.addEventListener('click', handleFilmDelete);
+  setupTmdbLookup();
+}
+
+// ─── TMDB auto-fill ───────────────────────────────────────────────────────────
+function setupTmdbLookup() {
+  const btn   = document.getElementById('tmdb-lookup-btn');
+  const input = document.getElementById('tmdb-lookup-input');
+  if (!btn || !input) return;
+
+  btn.addEventListener('click', handleTmdbLookup);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); handleTmdbLookup(); }
+  });
+}
+
+async function handleTmdbLookup() {
+  const input  = document.getElementById('tmdb-lookup-input');
+  const status = document.getElementById('tmdb-lookup-status');
+  const btn    = document.getElementById('tmdb-lookup-btn');
+
+  const parsed = parseTmdbUrl(input.value.trim());
+  if (!parsed) {
+    setLookupStatus(status, 'Could not find a TMDB ID in that URL.', 'error');
+    return;
+  }
+
+  btn.disabled = true;
+  setLookupStatus(status, 'Fetching…', '');
+
+  try {
+    const [data, providers] = await Promise.all([
+      fetch(`https://api.themoviedb.org/3/${parsed.type}/${parsed.id}?api_key=${TMDB_KEY}&append_to_response=credits`).then(r => r.json()),
+      fetch(`https://api.themoviedb.org/3/${parsed.type}/${parsed.id}/watch/providers?api_key=${TMDB_KEY}`).then(r => r.json()),
+    ]);
+
+    if (data.status_message) {
+      setLookupStatus(status, `TMDB: ${data.status_message}`, 'error');
+      return;
+    }
+
+    // Title
+    const title = data.title || data.name || '';
+    if (title) document.getElementById('film-title').value = title;
+
+    // Year
+    const dateStr = data.release_date || data.first_air_date || '';
+    const year    = dateStr ? parseInt(dateStr.split('-')[0], 10) : null;
+    if (year) document.getElementById('film-year').value = year;
+
+    // Director (movies only; TV shows use series creators)
+    const crew      = data.credits?.crew || [];
+    const creators  = data.created_by   || [];
+    const director  = crew.find(p => p.job === 'Director')?.name
+                   || creators[0]?.name || '';
+    if (director) document.getElementById('film-director').value = director;
+
+    // Overview
+    if (data.overview) document.getElementById('film-overview').value = data.overview;
+
+    // Poster
+    if (data.poster_path) {
+      const posterUrl  = TMDB_IMG + data.poster_path;
+      const posterInput = document.getElementById('film-poster');
+      const wrap        = document.getElementById('poster-preview-wrap');
+      const preview     = document.getElementById('poster-preview');
+      posterInput.value = posterUrl;
+      preview.src       = posterUrl;
+      wrap.hidden       = false;
+    }
+
+    // Streaming (US flatrate)
+    const flatrate = providers.results?.US?.flatrate || [];
+    const platforms = flatrate
+      .map(p => FORM_PROVIDER_MAP[p.provider_name])
+      .filter(Boolean)
+      .filter((v, i, a) => a.indexOf(v) === i);
+    document.querySelectorAll('input[name="streaming"]').forEach(cb => {
+      cb.checked = platforms.includes(cb.value);
+    });
+
+    setLookupStatus(status, `✓ Filled in from TMDB — check genres and rating.`, 'ok');
+  } catch (e) {
+    setLookupStatus(status, `Request failed: ${e.message}`, 'error');
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+function parseTmdbUrl(raw) {
+  const tv    = raw.match(/themoviedb\.org\/tv\/(\d+)/);
+  if (tv) return { id: parseInt(tv[1], 10), type: 'tv' };
+  const movie = raw.match(/themoviedb\.org\/movie\/(\d+)/);
+  if (movie) return { id: parseInt(movie[1], 10), type: 'movie' };
+  const num   = parseInt(raw, 10);
+  return isNaN(num) ? null : { id: num, type: 'movie' };
+}
+
+function setLookupStatus(el, msg, type) {
+  if (!el) return;
+  el.textContent  = msg;
+  el.dataset.type = type;
 }
 
 function toggleWatchedFields() {
@@ -89,9 +202,14 @@ function resetFilmForm() {
   document.getElementById('film-director').value    = '';
   document.getElementById('film-overview').value    = '';
   document.getElementById('film-poster').value      = '';
-  document.getElementById('film-rating').value   = '7';
+  document.getElementById('film-rating').value      = '7';
   document.getElementById('rating-display').textContent = '7 / 10';
   document.getElementById('poster-preview-wrap').hidden = true;
+
+  const lookupInput  = document.getElementById('tmdb-lookup-input');
+  const lookupStatus = document.getElementById('tmdb-lookup-status');
+  if (lookupInput)  lookupInput.value   = '';
+  if (lookupStatus) { lookupStatus.textContent = ''; delete lookupStatus.dataset.type; }
 
   document.querySelectorAll('input[name="status"]').forEach(r => {
     r.checked = r.value === 'watched';

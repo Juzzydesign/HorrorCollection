@@ -62,6 +62,18 @@
       <form id="film-form" novalidate>
         <input type="hidden" id="film-id">
 
+        <!-- ── TMDB auto-fill ── -->
+        <div class="form-section tmdb-lookup-section">
+          <p class="form-section-label">Auto-fill from TMDB</p>
+          <div class="tmdb-lookup-row">
+            <input class="form-input" type="text" id="tmdb-lookup-input"
+                   placeholder="Paste TMDB URL — movie/228274 or tv/1399"
+                   spellcheck="false" autocomplete="off">
+            <button type="button" class="admin-fix-btn" id="tmdb-lookup-btn">FETCH</button>
+          </div>
+          <p class="tmdb-lookup-status" id="tmdb-lookup-status"></p>
+        </div>
+
         <div class="form-section">
           <p class="form-section-label">Status</p>
           <div class="radio-group">

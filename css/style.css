@@ -640,6 +640,21 @@ img { display: block; max-width: 100%; }
 .admin-fix-btn:hover    { background: var(--red-bright); }
 .admin-fix-btn:disabled { opacity: 0.5; cursor: default; }
 
+/* TMDB lookup row inside the film modal */
+.tmdb-lookup-section { border-bottom: 1px solid rgba(255,255,255,0.07); padding-bottom: 20px; margin-bottom: 20px; }
+.tmdb-lookup-row { display: flex; gap: 8px; align-items: stretch; }
+.tmdb-lookup-row .form-input { flex: 1; font-size: 0.85rem; }
+.tmdb-lookup-row .admin-fix-btn { flex-shrink: 0; padding: 9px 16px; }
+.tmdb-lookup-status {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  margin-top: 8px;
+  min-height: 1em;
+}
+.tmdb-lookup-status[data-type="ok"]    { color: #5a9e6f; }
+.tmdb-lookup-status[data-type="error"] { color: var(--red-bright); }
+
 .admin-clear-btn {
   background: rgba(255,255,255,0.08);
   color: var(--text-dim);
