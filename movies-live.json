@@ -2102,102 +2102,20 @@
     "id": 128
   },
   {
-    "title": "The Medium",
-    "year": 2021,
-    "genres": [
-      "Supernatural",
-      "Folk"
-    ],
-    "status": "watched",
-    "rating": 7.5,
-    "description": "A shaman's family learn that their goddess is supposedly controlling one of them. However, their lives take a frightening turn when they realise the goddess has nothing to do with the possession.",
-    "director": "Banjong Pisanthanakun",
-    "streaming": [
-      "Shudder"
-    ],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/tWoSE8SH6XhgWKHIL3p0sj7lA3V.jpg",
-    "tmdbId": null,
-    "id": 129
-  },
-  {
-    "title": "Terrified",
-    "year": 2018,
-    "genres": [
-      "Supernatural"
-    ],
-    "status": "watchlist",
-    "rating": null,
-    "description": "Police commissioner Funes and three researchers of supernatural phenomena investigate inexplicable events that are occurring in the suburbs of Buenos Aires.",
-    "director": "Demián Rugna",
-    "streaming": [
-      "Shudder"
-    ],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/eMP4F0POBgrB4icn6XgYeLLIrld.jpg",
-    "tmdbId": null,
-    "id": 130
-  },
-  {
-    "title": "When Evil Lurks",
-    "year": 2023,
-    "genres": [
-      "Supernatural"
-    ],
-    "status": "watchlist",
-    "rating": null,
-    "description": "When brothers Pedro and Jimi discover that a demonic infection has been festering in a nearby farmhouse, they attempt to evict the victim from their land. Failing to adhere to the proper rites of exorcism, their reckless actions inadvertently trigger an epidemic of possessions across their rural community.",
-    "director": "Demián Rugna",
-    "streaming": [
-      "Shudder"
-    ],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/iQ7G9LhP7NRRIUM4Vlai3eOxBAc.jpg",
-    "tmdbId": null,
-    "id": 131
-  },
-  {
-    "title": "The Plague",
+    "title": "Sisu: Road to Revenge",
     "year": 2025,
     "genres": [
-      "Psychological"
+      "Slasher"
     ],
     "status": "watchlist",
     "rating": null,
-    "description": "A socially awkward tween endures the ruthless hierarchy at a water polo camp, his anxiety spiraling into psychological turmoil over the summer.",
-    "director": "Charlie Polinger",
-    "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/b0RWuqzgvyfiIYU4QfgJHhmxZF4.jpg",
-    "tmdbId": null,
-    "id": 132
-  },
-  {
-    "title": "Obsession",
-    "year": 2026,
-    "genres": [
-      "Psychological"
-    ],
-    "status": "watchlist",
-    "rating": null,
-    "description": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-    "director": "Curry Barker",
-    "streaming": [],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
-    "tmdbId": null,
-    "id": 133
-  },
-  {
-    "title": "The Cursed",
-    "year": 2021,
-    "genres": [
-      "Supernatural"
-    ],
-    "status": "watchlist",
-    "rating": null,
-    "description": "In the late 19th century, a brutal land baron slaughters a Roma clan, unleashing a curse on his family and village. In the days that follow, the townspeople are plagued by nightmares, the baron's son goes missing, and a boy is found murdered. The locals suspect a wild animal, but a visiting pathologist warns of a more sinister presence lurking in the woods.",
-    "director": "Sean Ellis",
+    "description": "Returning to the house where his family was brutally murdered during the war, \"the man who refuses to die\" dismantles it, loads it on a truck, and is determined to rebuild it somewhere safe in their honor. When the commander who killed his family comes back hellbent on finishing the job, a relentless, eye-popping cross-country chase ensues.",
+    "director": "Jalmari Helander",
     "streaming": [
       "Netflix"
     ],
-    "posterUrl": "https://image.tmdb.org/t/p/w500/bewmBcjJxHeipS1PNu9Lfyvt3zY.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/jNsttCWZyPtW66MjhUozBzVsRb7.jpg",
     "tmdbId": null,
-    "id": 134
+    "id": 129
   }
 ]
