@@ -1340,7 +1340,7 @@
     "genres": [
       "Psychological"
     ],
-    "status": "watched",
+    "status": "watchlist",
     "rating": null,
     "review": null,
     "director": "Greg Jardin",
@@ -1349,7 +1349,9 @@
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/6jzwaLoDurD6Jn2ILb42nFcn3xq.jpg",
     "description": "A pre-wedding reunion descends into a psychological nightmare for a group of college friends when a surprise guest arrives with a mysterious suitcase.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "id": 82,
