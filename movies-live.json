@@ -1881,23 +1881,6 @@
     "tmdbId": 54671
   },
   {
-    "id": 115,
-    "title": "Bates Motel",
-    "year": 2013,
-    "genres": [
-      "Series",
-      "Psychological"
-    ],
-    "status": "watchlist",
-    "rating": null,
-    "review": null,
-    "director": null,
-    "streaming": [],
-    "posterUrl": null,
-    "description": null,
-    "tmdbId": null
-  },
-  {
     "id": 116,
     "title": "The Vow",
     "year": 2020,
@@ -1968,5 +1951,22 @@
     "tmdbId": 124364,
     "id": 119,
     "description": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down."
+  },
+  {
+    "title": "Heresy",
+    "year": 2024,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "In a medieval Dutch village, a young woman is caught between her faith, fanatic townsfolk and the dark forces lurking in the woods.",
+    "director": "Didier Konings",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/gGStwXLjGe9WaodCCgeVwkDDwS3.jpg",
+    "tmdbId": null,
+    "id": 120
   }
 ]
