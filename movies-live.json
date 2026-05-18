@@ -1344,17 +1344,17 @@
   {
     "id": 82,
     "title": "Milk and Serial",
-    "year": null,
+    "year": 2024,
     "genres": [
       "Psychological"
     ],
     "status": "watchlist",
     "rating": null,
     "review": null,
-    "director": null,
+    "director": "Curry Barker",
     "streaming": [],
-    "posterUrl": null,
-    "description": null,
+    "posterUrl": "https://raw.githubusercontent.com/Juzzydesign/HorrorCollection/main/posters/82.jpg",
+    "description": "A birthday prank gone wrong forces a popular social media duo to confront a terrifying situation and its consequences. This micro-budget independent film (barely $800) was released directly on YouTube and achieved some virality and press coverage due to its quality and effectiveness.",
     "tmdbId": null
   },
   {
@@ -1734,9 +1734,9 @@
     "review": null,
     "director": null,
     "streaming": [],
-    "posterUrl": null,
-    "description": null,
-    "tmdbId": null
+    "posterUrl": "https://image.tmdb.org/t/p/w500/sKnwnnmBpjo9BEskHtja6ToXUV1.jpg",
+    "description": "When a musician and her husband move to a remote house in Wales, the music they make disturbs local ancient folk magic, bringing a nameless child to their door who is intent on infiltrating their lives.",
+    "tmdbId": 1193824
   },
   {
     "id": 106,
