@@ -2117,5 +2117,22 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/jNsttCWZyPtW66MjhUozBzVsRb7.jpg",
     "tmdbId": null,
     "id": 129
+  },
+  {
+    "title": "The Haunting of Hill House",
+    "year": 2018,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watched",
+    "rating": 7.5,
+    "description": "Flashing between past and present, a fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
+    "director": "Mike Flanagan",
+    "streaming": [
+      "Netflix"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/38PkhBGRQtmVx2drvPik3F42qHO.jpg",
+    "tmdbId": null,
+    "id": 130
   }
 ]
