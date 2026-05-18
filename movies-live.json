@@ -2135,5 +2135,22 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/eMP4F0POBgrB4icn6XgYeLLIrld.jpg",
     "tmdbId": null,
     "id": 130
+  },
+  {
+    "title": "When Evil Lurks",
+    "year": 2023,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "When brothers Pedro and Jimi discover that a demonic infection has been festering in a nearby farmhouse, they attempt to evict the victim from their land. Failing to adhere to the proper rites of exorcism, their reckless actions inadvertently trigger an epidemic of possessions across their rural community.",
+    "director": "Demián Rugna",
+    "streaming": [
+      "Shudder"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/iQ7G9LhP7NRRIUM4Vlai3eOxBAc.jpg",
+    "tmdbId": null,
+    "id": 131
   }
 ]
