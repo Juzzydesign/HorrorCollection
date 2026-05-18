@@ -220,6 +220,7 @@ function resetFilmForm() {
     r.checked = r.value === 'watchlist';
   });
   document.querySelectorAll('input[name="genre"]').forEach(cb => cb.checked = false);
+  document.querySelectorAll('input[name="trigger"]').forEach(cb => cb.checked = false);
   document.querySelectorAll('input[name="streaming"]').forEach(cb => cb.checked = false);
 }
 
@@ -239,11 +240,15 @@ function populateFilmForm(movie) {
   document.querySelectorAll('input[name="status"]').forEach(r => {
     r.checked = r.value === movie.status;
   });
-  (movie.genres    || []).forEach(g => {
+  (movie.genres          || []).forEach(g => {
     const cb = document.querySelector(`input[name="genre"][value="${g}"]`);
     if (cb) cb.checked = true;
   });
-  (movie.streaming || []).forEach(s => {
+  (movie.triggerWarnings || []).forEach(t => {
+    const cb = document.querySelector(`input[name="trigger"][value="${t}"]`);
+    if (cb) cb.checked = true;
+  });
+  (movie.streaming       || []).forEach(s => {
     const cb = document.querySelector(`input[name="streaming"][value="${s}"]`);
     if (cb) cb.checked = true;
   });
@@ -268,9 +273,10 @@ function handleFilmSubmit() {
   const genres = [...document.querySelectorAll('input[name="genre"]:checked')].map(cb => cb.value);
   if (genres.length === 0) return showError('film-error', 'Select at least one genre.');
 
-  const status    = document.querySelector('input[name="status"]:checked')?.value || 'watchlist';
-  const isWatched = status === 'watched';
-  const streaming = [...document.querySelectorAll('input[name="streaming"]:checked')].map(cb => cb.value);
+  const status          = document.querySelector('input[name="status"]:checked')?.value || 'watchlist';
+  const isWatched       = status === 'watched';
+  const streaming       = [...document.querySelectorAll('input[name="streaming"]:checked')].map(cb => cb.value);
+  const triggerWarnings = [...document.querySelectorAll('input[name="trigger"]:checked')].map(cb => cb.value);
 
   const movieData = {
     title,
@@ -281,6 +287,7 @@ function handleFilmSubmit() {
     description: document.getElementById('film-overview').value.trim() || null,
     director:    document.getElementById('film-director').value.trim() || null,
     streaming,
+    triggerWarnings,
     posterUrl:   document.getElementById('film-poster').value.trim() || null,
     tmdbId:      null,
     tmdbGenres:  pendingTmdbGenres,

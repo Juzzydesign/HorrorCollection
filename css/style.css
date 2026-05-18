@@ -899,6 +899,40 @@ img { display: block; max-width: 100%; }
 }
 
 /* Synopsis in info panel */
+/* Trigger warnings */
+.detail-triggers {
+  margin-bottom: 14px;
+}
+
+.detail-triggers-label {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 7px;
+}
+
+.detail-trigger-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.trigger-tag {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c97a14;
+  border: 1px solid rgba(201, 122, 20, 0.35);
+  border-radius: var(--radius);
+  padding: 3px 9px;
+  background: rgba(201, 122, 20, 0.06);
+}
+
 .detail-synopsis {
   margin-top: 20px;
   font-family: var(--font-body);

@@ -103,6 +103,15 @@ function renderHero(movie) {
        </div>`
     : '';
 
+  const triggerHTML = (movie.triggerWarnings || []).length
+    ? `<div class="detail-triggers">
+         <p class="detail-triggers-label">Trigger warnings</p>
+         <div class="detail-trigger-tags">
+           ${(movie.triggerWarnings).map(t => `<span class="trigger-tag">${escapeHTML(t)}</span>`).join('')}
+         </div>
+       </div>`
+    : '';
+
   const synopsisHTML = movie.description
     ? `<div class="detail-synopsis">
          <p>${escapeHTML(movie.description)}</p>
@@ -141,6 +150,8 @@ function renderHero(movie) {
         ${movie.director ? `<span>${escapeHTML(movie.director)}</span>` : ''}
         ${runtimeText    ? `<span>${runtimeText}</span>` : ''}
       </div>` : ''}
+
+      ${triggerHTML}
 
       ${synopsisHTML}
     </div>
