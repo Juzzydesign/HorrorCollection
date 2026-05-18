@@ -1681,6 +1681,15 @@ body.modal-open {
   margin-bottom: 14px;
 }
 
+.sync-status-msg {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: #5a9e6f;
+  min-height: 1.2em;
+  margin-bottom: 14px;
+}
+
 /* Buttons */
 .btn-primary {
   width: 100%;

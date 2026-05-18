@@ -213,10 +213,43 @@
   </div>
 
   <!-- ══════════════════════════════════════════════
+       MODAL: SYNC TO GITHUB
+  ══════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="sync-modal" hidden role="dialog" aria-modal="true" aria-labelledby="sync-modal-title">
+    <div class="modal">
+      <button class="modal-close" id="sync-modal-close" aria-label="Close">✕</button>
+      <h2 class="modal-title" id="sync-modal-title">Sync to GitHub</h2>
+      <p class="modal-sub">Push your changes so all visitors see the latest collection.</p>
+
+      <div class="form-field">
+        <label class="form-label" for="sync-pat">GitHub Token</label>
+        <input class="form-input" type="password" id="sync-pat"
+               placeholder="ghp_…" autocomplete="off" spellcheck="false">
+      </div>
+      <p class="form-hint">
+        Create a token at
+        <a href="https://github.com/settings/tokens" target="_blank" rel="noopener" style="color:var(--accent)">github.com/settings/tokens</a>
+        — tick <strong>repo → Contents</strong> (read &amp; write).
+        Your token is saved only in your browser.
+      </p>
+
+      <p class="form-error" id="sync-error" hidden></p>
+      <p class="sync-status-msg" id="sync-status"></p>
+
+      <div class="form-actions">
+        <button type="button" class="btn-secondary" id="sync-clear-pat">CLEAR TOKEN</button>
+        <button type="button" class="btn-secondary" id="sync-cancel">CANCEL</button>
+        <button type="button" class="btn-primary"   id="sync-now-btn">SYNC NOW</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
        SCRIPTS (order matters)
   ══════════════════════════════════════════════ -->
   <script src="js/movies.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/sync.js"></script>
   <script src="js/auth.js"></script>
   <script src="js/film-form.js"></script>
   <script src="js/main.js"></script>

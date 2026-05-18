@@ -9,7 +9,11 @@ let searchQuery  = '';
 const RETURN_STATE_KEY = 'horror_return_state';
 
 // ─── Entry point ──────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  // Pull the latest data from GitHub before rendering so visitors always see
+  // the most up-to-date collection. Falls back to localStorage silently.
+  await loadRemoteMovies();
+
   setupViewTabs();
   setupGenreFilters();
   setupSearch();
@@ -18,7 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
   setupLoginModal();
   setupFilmModal();
   setupSaveButton();
-  document.addEventListener('film-saved', renderGrid);
+  setupSyncModal();
+
+  document.addEventListener('film-saved', () => {
+    renderGrid();
+    autoPush(result => {
+      if (!result.ok) console.warn('[sync] Push failed:', result.error);
+    });
+  });
+
   updateAuthUI();   // from auth.js — sync login state on load
   if (!restoreReturnState()) renderGrid();
 });
@@ -101,23 +113,85 @@ function setupSearch() {
   });
 }
 
-// ─── Save / Export ────────────────────────────────────────────────────────────
+// ─── Save / Sync button ───────────────────────────────────────────────────────
 function setupSaveButton() {
-  document.getElementById('save-btn')?.addEventListener('click', exportMoviesJS);
+  document.getElementById('save-btn')?.addEventListener('click', openSyncModal);
 }
 
-function exportMoviesJS() {
-  const movies  = getMovies();
-  const version = localStorage.getItem('horror_archive_data_version') || DATA_VERSION;
-  const content =
-    `const DATA_VERSION = '${version}';\n\n` +
-    `const MOVIES = ${JSON.stringify(movies, null, 2)};\n`;
-  const url = URL.createObjectURL(new Blob([content], { type: 'text/javascript' }));
-  const a   = Object.assign(document.createElement('a'), { href: url, download: 'movies.js' });
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+// ─── Sync modal ───────────────────────────────────────────────────────────────
+function openSyncModal() {
+  const modal = document.getElementById('sync-modal');
+  if (!modal) return;
+  // Pre-fill PAT if already saved (masked)
+  const patInput = document.getElementById('sync-pat');
+  if (patInput) patInput.value = getSyncPAT() ? '••••••••' : '';
+  clearSyncStatus();
+  modal.hidden = false;
+  document.body.classList.add('modal-open');
+  if (!getSyncPAT()) setTimeout(() => patInput?.focus(), 50);
+}
+
+function closeSyncModal() {
+  const modal = document.getElementById('sync-modal');
+  if (modal) modal.hidden = true;
+  document.body.classList.remove('modal-open');
+}
+
+function clearSyncStatus() {
+  const err = document.getElementById('sync-error');
+  const sta = document.getElementById('sync-status');
+  if (err) { err.hidden = true; err.textContent = ''; }
+  if (sta) sta.textContent = '';
+}
+
+function setupSyncModal() {
+  document.getElementById('sync-modal-close')?.addEventListener('click', closeSyncModal);
+  document.getElementById('sync-cancel')?.addEventListener('click', closeSyncModal);
+  document.getElementById('sync-modal')?.addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeSyncModal();
+  });
+
+  document.getElementById('sync-now-btn')?.addEventListener('click', async () => {
+    const patInput  = document.getElementById('sync-pat');
+    const statusEl  = document.getElementById('sync-status');
+    const errorEl   = document.getElementById('sync-error');
+    const btn       = document.getElementById('sync-now-btn');
+
+    // If the user typed a new token (not the placeholder), save it
+    const typed = patInput?.value.trim() || '';
+    if (typed && typed !== '••••••••') {
+      setSyncPAT(typed);
+    }
+
+    if (!isSyncConfigured()) {
+      if (errorEl) { errorEl.textContent = 'Paste your GitHub token first.'; errorEl.hidden = false; }
+      return;
+    }
+
+    btn.disabled = true;
+    if (statusEl) statusEl.textContent = 'Syncing…';
+    if (errorEl)  errorEl.hidden = true;
+
+    const result = await pushMoviesToGitHub();
+
+    btn.disabled = false;
+    if (result.ok) {
+      if (statusEl) statusEl.textContent = '✓ Synced — visitors will now see your changes.';
+    } else {
+      if (errorEl)  { errorEl.textContent = result.error; errorEl.hidden = false; }
+      if (statusEl) statusEl.textContent = '';
+    }
+  });
+
+  document.getElementById('sync-clear-pat')?.addEventListener('click', () => {
+    if (confirm('Remove the saved GitHub token?')) {
+      setSyncPAT('');
+      const patInput = document.getElementById('sync-pat');
+      if (patInput) patInput.value = '';
+      const statusEl = document.getElementById('sync-status');
+      if (statusEl) statusEl.textContent = 'Token removed.';
+    }
+  });
 }
 
 // ─── Login / Logout button ────────────────────────────────────────────────────
@@ -236,6 +310,7 @@ function renderGrid() {
       if (confirm('Remove this film from the archive?')) {
         deleteMovie(id);   // from data.js
         renderGrid();
+        autoPush();
       }
     });
   });

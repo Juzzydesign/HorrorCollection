@@ -10,7 +10,11 @@ function isAdminLoggedIn() {
   return sessionStorage.getItem('horror_archive_session') === 'authenticated';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  // Pull the latest data from GitHub so the detail page reflects any
+  // changes made on another device. Falls back to localStorage silently.
+  await loadRemoteMovies();
+
   // Use history.back() so the browser restores scroll + filter state
   document.getElementById('back-btn')?.addEventListener('click', e => {
     if (history.length > 1) {
@@ -37,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
     injectAdminPanel(movie);
     injectPosterUpload(movie);
     setupFilmModal();
-    document.addEventListener('film-saved', () => location.reload());
+    document.addEventListener('film-saved', () => {
+      autoPush();
+      location.reload();
+    });
   }
 });
 
@@ -222,6 +229,7 @@ function injectAdminPanel(movie) {
   document.getElementById('tmdb-clear-btn').addEventListener('click', () => {
     if (confirm('Clear poster and description for this film?')) {
       updateMovie(movie.id, { posterUrl: null, description: null, tmdbId: null });
+      autoPush();
       location.reload();
     }
   });
@@ -256,8 +264,11 @@ async function handleTmdbFix(movie) {
     };
 
     updateMovie(movie.id, changes);
-    setStatus(status, 'Updated! Reloading…', 'ok');
-    setTimeout(() => location.reload(), 800);
+    setStatus(status, 'Updated! Syncing…', 'ok');
+    autoPush(result => {
+      setStatus(status, result.ok ? 'Synced! Reloading…' : 'Saved locally. Reloading…', result.ok ? 'ok' : '');
+    });
+    setTimeout(() => location.reload(), 1200);
   } catch (err) {
     setStatus(status, `Request failed: ${err.message}`, 'error');
   } finally {
@@ -328,6 +339,8 @@ function injectPosterUpload(movie) {
         canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
         const compressed = canvas.toDataURL('image/jpeg', 0.82);
         updateMovie(movie.id, { posterUrl: compressed });
+        // Note: base64 posters are kept local-only (not pushed to GitHub)
+        autoPush();
         location.reload();
       };
       img.src = reader.result;
