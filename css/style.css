@@ -289,6 +289,9 @@ img { display: block; max-width: 100%; }
 
 .filters-row--ratings {
   padding-top: 2px;
+  border-top: 1px dotted rgba(255,255,255,0.15);
+  padding-top: 8px;
+  margin-top: 2px;
 }
 
 /* Genre / rating pill groups */
