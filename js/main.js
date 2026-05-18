@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.addEventListener('film-deleted', () => {
+    renderGrid();
+    autoPush();
+  });
+
   updateAuthUI();   // from auth.js — sync login state on load
 
   // Render immediately from localStorage — page appears instantly

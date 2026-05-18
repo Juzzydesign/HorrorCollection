@@ -1730,6 +1730,27 @@ body.modal-open {
   border-color: rgba(255,255,255,0.25);
 }
 
+.btn-delete {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--red-bright);
+  background: transparent;
+  border: 1px solid rgba(201,21,14,0.35);
+  border-radius: var(--radius);
+  padding: 11px 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-right: auto;
+}
+
+.btn-delete:hover {
+  background: rgba(201,21,14,0.12);
+  border-color: var(--red-bright);
+}
+
 .form-actions {
   display: flex;
   gap: 10px;

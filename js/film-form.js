@@ -17,6 +17,9 @@ function openFilmModal(movie = null) {
   titleEl.textContent   = movie ? 'Edit Film' : 'Add to the Archive';
   submitBtn.textContent = movie ? 'SAVE CHANGES' : 'ADD TO ARCHIVE';
 
+  const deleteBtn = document.getElementById('film-delete-btn');
+  if (deleteBtn) deleteBtn.hidden = !movie;
+
   resetFilmForm();
   if (movie) populateFilmForm(movie);
   toggleWatchedFields();
@@ -70,6 +73,8 @@ function setupFilmModal() {
     e.preventDefault();
     handleFilmSubmit();
   });
+
+  document.getElementById('film-delete-btn')?.addEventListener('click', handleFilmDelete);
 }
 
 function toggleWatchedFields() {
@@ -162,6 +167,15 @@ function handleFilmSubmit() {
 
   closeFilmModal();
   document.dispatchEvent(new CustomEvent('film-saved', { detail: { id: editingId } }));
+}
+
+function handleFilmDelete() {
+  if (!editingId) return;
+  const title = document.getElementById('film-title').value.trim() || 'this film';
+  if (!confirm(`Remove "${title}" from the archive?`)) return;
+  deleteMovie(editingId);
+  closeFilmModal();
+  document.dispatchEvent(new CustomEvent('film-deleted', { detail: { id: editingId } }));
 }
 
 // ─── Utilities ────────────────────────────────────────────────────────────────

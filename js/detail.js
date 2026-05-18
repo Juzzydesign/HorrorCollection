@@ -41,6 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
       autoPush();
       location.reload();
     });
+
+    document.addEventListener('film-deleted', () => {
+      autoPush();
+      history.back();
+    });
   }
 
   // Fetch remote data in the background; re-render the detail if it changed
