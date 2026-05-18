@@ -2134,5 +2134,20 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/fAXDQny8kEquc1BImiQHhYMGSsW.jpg",
     "tmdbId": null,
     "id": 131
+  },
+  {
+    "title": "Hokum",
+    "year": 2026,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
+    "director": "Damian McCarthy",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/jKPWwsbAM6HKURPYQ1eG8DmKMKn.jpg",
+    "tmdbId": null,
+    "id": 132
   }
 ]
