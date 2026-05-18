@@ -127,11 +127,12 @@ function renderHero(movie) {
 
       <div class="detail-divider"></div>
 
+      ${(movie.year || movie.director || runtimeText) ? `
       <div class="detail-meta-row">
-        <span>${movie.year}</span>
+        ${movie.year     ? `<span>${movie.year}</span>` : ''}
         ${movie.director ? `<span>${escapeHTML(movie.director)}</span>` : ''}
-        ${runtimeText ? `<span>${runtimeText}</span>` : ''}
-      </div>
+        ${runtimeText    ? `<span>${runtimeText}</span>` : ''}
+      </div>` : ''}
 
       ${synopsisHTML}
     </div>
