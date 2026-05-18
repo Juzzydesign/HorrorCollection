@@ -2152,5 +2152,20 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/iQ7G9LhP7NRRIUM4Vlai3eOxBAc.jpg",
     "tmdbId": null,
     "id": 131
+  },
+  {
+    "title": "The Plague",
+    "year": 2025,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "A socially awkward tween endures the ruthless hierarchy at a water polo camp, his anxiety spiraling into psychological turmoil over the summer.",
+    "director": "Charlie Polinger",
+    "streaming": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/b0RWuqzgvyfiIYU4QfgJHhmxZF4.jpg",
+    "tmdbId": null,
+    "id": 132
   }
 ]
