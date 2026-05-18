@@ -2212,5 +2212,26 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/9022CYEGqYETCeXN1oE3uwYJWub.jpg",
     "tmdbId": null,
     "id": 134
+  },
+  {
+    "title": "Midsommar",
+    "year": 2019,
+    "genres": [
+      "Folk"
+    ],
+    "status": "watched",
+    "rating": 8.5,
+    "description": "Several friends travel to Sweden to study as anthropologists a summer festival that is held every ninety years in the remote hometown of one of them. What begins as a dream vacation in a place where the sun never sets, gradually turns into a dark nightmare as the mysterious inhabitants invite them to participate in their disturbing festive activities.",
+    "director": "Ari Aster",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Drama",
+      "Mystery"
+    ],
+    "id": 135
   }
 ]
