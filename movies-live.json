@@ -1954,10 +1954,12 @@
     "rating": null,
     "review": null,
     "director": null,
-    "streaming": [],
-    "posterUrl": null,
-    "description": null,
-    "tmdbId": null
+    "streaming": [
+      "Max"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/1SGovj2qDdkJexvhFiXllj9EYfu.jpg",
+    "description": "Reporter Camille Preaker confronts the psychological demons from her past when she returns to her hometown to investigate the murders of two young girls.",
+    "tmdbId": 70453
   },
   {
     "title": "From",
