@@ -1919,11 +1919,11 @@
     "review": null,
     "director": null,
     "streaming": [
-      "Netflix"
+      "Max"
     ],
-    "posterUrl": null,
-    "description": "Yo and Boy, the two of them have to come across a shrine shaped like a Doraemon cartoon character. They argue about the sacredness of this shrine and whether we should really believe in it or not.",
-    "tmdbId": null
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7AwKXXri13OIiGJIYhVELkx4pb5.jpg",
+    "description": "The docuseries follows people deeply involved in the group NXIVM — which is faced with various charges, including sex trafficking and racketeering conspiracy — over the course of several years.",
+    "tmdbId": 49920
   },
   {
     "id": 117,
