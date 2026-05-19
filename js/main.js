@@ -86,6 +86,13 @@ function restoreReturnState() {
   } catch (e) { return false; }
 }
 
+// ─── Scroll to top of grid ────────────────────────────────────────────────────
+function scrollToGrid() {
+  const grid = document.querySelector('.main-content');
+  if (!grid) return;
+  grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 function syncFilterUI() {
   document.querySelectorAll('.filter-btn:not(.rating-filter)').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.genre === activeGenre);
@@ -119,6 +126,7 @@ function setupViewTabs() {
       }
       toggleRatingRow();
       renderGrid();
+      scrollToGrid();
     });
   });
 }
@@ -136,6 +144,7 @@ function setupGenreFilters() {
       btn.classList.add('active');
       activeGenre = btn.dataset.genre;
       renderGrid();
+      scrollToGrid();
     });
   });
 }
@@ -148,6 +157,7 @@ function setupRatingFilters() {
       btn.classList.add('active');
       activeRatingKey = btn.dataset.ratingKey || 'all';
       renderGrid();
+      scrollToGrid();
     });
   });
 }
@@ -162,6 +172,7 @@ function setupSearch() {
     timer = setTimeout(() => {
       searchQuery = input.value.trim().toLowerCase();
       renderGrid();
+      scrollToGrid();
     }, 200);
   });
 }
