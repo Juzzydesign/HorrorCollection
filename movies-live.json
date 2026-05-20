@@ -2298,5 +2298,29 @@
       "Mystery"
     ],
     "id": 138
+  },
+  {
+    "title": "Blink Twice",
+    "year": 2024,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "description": "When tech billionaire Slater King meets cocktail waitress Frida at his fundraising gala, he invites her to join him and his friends on a dream vacation on his private island. But despite the epic setting, beautiful people, ever-flowing champagne, and late-night dance parties, Frida can sense that there’s something sinister hiding beneath the island’s lush façade.",
+    "director": "Zoë Kravitz",
+    "streaming": [
+      "Prime"
+    ],
+    "triggerWarnings": [
+      "Sexual violence"
+    ],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/lZGOK0I2DJSRlEPNOAFTSNxSjDD.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Mystery",
+      "Thriller"
+    ],
+    "id": 139
   }
 ]
