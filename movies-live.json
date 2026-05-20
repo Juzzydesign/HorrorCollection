@@ -2142,7 +2142,8 @@
     "title": "The Haunting of Hill House",
     "year": 2018,
     "genres": [
-      "Supernatural"
+      "Supernatural",
+      "Series"
     ],
     "status": "watched",
     "rating": 7.5,
@@ -2153,7 +2154,9 @@
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/38PkhBGRQtmVx2drvPik3F42qHO.jpg",
     "tmdbId": null,
-    "id": 130
+    "id": 130,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "title": "The Damned",
