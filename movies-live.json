@@ -2322,5 +2322,29 @@
       "Thriller"
     ],
     "id": 139
+  },
+  {
+    "title": "Something Very Bad Is Going to Happen",
+    "year": 2026,
+    "genres": [
+      "Psychological",
+      "Series"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "description": "A bride has a feeling that something horrifying will happen at her wedding — and the closer to the altar she gets, the worse it becomes.",
+    "director": "Haley Z. Boston",
+    "streaming": [
+      "Netflix"
+    ],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/tuj37DlqEqib8sTO4h3nHJeTAJ2.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi & Fantasy"
+    ],
+    "id": 140
   }
 ]
