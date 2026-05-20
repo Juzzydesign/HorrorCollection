@@ -742,7 +742,7 @@
     "title": "Good Boy",
     "year": 2023,
     "genres": [
-      "Supernatural"
+      "Psychological"
     ],
     "status": "watchlist",
     "rating": null,
@@ -753,7 +753,9 @@
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/pzluRg3Jnm2YPs7CQyCrFJ8JADl.jpg",
     "description": "Christian, a millionaire heir, meets Sigrid, a young student, on a dating app. They hit it off quickly, but there's only one problem: Christian lives with Frank, a man who dresses up and constantly acts like a dog.",
-    "tmdbId": 983507
+    "tmdbId": null,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "id": 45,
@@ -1304,7 +1306,11 @@
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/gMtjxIkEi0hnTV5lPHbgeZ4ZpUZ.jpg",
     "description": "During a stopover in Germany in the middle of a carefree road trip through Europe, two American girls find themselves alone at night when their car breaks down in the woods. Searching for help at a nearby villa, they are wooed into the clutches of a deranged retired surgeon, who has a very disturbed vision.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Torture"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 79,
@@ -1898,7 +1904,11 @@
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/7AwKXXri13OIiGJIYhVELkx4pb5.jpg",
     "description": "The docuseries follows people deeply involved in the group NXIVM — which is faced with various charges, including sex trafficking and racketeering conspiracy — over the course of several years.",
-    "tmdbId": 49920
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Sexual violence"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 117,
@@ -2029,7 +2039,8 @@
     "title": "Kill List",
     "year": 2011,
     "genres": [
-      "Psychological"
+      "Psychological",
+      "Folk"
     ],
     "status": "watchlist",
     "rating": null,
@@ -2040,7 +2051,9 @@
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/qwT2I3ons0oD58jIppKmd4qLtvB.jpg",
     "tmdbId": null,
-    "id": 124
+    "id": 124,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "title": "The Blood on Satan's Claw",
