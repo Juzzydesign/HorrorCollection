@@ -76,7 +76,7 @@ function renderHero(movie) {
   const hero = document.getElementById('detail-hero');
   if (!hero) return;
 
-  const statusLabel = movie.status === 'watched' ? 'Watched' : 'On Watchlist';
+  const statusLabel = movie.status === 'watched' ? 'Watched' : 'Watchlist';
   const statusClass = movie.status;
 
   const posterHTML = movie.posterUrl

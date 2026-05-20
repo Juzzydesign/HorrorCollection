@@ -420,7 +420,7 @@ function applyFilters(movies) {
 // ─── Card HTML ────────────────────────────────────────────────────────────────
 function buildCardHTML(movie) {
   const genre  = (movie.genres || [])[0] || '';
-  const label  = movie.status === 'watched' ? 'Seen' : 'Want to Watch';
+  const label  = movie.status === 'watched' ? 'Seen' : 'Watchlist';
   const cls    = movie.status;
 
   const ratingBadge = (movie.status === 'watched' && movie.rating != null)
