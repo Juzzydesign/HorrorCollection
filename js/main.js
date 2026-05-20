@@ -126,7 +126,6 @@ function setupViewTabs() {
       }
       toggleRatingRow();
       renderGrid();
-      scrollToGrid();
     });
   });
 }
