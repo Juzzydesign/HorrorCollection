@@ -1,20 +1,28 @@
 /**
  * auth.js — Login / logout for the Horror Archive admin
  *
- * How it works:
- *   - Your password is stored as a SHA-256 hash in localStorage.
- *   - The first time you click LOGIN you will be prompted to CREATE a password.
- *   - After that, LOGIN checks your entry against the stored hash.
- *   - The active session lives in sessionStorage (cleared when you close the tab).
+ * Security model:
+ *   - Admin access requires a password hash to already be stored in
+ *     localStorage on the device. Visitors on their own browsers have no
+ *     hash, so they cannot log in at all.
+ *   - The hash is created once per device by running setupAdmin() in the
+ *     browser console. After that, only the correct password grants access.
+ *   - The active session lives in sessionStorage (cleared on tab close).
  *
- * To reset your password: open the browser console and run:
- *   localStorage.removeItem('horror_archive_auth')
- *   Then click LOGIN to set a new one.
+ * ── First-time setup on a new device ──────────────────────────────────────
+ *   Open the browser console (F12 → Console) and run:
+ *     setupAdmin()
+ *   Enter your password when prompted. Do this once per device/browser.
+ *
+ * ── Reset password ─────────────────────────────────────────────────────────
+ *   Open the console and run:
+ *     localStorage.removeItem('horror_archive_auth')
+ *   Then run setupAdmin() again to set a new password.
  */
 
-const AUTH_HASH_KEY    = 'horror_archive_auth';
-const SESSION_KEY      = 'horror_archive_session';
-const SESSION_TOKEN    = 'authenticated';
+const AUTH_HASH_KEY = 'horror_archive_auth';
+const SESSION_KEY   = 'horror_archive_session';
+const SESSION_TOKEN = 'authenticated';
 
 // ─── Public API ───────────────────────────────────────────────────────────────
 
@@ -22,30 +30,24 @@ function isLoggedIn() {
   return sessionStorage.getItem(SESSION_KEY) === SESSION_TOKEN;
 }
 
-function isPasswordSet() {
-  return !!localStorage.getItem(AUTH_HASH_KEY);
-}
-
 function logout() {
   sessionStorage.removeItem(SESSION_KEY);
   updateAuthUI();
-  renderGrid();   // re-render to hide admin controls
+  renderGrid();
 }
 
-// Called by the login form. On first use (no password stored) the entered
-// password silently becomes the admin password — visitors can't sign up
-// because they don't know what to type.
+// Login — only succeeds if a hash is already stored on this device.
+// Visitors on their own browsers have no hash → always blocked.
 async function attemptLogin(password) {
   if (!password) return { ok: false, error: 'Enter your password.' };
 
-  const hash   = await sha256(password);
   const stored = localStorage.getItem(AUTH_HASH_KEY);
-
   if (!stored) {
-    // First-time: set this as the admin password
-    if (password.length < 4) return { ok: false, error: 'Password must be at least 4 characters.' };
-    localStorage.setItem(AUTH_HASH_KEY, hash);
-  } else if (hash !== stored) {
+    return { ok: false, error: 'Admin access not set up on this device.' };
+  }
+
+  const hash = await sha256(password);
+  if (hash !== stored) {
     return { ok: false, error: 'Incorrect password.' };
   }
 
@@ -53,6 +55,17 @@ async function attemptLogin(password) {
   updateAuthUI();
   renderGrid();
   return { ok: true };
+}
+
+// ─── First-time device setup (console only) ───────────────────────────────────
+// Run setupAdmin() in the browser console to register this device.
+async function setupAdmin() {
+  const pwd = prompt('Set admin password (min 6 characters):');
+  if (!pwd) return console.log('[auth] Cancelled.');
+  if (pwd.length < 6) return console.log('[auth] Password too short — minimum 6 characters.');
+  const hash = await sha256(pwd);
+  localStorage.setItem(AUTH_HASH_KEY, hash);
+  console.log('[auth] ✓ Admin password set. You can now log in normally.');
 }
 
 // ─── UI sync ──────────────────────────────────────────────────────────────────
