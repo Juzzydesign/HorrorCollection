@@ -2387,5 +2387,135 @@
       "Science Fiction"
     ],
     "id": 141
+  },
+  {
+    "title": "undertone",
+    "year": 2026,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "The host of a popular paranormal podcast becomes haunted by terrifying recordings mysteriously sent her way.",
+    "director": "Ian Tuason",
+    "streaming": [
+      "Max"
+    ],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/2PFgFMnrdCPXWiZl1PUvky7Mo9D.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Mystery"
+    ],
+    "id": 142
+  },
+  {
+    "title": "Send Help",
+    "year": 2026,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+    "director": "Sam Raimi",
+    "streaming": [
+      "Hulu"
+    ],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/zbJWVHOtj3ljBzWgL1P8pxP03Up.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Thriller",
+      "Comedy"
+    ],
+    "id": 143
+  },
+  {
+    "title": "28 Years Later: The Bone Temple",
+    "year": 2026,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Dr. Kelson finds himself in a shocking new relationship - with consequences that could change the world as they know it - and Spike's encounter with Jimmy Crystal becomes a nightmare he can't escape.",
+    "director": "Nia DaCosta",
+    "streaming": [
+      "Netflix"
+    ],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "id": 144
+  },
+  {
+    "title": "Leviticus",
+    "year": 2026,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Two teenage boys must escape a violent entity that takes the form of the person they desire most — each other.",
+    "director": "Adrian Chiarella",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/cu0XnXLzJGPeI0msCoJKgnEecKz.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Romance"
+    ],
+    "id": 145
+  },
+  {
+    "title": "Mother Mary",
+    "year": 2026,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Long-buried wounds rise to the surface when iconic pop star Mother Mary reunites with her estranged best friend and former costume designer Sam Anselm on the eve of her comeback performance.",
+    "director": "David Lowery",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/uVcsN3yoHh7ZcJ6ecj1FJfv7dLa.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Music",
+      "Drama",
+      "Thriller"
+    ],
+    "id": 146
+  },
+  {
+    "title": "Backrooms",
+    "year": 2026,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "A strange doorway appears in the basement of a furniture showroom.",
+    "director": "Kane Parsons",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Mystery",
+      "Science Fiction"
+    ],
+    "id": 147
   }
 ]
