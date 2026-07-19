@@ -2517,5 +2517,28 @@
       "Science Fiction"
     ],
     "id": 147
+  },
+  {
+    "title": "Infested",
+    "year": 2023,
+    "genres": [
+      "Supernatural",
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Residents of a rundown French apartment building battle against an army of deadly, rapidly reproducing spiders.",
+    "director": "Sébastien Vaniček",
+    "streaming": [
+      "Shudder"
+    ],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/dY98PkUAbIGUUg0FhXEcOkbzHIZ.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Thriller"
+    ],
+    "id": 148
   }
 ]
