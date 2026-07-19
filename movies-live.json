@@ -2540,5 +2540,25 @@
       "Thriller"
     ],
     "id": 148
+  },
+  {
+    "title": "Evil Dead Burn",
+    "year": 2026,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
+    "director": "Sébastien Vaniček",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Thriller"
+    ],
+    "id": 149
   }
 ]
