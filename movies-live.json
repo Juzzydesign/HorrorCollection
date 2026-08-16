@@ -2127,8 +2127,8 @@
     "genres": [
       "Slasher"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 7,
     "description": "Returning to the house where his family was brutally murdered during the war, \"the man who refuses to die\" dismantles it, loads it on a truck, and is determined to rebuild it somewhere safe in their honor. When the commander who killed his family comes back hellbent on finishing the job, a relentless, eye-popping cross-country chase ensues.",
     "director": "Jalmari Helander",
     "streaming": [
@@ -2136,7 +2136,9 @@
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/jNsttCWZyPtW66MjhUozBzVsRb7.jpg",
     "tmdbId": null,
-    "id": 129
+    "id": 129,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "title": "The Haunting of Hill House",
