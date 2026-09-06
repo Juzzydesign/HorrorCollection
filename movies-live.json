@@ -764,14 +764,18 @@
     "genres": [
       "Supernatural"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 5.5,
     "review": null,
     "director": "Kiah Roache-Turner",
-    "streaming": [],
+    "streaming": [
+      "Prime"
+    ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/97XZtLd461e5e0WBIBJREK1lzqC.jpg",
     "description": "After raising an unnervingly talented spider in secret, 12-year-old Charlotte must face the truth about her pet and fight for her family's survival.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "id": 46,
