@@ -1139,16 +1139,21 @@
     "title": "Would You Rather",
     "year": 2012,
     "genres": [
-      "Psychological"
+      "Psychological",
+      "Slasher"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 6,
     "review": null,
     "director": "David Guy Levy",
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/unYQSQWX66qmQwUYDBaBkOOFEGm.jpg",
     "description": "Desperate to help her ailing brother, a young woman agrees to compete in a deadly game of \"Would You Rather\" hosted by a sadistic aristocrat.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Torture"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 69,
