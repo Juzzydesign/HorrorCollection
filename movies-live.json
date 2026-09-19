@@ -1687,14 +1687,21 @@
     "genres": [
       "Folk"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 6.5,
     "review": null,
     "director": "Lukas Feigelfeld",
-    "streaming": [],
+    "streaming": [
+      "Tubi"
+    ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/qxUiwpRKagcNHFlly5IpcbX0QPI.jpg",
     "description": "In the 15th century, a young goatherd living alone in a mountain hut feels a dark presence in the woods.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Sexual violence",
+      "Child harm"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 102,
@@ -1737,14 +1744,20 @@
     "genres": [
       "Folk"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 7,
     "review": null,
     "director": "Veronika Franz, Severin Fiala",
-    "streaming": [],
+    "streaming": [
+      "Tubi"
+    ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/txVfrmwFOKB5qczM0ENYSqKMnSv.jpg",
     "description": "In 1750 Austria, a deeply religious woman named Agnes has just married her beloved, but her mind and heart soon grow heavy as her life becomes a long list of chores and expectations. Day after day, she is increasingly trapped in a murky and lonely path leading to evil thoughts, until the possibility of committing a shocking act of violence seems like the only way out of her inner prison.",
-    "tmdbId": null
+    "tmdbId": null,
+    "triggerWarnings": [
+      "Child harm"
+    ],
+    "tmdbGenres": []
   },
   {
     "id": 105,
