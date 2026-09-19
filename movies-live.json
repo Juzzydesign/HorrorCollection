@@ -2044,18 +2044,22 @@
     "title": "The Lighthouse",
     "year": 2019,
     "genres": [
-      "Folk"
+      "Psychological"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 7.5,
     "description": "Two lighthouse keepers try to maintain their sanity while living on a remote and mysterious New England island in the 1890s.",
     "director": "Robert Eggers",
     "streaming": [
+      "Netflix",
+      "Prime",
       "Max"
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/f1tIYarTbkBdIT1aW0gzelDwknv.jpg",
     "tmdbId": null,
-    "id": 123
+    "id": 123,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "title": "Kill List",
@@ -2440,11 +2444,12 @@
     "genres": [
       "Psychological"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 5.5,
     "description": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
     "director": "Sam Raimi",
     "streaming": [
+      "Prime",
       "Hulu"
     ],
     "triggerWarnings": [],
