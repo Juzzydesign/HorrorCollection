@@ -2748,5 +2748,26 @@
       "Thriller"
     ],
     "id": 156
+  },
+  {
+    "title": "Clayface",
+    "year": 2026,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
+    "director": "James Watkins",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "id": 157
   }
 ]
