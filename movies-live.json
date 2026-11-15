@@ -2660,5 +2660,26 @@
       "Mystery"
     ],
     "id": 152
+  },
+  {
+    "title": "Widow's Bay",
+    "year": 2026,
+    "genres": [
+      "Series"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "The mayor of a New England town resolves to turn it into the next tourist hot spot, despite local warnings that it's cursed.",
+    "director": "Katie Dippold",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/5lcxWLVAEICkFpuAiV1aMy7ZZj3.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Drama",
+      "Comedy",
+      "Mystery"
+    ],
+    "id": 153
   }
 ]
