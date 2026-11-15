@@ -2681,5 +2681,27 @@
       "Mystery"
     ],
     "id": 153
+  },
+  {
+    "title": "Disclosure Day",
+    "year": 2026,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+    "director": "Steven Spielberg",
+    "streaming": [
+      "Peacock"
+    ],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Science Fiction",
+      "Thriller"
+    ],
+    "id": 154
   }
 ]
