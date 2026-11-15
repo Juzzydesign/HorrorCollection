@@ -1306,13 +1306,16 @@
     "title": "The Human Centipede",
     "year": 2009,
     "genres": [
-      "Psychological"
+      "Psychological",
+      "Slasher"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 6,
     "review": null,
     "director": "Tom Six",
-    "streaming": [],
+    "streaming": [
+      "Tubi"
+    ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/gMtjxIkEi0hnTV5lPHbgeZ4ZpUZ.jpg",
     "description": "During a stopover in Germany in the middle of a carefree road trip through Europe, two American girls find themselves alone at night when their car breaks down in the woods. Searching for help at a nearby villa, they are wooed into the clutches of a deranged retired surgeon, who has a very disturbed vision.",
     "tmdbId": null,
@@ -1708,18 +1711,22 @@
     "title": "Frewaka",
     "year": 2023,
     "genres": [
+      "Cults",
       "Folk"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 7.5,
     "review": null,
     "director": "Tom Sullivan",
     "streaming": [
+      "Netflix",
       "Shudder"
     ],
     "posterUrl": "https://image.tmdb.org/t/p/w500/pfLylbmY0uxQm6Sh63j6bpb7XB3.jpg",
     "description": "Care worker Shoo, who is haunted by a personal tragedy, is sent to a remote village to care for an agoraphobic woman, who fears both her neighbours and the Na Sídhe – sinister folkloric entities she believes abducted her decades before.",
-    "tmdbId": 1189735
+    "tmdbId": null,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "id": 103,
@@ -2209,16 +2216,18 @@
     "title": "Hokum",
     "year": 2026,
     "genres": [
-      "Folk"
+      "Supernatural"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 7,
     "description": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
     "director": "Damian McCarthy",
     "streaming": [],
     "posterUrl": "https://image.tmdb.org/t/p/w500/jKPWwsbAM6HKURPYQ1eG8DmKMKn.jpg",
     "tmdbId": null,
-    "id": 132
+    "id": 132,
+    "triggerWarnings": [],
+    "tmdbGenres": []
   },
   {
     "title": "In the Tall Grass",
@@ -2283,11 +2292,12 @@
     "genres": [
       "Folk"
     ],
-    "status": "watchlist",
-    "rating": null,
+    "status": "watched",
+    "rating": 6.5,
     "description": "In 1630, a farmer relocates his family to a remote plot of land on the edge of a forest where strange, unsettling things happen. With suspicion and paranoia mounting, each family member's faith, loyalty and love are tested in shocking ways.",
     "director": "Robert Eggers",
     "streaming": [
+      "Netflix",
       "Max"
     ],
     "triggerWarnings": [],
@@ -2629,5 +2639,26 @@
       "Documentary"
     ],
     "id": 151
+  },
+  {
+    "title": "1408",
+    "year": 2007,
+    "genres": [
+      "Supernatural",
+      "Psychological"
+    ],
+    "status": "watched",
+    "rating": 7.5,
+    "description": "A man specializing in debunking paranormal occurrences checks into the fabled room 1408 at the Dolphin Hotel. Soon after settling in, he confronts genuine terror.",
+    "director": "Mikael Håfström",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/yE9MCW7ZNxSw5SC1TMqm51pMBIV.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Mystery"
+    ],
+    "id": 152
   }
 ]
