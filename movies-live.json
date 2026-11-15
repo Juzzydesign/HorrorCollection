@@ -2609,5 +2609,25 @@
       "Thriller"
     ],
     "id": 150
+  },
+  {
+    "title": "Introducing Chucky: The Making of Child's Play",
+    "year": 1988,
+    "genres": [
+      "Supernatural",
+      "Slasher"
+    ],
+    "status": "watched",
+    "rating": 8,
+    "description": "A vintage featurette about the making of Child's Play (1988).",
+    "director": "Greg Grosz",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mRTnim0xPxYiH0LWi2O59Lqk2Gd.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Documentary"
+    ],
+    "id": 151
   }
 ]
