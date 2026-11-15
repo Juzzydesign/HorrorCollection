@@ -2769,5 +2769,27 @@
       "Science Fiction"
     ],
     "id": 157
+  },
+  {
+    "title": "Lake Mungo",
+    "year": 2009,
+    "genres": [
+      "Supernatural"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "After 16-year-old Alice Palmer drowns at a local dam, her family experiences a series of strange, inexplicable events centered in and around their home. Unsettled, the Palmers seek the help of a psychic and parapsychologist, who discovers that Alice led a secret, double life. At Lake Mungo, Alice's secret past emerges.",
+    "director": "Joel Anderson",
+    "streaming": [
+      "Prime"
+    ],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/5IaGu8r0t6bBaydkR6z9l9tJsCg.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Horror",
+      "Thriller"
+    ],
+    "id": 158
   }
 ]
