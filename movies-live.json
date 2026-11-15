@@ -2589,5 +2589,25 @@
       "Thriller"
     ],
     "id": 149
+  },
+  {
+    "title": "One Hour Photo",
+    "year": 2002,
+    "genres": [
+      "Psychological"
+    ],
+    "status": "watchlist",
+    "rating": null,
+    "description": "Sy Parrish has lovingly developed photographs for the Yorkin family since their son was a baby. But as the Yorkins' lives become fuller, Sy's only seems lonelier, until he eventually convinces himself he's part of their family. When Sy's picture-perfect fantasy collides with an ugly dose of reality, a bizarre and thrilling confrontation ensues.",
+    "director": "Mark Romanek",
+    "streaming": [],
+    "triggerWarnings": [],
+    "posterUrl": "https://image.tmdb.org/t/p/w500/fuSIN3Nq6dmaA8LZSkASpQueFO1.jpg",
+    "tmdbId": null,
+    "tmdbGenres": [
+      "Drama",
+      "Thriller"
+    ],
+    "id": 150
   }
 ]
